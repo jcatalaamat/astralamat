@@ -62,11 +62,11 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
       </div>
 
       {/* Content Container */}
-      <div className={`relative z-10 container mx-auto px-4 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`relative z-10 container mx-auto px-4 py-12 md:py-20 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-6xl mx-auto">
 
           {/* Dual Identity Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
               {/* Technical Identity */}
               <div className="flex items-center gap-3 group">
@@ -95,7 +95,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
             </div>
 
             {/* Main Tagline */}
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">
               {language === 'en' && 'Where Code Meets Consciousness'}
               {language === 'es' && 'Donde el Código Encuentra la Consciencia'}
               {language === 'ca' && 'On el Codi Troba la Consciència'}
@@ -103,14 +103,14 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
 
             {/* Subtitle with dual nature */}
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
                 {t.tagline}
               </p>
             </div>
           </div>
 
           {/* Dual Value Propositions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Technical Mastery Card */}
             <div className="relative group">
               <div className={`absolute -inset-1 bg-gradient-to-r ${colors.tech.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
