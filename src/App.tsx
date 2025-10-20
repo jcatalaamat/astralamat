@@ -19,7 +19,7 @@ import IntegratedHero from './components/IntegratedHero';
 import DualTimeline from './components/DualTimeline';
 import QuadrantMastery from './components/QuadrantMastery';
 import SacredMandala from './components/SacredMandala';
-import ThreeEcosystems from './components/ThreeEcosystems';
+import FourEcosystems from './components/ThreeEcosystems';
 
 // Main Landing Page Component
 function LandingPage() {
@@ -215,7 +215,7 @@ function LandingPage() {
         <QuadrantMastery language={language} translations={t} />
         <ProjectsShowcase language={language} translations={t} />
         <SacredMandala language={language} translations={t} />
-        <ThreeEcosystems language={language} />
+        <FourEcosystems language={language} />
         <ServicesSection language={language} translations={t} />
         <InvestmentCTA language={language} translations={t} />
         <ContactSection language={language} translations={t} />

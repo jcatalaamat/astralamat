@@ -1,11 +1,11 @@
-import { ExternalLink, Mountain, Sunrise, Sparkles } from 'lucide-react';
+import { ExternalLink, Mountain, Sunrise, Sparkles, Waves } from 'lucide-react';
 import { colors } from '../styles/colors';
 
-interface ThreeEcosystemsProps {
+interface FourEcosystemsProps {
   language: 'en' | 'es' | 'ca';
 }
 
-const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
+const FourEcosystems = ({ language }: FourEcosystemsProps) => {
   const ecosystems = [
     {
       name: 'Proyecto Salvaje',
@@ -58,6 +58,23 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
       gradient: 'from-violet-500 via-purple-500 to-fuchsia-500',
       glowColor: 'purple-500',
     },
+    {
+      name: 'Mazunte Connect',
+      tagline: {
+        en: 'Never Miss What\'s Happening in Mazunte',
+        es: 'Nunca Te Pierdas Lo Que Pasa en Mazunte',
+        ca: 'Mai Et Perdis El Que Passa a Mazunte',
+      },
+      description: {
+        en: 'Mobile app for Mazunte\'s conscious community. All events, retreats, yoga, restaurants, and conscious spaces in one place. No more WhatsApp chaos - just a beautifully organized calendar of everything happening in paradise.',
+        es: 'App móvil para la comunidad consciente de Mazunte. Todos los eventos, retiros, yoga, restaurantes y espacios conscientes en un solo lugar. Sin más caos de WhatsApp - solo un calendario bellamente organizado de todo lo que sucede en el paraíso.',
+        ca: 'App mòbil per a la comunitat conscient de Mazunte. Tots els esdeveniments, retirs, ioga, restaurants i espais conscients en un sol lloc. Sense més caos de WhatsApp - només un calendari bellament organitzat de tot el que passa al paradís.',
+      },
+      url: 'https://mazunte-connect.com',
+      icon: Waves,
+      gradient: 'from-cyan-500 to-blue-500',
+      glowColor: 'cyan-500',
+    },
   ];
 
   return (
@@ -71,14 +88,14 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
             {language === 'ca' && 'L\'Ecosistema'}
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6">
-            {language === 'en' && 'Three interconnected projects weaving technology, consciousness, and community'}
-            {language === 'es' && 'Tres proyectos interconectados tejiendo tecnología, consciencia y comunidad'}
-            {language === 'ca' && 'Tres projectes interconnectats teixint tecnologia, consciència i comunitat'}
+            {language === 'en' && 'Four interconnected projects weaving technology, consciousness, and community'}
+            {language === 'es' && 'Cuatro proyectos interconectados tejiendo tecnología, consciencia y comunidad'}
+            {language === 'ca' && 'Quatre projectes interconnectats teixint tecnologia, consciència i comunitat'}
           </p>
         </div>
 
         {/* Ecosystems Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {ecosystems.map((ecosystem, index) => {
             const Icon = ecosystem.icon;
 
@@ -103,9 +120,7 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text" style={{
-                    backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`,
-                  }}>
+                  <h3 className="text-3xl font-bold text-white mb-3">
                     {ecosystem.name}
                   </h3>
 
@@ -149,9 +164,9 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
                 <Sparkles className="w-6 h-6 text-cyan-400" />
               </div>
               <p className="text-lg text-gray-300 leading-relaxed">
-                {language === 'en' && 'Each project serves a different aspect of transformation: Salvaje for regenerative community living, Ascend for daily spiritual practice and shadow work, Astral for deep 1:1 soul work and medicine integration. Together, they form a complete ecosystem for conscious evolution.'}
-                {language === 'es' && 'Cada proyecto sirve a un aspecto diferente de la transformación: Salvaje para vida comunitaria regenerativa, Ascend para práctica espiritual diaria y trabajo de sombra, Astral para trabajo del alma 1:1 profundo e integración de medicina. Juntos, forman un ecosistema completo para evolución consciente.'}
-                {language === 'ca' && 'Cada projecte serveix a un aspecte diferent de la transformació: Salvaje per a vida comunitària regenerativa, Ascend per a pràctica espiritual diària i treball d\'ombra, Astral per a treball de l\'ànima 1:1 profund i integració de medicina. Junts, formen un ecosistema complet per a evolució conscient.'}
+                {language === 'en' && 'Each project serves a different aspect of transformation: Salvaje for regenerative community living, Ascend for daily spiritual practice, Astral for deep 1:1 soul work and medicine integration, and Mazunte Connect for digital community infrastructure. Together, they form a complete ecosystem for conscious evolution.'}
+                {language === 'es' && 'Cada proyecto sirve a un aspecto diferente de la transformación: Salvaje para vida comunitaria regenerativa, Ascend para práctica espiritual diaria, Astral para trabajo del alma 1:1 e integración de medicina, y Mazunte Connect para infraestructura digital comunitaria. Juntos, forman un ecosistema completo para evolución consciente.'}
+                {language === 'ca' && 'Cada projecte serveix a un aspecte diferent de la transformació: Salvaje per a vida comunitària regenerativa, Ascend per a pràctica espiritual diària, Astral per a treball de l\'ànima 1:1 i integració de medicina, i Mazunte Connect per a infraestructura digital comunitària. Junts, formen un ecosistema complet per a evolució conscient.'}
               </p>
             </div>
           </div>
@@ -161,4 +176,4 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
   );
 };
 
-export default ThreeEcosystems;
+export default FourEcosystems;
