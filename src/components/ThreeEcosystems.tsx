@@ -1,4 +1,4 @@
-import { ExternalLink, Waves, Mountain, Sunrise, Sparkles } from 'lucide-react';
+import { ExternalLink, Mountain, Sunrise, Sparkles } from 'lucide-react';
 import { colors } from '../styles/colors';
 
 interface ThreeEcosystemsProps {
@@ -10,14 +10,14 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
     {
       name: 'Proyecto Salvaje',
       tagline: {
-        en: 'Wild Transformation & Sacred Ceremonies',
-        es: 'Transformación Salvaje y Ceremonias Sagradas',
-        ca: 'Transformació Salvatge i Cerimònies Sagrades',
+        en: 'Regenerative Village & Living School',
+        es: 'Pueblo Regenerativo y Escuela Viviente',
+        ca: 'Poble Regeneratiu i Escola Vivent',
       },
       description: {
-        en: 'Deep inner work through plant medicine ceremonies, masculine integration, and returning to wild authenticity. For those ready to remember who they truly are.',
-        es: 'Trabajo interior profundo a través de ceremonias de medicina vegetal, integración masculina, y retorno a la autenticidad salvaje. Para quienes están listos para recordar quiénes son realmente.',
-        ca: 'Treball interior profund a través de cerimònies de medicina vegetal, integració masculina, i retorn a l\'autenticitat salvatge. Per als qui estan preparats per recordar qui són realment.',
+        en: 'Intentional regenerative community in Mexico dedicated to protecting freedom, bodily autonomy, and living in harmony with nature. A healing village and educational center for sovereign living.',
+        es: 'Comunidad regenerativa intencional en México dedicada a proteger la libertad, autonomía corporal, y vivir en armonía con la naturaleza. Un pueblo sanador y centro educativo para vida soberana.',
+        ca: 'Comunitat regenerativa intencional a Mèxic dedicada a protegir la llibertat, autonomia corporal, i viure en harmonia amb la natura. Un poble sanador i centre educatiu per a vida sobirana.',
       },
       url: 'https://proyectosalvaje.com',
       icon: Mountain,
@@ -27,14 +27,14 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
     {
       name: 'Inner Ascend',
       tagline: {
-        en: 'Conscious Leadership & Spiritual Integration',
-        es: 'Liderazgo Consciente e Integración Espiritual',
-        ca: 'Lideratge Conscient i Integració Espiritual',
+        en: 'Daily Spiritual Practice & Shadow Work',
+        es: 'Práctica Espiritual Diaria y Trabajo de Sombra',
+        ca: 'Pràctica Espiritual Diària i Treball d\'Ombra',
       },
       description: {
-        en: 'Bridging spirituality and practical life. Community platform, DAO governance, and tools for new-paradigm leaders building the future with consciousness.',
-        es: 'Uniendo espiritualidad y vida práctica. Plataforma comunitaria, gobernanza DAO, y herramientas para líderes de nuevo paradigma construyendo el futuro con consciencia.',
-        ca: 'Unint espiritualitat i vida pràctica. Plataforma comunitària, governança DAO, i eines per a líders de nou paradigma construint el futur amb consciència.',
+        en: '90-day journey from wounded to wise. Mobile app combining daily cosmic guidance, structured curriculum, guided meditations, and shadow work focus. Your path from spiritual seeking to embodied wisdom.',
+        es: 'Viaje de 90 días de herido a sabio. App móvil que combina guía cósmica diaria, currículum estructurado, meditaciones guiadas, y enfoque en trabajo de sombra. Tu camino de búsqueda espiritual a sabiduría encarnada.',
+        ca: 'Viatge de 90 dies de ferit a savi. App mòbil que combina guia còsmica diària, currículum estructurat, meditacions guiades, i enfocament en treball d\'ombra. El teu camí de cerca espiritual a saviesa encarnada.',
       },
       url: 'https://inner-ascend.com',
       icon: Sunrise,
@@ -42,21 +42,21 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
       glowColor: 'purple-500',
     },
     {
-      name: 'Mazunte Connect',
+      name: 'Astral Integration',
       tagline: {
-        en: 'Digital Infrastructure for Conscious Communities',
-        es: 'Infraestructura Digital para Comunidades Conscientes',
-        ca: 'Infraestructura Digital per a Comunitats Conscients',
+        en: 'Soul Work & Medicine Integration',
+        es: 'Trabajo del Alma e Integración de Medicina',
+        ca: 'Treball de l\'Ànima i Integració de Medicina',
       },
       description: {
-        en: 'Tech platform connecting regenerative communities. Built with modern stack, designed for humans. Where my technical expertise serves conscious collaboration.',
-        es: 'Plataforma tecnológica conectando comunidades regenerativas. Construida con stack moderno, diseñada para humanos. Donde mi experiencia técnica sirve a la colaboración consciente.',
-        ca: 'Plataforma tecnològica connectant comunitats regeneratives. Construïda amb stack modern, dissenyada per a humans. On la meva experiència tècnica serveix a la col·laboració conscient.',
+        en: '1:1 mentorship for soul realignment and timeline shifting. Shamanic presence healing, medicine integration (Bufo, Ayahuasca), ancestral liberation, and spiritual business alchemy. For initiates ready to transcend.',
+        es: 'Mentoría 1:1 para realineación del alma y cambio de línea temporal. Sanación chamánica, integración de medicina (Bufo, Ayahuasca), liberación ancestral, y alquimia de negocio espiritual. Para iniciados listos a trascender.',
+        ca: 'Mentoria 1:1 per a realineació de l\'ànima i canvi de línia temporal. Sanació xamànica, integració de medicina (Bufo, Ayahuasca), alliberament ancestral, i alquímia de negoci espiritual. Per a iniciats preparats per transcendir.',
       },
-      url: 'https://mazunteconnect.com',
-      icon: Waves,
-      gradient: 'from-cyan-500 to-blue-500',
-      glowColor: 'cyan-500',
+      url: 'https://astral-integration.com',
+      icon: Sparkles,
+      gradient: 'from-violet-500 via-purple-500 to-fuchsia-500',
+      glowColor: 'purple-500',
     },
   ];
 
@@ -149,9 +149,9 @@ const ThreeEcosystems = ({ language }: ThreeEcosystemsProps) => {
                 <Sparkles className="w-6 h-6 text-cyan-400" />
               </div>
               <p className="text-lg text-gray-300 leading-relaxed">
-                {language === 'en' && 'Each project serves a different aspect of the transformation: Salvaje for deep inner work, Ascend for integrating spirituality into life, Mazunte for conscious community infrastructure. Together, they form a complete ecosystem for human evolution.'}
-                {language === 'es' && 'Cada proyecto sirve a un aspecto diferente de la transformación: Salvaje para el trabajo interior profundo, Ascend para integrar la espiritualidad en la vida, Mazunte para infraestructura comunitaria consciente. Juntos, forman un ecosistema completo para la evolución humana.'}
-                {language === 'ca' && 'Cada projecte serveix a un aspecte diferent de la transformació: Salvaje per al treball interior profund, Ascend per integrar l\'espiritualitat a la vida, Mazunte per a infraestructura comunitària conscient. Junts, formen un ecosistema complet per a l\'evolució humana.'}
+                {language === 'en' && 'Each project serves a different aspect of transformation: Salvaje for regenerative community living, Ascend for daily spiritual practice and shadow work, Astral for deep 1:1 soul work and medicine integration. Together, they form a complete ecosystem for conscious evolution.'}
+                {language === 'es' && 'Cada proyecto sirve a un aspecto diferente de la transformación: Salvaje para vida comunitaria regenerativa, Ascend para práctica espiritual diaria y trabajo de sombra, Astral para trabajo del alma 1:1 profundo e integración de medicina. Juntos, forman un ecosistema completo para evolución consciente.'}
+                {language === 'ca' && 'Cada projecte serveix a un aspecte diferent de la transformació: Salvaje per a vida comunitària regenerativa, Ascend per a pràctica espiritual diària i treball d\'ombra, Astral per a treball de l\'ànima 1:1 profund i integració de medicina. Junts, formen un ecosistema complet per a evolució conscient.'}
               </p>
             </div>
           </div>
