@@ -15,6 +15,11 @@ import ServicesSection from './components/ServicesSection';
 import InvestmentCTA from './components/InvestmentCTA';
 import ContactSection from './components/ContactSection';
 import PhilosophySection from './components/PhilosophySection';
+import IntegratedHero from './components/IntegratedHero';
+import DualTimeline from './components/DualTimeline';
+import QuadrantMastery from './components/QuadrantMastery';
+import SacredMandala from './components/SacredMandala';
+import ThreeEcosystems from './components/ThreeEcosystems';
 
 // Main Landing Page Component
 function LandingPage() {
@@ -70,9 +75,14 @@ function LandingPage() {
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
               <div className="flex items-center gap-3">
-                <Code2 className="w-8 h-8 text-cyan-400" />
-                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Jordi Amat
+                <div className="relative">
+                  <Code2 className="w-8 h-8 text-cyan-400" />
+                  <div className="absolute -top-1 -right-1 w-3 h-3">
+                    <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-pink-500 blur-sm opacity-70"></div>
+                  </div>
+                </div>
+                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Astral Amat
                 </span>
               </div>
 
@@ -90,10 +100,13 @@ function LandingPage() {
                 <button onClick={() => scrollToSection('philosophy')} className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
                   Philosophy
                 </button>
+                <button onClick={() => scrollToSection('ecosystems')} className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">
+                  Ecosystem
+                </button>
                 <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.services}
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all text-sm">
+                <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all text-sm">
                   {t.navigation.contact}
                 </button>
               </div>
@@ -110,76 +123,15 @@ function LandingPage() {
           </div>
         </nav>
 
-        {/* Hero Section */}
-        <div className="container mx-auto px-4 pt-32 pb-20 md:pt-40 md:pb-32">
-          <div className="max-w-6xl mx-auto text-center">
-            {/* Main Headline */}
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
-              <span className="inline-block animate-fadeIn bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" style={{
-                backgroundSize: '200% auto',
-                animation: 'gradient 3s linear infinite'
-              }}>
-                {t.hero.title}
-              </span>
-            </h1>
+        {/* Hero Section - New Integrated Hero */}
+        <IntegratedHero language={language} translations={t} />
 
-            {/* Tagline */}
-            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed">
-              {t.hero.tagline}
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-              <button
-                onClick={() => scrollToSection('projects')}
-                className="group px-8 py-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all flex items-center gap-3"
-              >
-                <span>{t.hero.cta}</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="px-8 py-4 bg-white/10 backdrop-blur-xl border border-white/20 text-white rounded-xl font-semibold hover:bg-white/20 transition-all"
-              >
-                {t.hero.secondaryCta}
-              </button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
-                  <Briefcase className="w-8 h-8 text-cyan-400 mb-3 mx-auto" />
-                  <div className="text-2xl font-bold text-white mb-1">{t.hero.stats.experience.split(' ')[0]}</div>
-                  <div className="text-sm text-gray-500">{t.hero.stats.experience.split(' ').slice(1).join(' ')}</div>
-                </div>
-              </div>
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
-                  <Rocket className="w-8 h-8 text-blue-400 mb-3 mx-auto" />
-                  <div className="text-2xl font-bold text-white mb-1">{t.hero.stats.projects.split(' ')[0]}</div>
-                  <div className="text-sm text-gray-500">{t.hero.stats.projects.split(' ').slice(1).join(' ')}</div>
-                </div>
-              </div>
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
-                  <TrendingUp className="w-8 h-8 text-purple-400 mb-3 mx-auto" />
-                  <div className="text-2xl font-bold text-white mb-1">{t.hero.stats.technologies.split(' ')[0]}</div>
-                  <div className="text-sm text-gray-500">{t.hero.stats.technologies.split(' ').slice(1).join(' ')}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* All Sections */}
-        <ExperienceTimeline language={language} translations={t} />
-        <SkillsSection language={language} translations={t} />
+        {/* All Sections - New Dual-Nature Design */}
+        <DualTimeline language={language} translations={t} />
+        <QuadrantMastery language={language} translations={t} />
         <ProjectsShowcase language={language} translations={t} />
-        <PhilosophySection language={language} translations={t} />
+        <SacredMandala language={language} translations={t} />
+        <ThreeEcosystems language={language} />
         <ServicesSection language={language} translations={t} />
         <InvestmentCTA language={language} translations={t} />
         <ContactSection language={language} translations={t} />
