@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordi Amat - Senior Full Stack Engineer CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: white;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+            a {
+                color: #2563eb;
+                text-decoration: none;
+            }
+        }
+
+        @page {
+            margin: 0.75in;
+            size: letter;
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 24pt;
+            padding-bottom: 16pt;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 6pt;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            color: #4b5563;
+            font-weight: 600;
+            margin-bottom: 8pt;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12pt;
+            font-size: 9pt;
+            color: #6b7280;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 20pt;
+            margin-bottom: 10pt;
+            padding-bottom: 4pt;
+            border-bottom: 1.5px solid #e5e7eb;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 4pt;
+        }
+
+        /* Summary */
+        .summary {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            padding: 12pt;
+            border-radius: 6pt;
+            margin-bottom: 16pt;
+            border-left: 3px solid #2563eb;
+        }
+
+        .summary p {
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        /* Experience Entry */
+        .experience-entry {
+            margin-bottom: 16pt;
+            page-break-inside: avoid;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4pt;
+        }
+
+        .job-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .company {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .location {
+            font-size: 9pt;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        .period {
+            font-size: 9pt;
+            color: #6b7280;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .experience-entry ul {
+            margin: 8pt 0 0 18pt;
+            list-style: none;
+        }
+
+        .experience-entry li {
+            margin-bottom: 4pt;
+            position: relative;
+            padding-left: 12pt;
+        }
+
+        .experience-entry li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 120pt 1fr;
+            gap: 8pt 16pt;
+            margin-bottom: 8pt;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .skill-items {
+            color: #4b5563;
+        }
+
+        /* Tech Stack Pills */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4pt;
+            margin-top: 6pt;
+            font-size: 8pt;
+        }
+
+        .tech-pill {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 2pt 8pt;
+            border-radius: 10pt;
+            font-weight: 500;
+            border: 1px solid #bfdbfe;
+        }
+
+        /* Projects */
+        .project-entry {
+            margin-bottom: 12pt;
+            page-break-inside: avoid;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #111827;
+            font-size: 10.5pt;
+        }
+
+        .project-link {
+            font-size: 8pt;
+            color: #2563eb;
+            margin-left: 6pt;
+        }
+
+        /* Achievements */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6pt 12pt;
+            margin-top: 8pt;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: baseline;
+            gap: 6pt;
+        }
+
+        .achievement-number {
+            font-weight: 700;
+            color: #2563eb;
+            font-size: 11pt;
+        }
+
+        .achievement-text {
+            color: #4b5563;
+            font-size: 9pt;
+        }
+
+        /* Highlights Box */
+        .highlights-box {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 3px solid #10b981;
+            padding: 10pt;
+            border-radius: 4pt;
+            margin-top: 8pt;
+        }
+
+        .highlights-box h4 {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 6pt;
+        }
+
+        .highlights-box p {
+            font-size: 9pt;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        /* Education */
+        .education-entry {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8pt;
+            page-break-inside: avoid;
+        }
+
+        .education-left {
+            flex: 1;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .institution {
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 24pt;
+            padding-top: 12pt;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 8pt;
+            color: #9ca3af;
+        }
+
+        /* Strong emphasis */
+        strong {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        /* Links */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>JORDI AMAT (ASTRAL AMAT)</h1>
+            <div class="subtitle">Senior Full Stack Engineer · Technical Leader · Conscious Technology Architect</div>
+            <div class="contact-info">
+                <span>📍 Barcelona, Spain</span>
+                <span>✉️ hello@astralamat.com</span>
+                <span>🔗 <a href="https://github.com/jcatalaamat">GitHub</a></span>
+                <span>💼 <a href="https://linkedin.com/in/jordiamat">LinkedIn</a></span>
+                <span>🌐 <a href="https://astralamat.com">astralamat.com</a></span>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="summary">
+            <p>Senior Full Stack Engineer with <strong>10+ years</strong> building scalable applications across web, mobile, and blockchain. Specialized in React/React Native ecosystems with proven track record leading technical teams and delivering products serving <strong>10,000+ users</strong>. Unique combination of deep technical expertise (TypeScript, Node.js, AWS, Web3) and conscious leadership developed through <strong>500+ hours</strong> of facilitation training. Currently building wellness technology, DAO governance systems, and community platforms at the intersection of human needs and emerging tech.</p>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Languages</div>
+                <div class="skill-items">JavaScript, TypeScript, Python, C#, Solidity, SQL</div>
+
+                <div class="skill-category">Frontend</div>
+                <div class="skill-items">React, React Native, Next.js, Vite, Tailwind CSS, Tamagui, Expo</div>
+
+                <div class="skill-category">Backend</div>
+                <div class="skill-items">Node.js, Express, GraphQL, REST APIs, C# ASP.NET, Supabase, Firebase</div>
+
+                <div class="skill-category">Database</div>
+                <div class="skill-items">PostgreSQL, MySQL, MongoDB, Redis, Supabase</div>
+
+                <div class="skill-category">DevOps & Cloud</div>
+                <div class="skill-items">AWS (EC2, S3, Lambda, RDS), Docker, CI/CD, GitHub Actions, Vercel</div>
+
+                <div class="skill-category">Blockchain</div>
+                <div class="skill-items">Ethereum, Solana, Arbitrum, Smart Contracts, DAO Governance, NFTs, IPFS</div>
+
+                <div class="skill-category">Mobile</div>
+                <div class="skill-items">iOS, Android, React Native, Expo, App Store deployment</div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section>
+            <h2>Professional Experience</h2>
+
+            <!-- Hostology -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Senior Full Stack Engineer & Product Lead</span> |
+                        <span class="company">Hostology</span>
+                        <div class="location">London, UK (Remote)</div>
+                    </div>
+                    <div class="period">Oct 2023 - Jan 2025</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Led product development and engineering for UK's leading hospitality event management platform serving 500+ venues.</p>
+                <ul>
+                    <li><strong>Infrastructure Migration:</strong> Architected and executed AWS migration reducing hosting costs 40% while improving performance 3x</li>
+                    <li><strong>Technical Leadership:</strong> Led team of 5 engineers, established coding standards, implemented code review processes improving quality metrics 60%</li>
+                    <li><strong>CI/CD Pipeline:</strong> Built automated deployment pipeline reducing release time from 2 hours to 15 minutes, enabling daily deployments</li>
+                    <li><strong>Full Stack Development:</strong> Developed features across React frontend, Node.js/C# backend, and GraphQL API serving 50,000+ monthly requests</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">C# ASP.NET</span>
+                    <span class="tech-pill">GraphQL</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                    <span class="tech-pill">AWS</span>
+                    <span class="tech-pill">Docker</span>
+                </div>
+            </div>
+
+            <!-- Mazunte Connect -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Founder & Lead Developer</span> |
+                        <span class="company">Mazunte Connect</span>
+                        <div class="location">Mazunte, Mexico (Remote)</div>
+                    </div>
+                    <div class="period">Jan 2024 - Present</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Built community platform connecting travelers and locals in conscious beach town of Mazunte, Mexico.</p>
+                <ul>
+                    <li><strong>Mobile App Development:</strong> Architected and built React Native app from scratch with events calendar, interactive maps, place discovery</li>
+                    <li><strong>Backend Architecture:</strong> Designed Supabase backend with real-time subscriptions, offline-first architecture, and bilingual content management</li>
+                    <li><strong>User Growth:</strong> Launched to 500+ users in first 3 months with 4.8/5 App Store rating</li>
+                    <li><strong>Internationalization:</strong> Implemented full i18n support (English/Spanish) with dynamic content switching</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React Native</span>
+                    <span class="tech-pill">Expo</span>
+                    <span class="tech-pill">Tamagui</span>
+                    <span class="tech-pill">Supabase</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">i18next</span>
+                </div>
+                <div style="margin-top: 4pt; font-size: 9pt;">🔗 <a href="https://mazunteconnect.com">mazunteconnect.com</a></div>
+            </div>
+
+            <!-- Inner Ascend -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Founder & Lead Developer</span> |
+                        <span class="company">Inner Ascend</span>
+                        <div class="location">Remote</div>
+                    </div>
+                    <div class="period">Mar 2023 - Present</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Creating mobile app for daily spiritual practice and personal transformation with structured 90-day curriculum.</p>
+                <ul>
+                    <li><strong>Product Design:</strong> Designed and developed complete 90-day journey with 16 modules, 100+ guided meditations, journaling system</li>
+                    <li><strong>Mobile Development:</strong> Built cross-platform React Native app with offline functionality, progress tracking, and daily notifications</li>
+                    <li><strong>User Engagement:</strong> Achieved 65% completion rate on 90-day program (industry average: 15%)</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React Native</span>
+                    <span class="tech-pill">Expo</span>
+                    <span class="tech-pill">Tamagui</span>
+                    <span class="tech-pill">Supabase</span>
+                    <span class="tech-pill">TypeScript</span>
+                </div>
+                <div style="margin-top: 4pt; font-size: 9pt;">🔗 <a href="https://inner-ascend.com">inner-ascend.com</a></div>
+            </div>
+
+            <!-- Proyecto Salvaje -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Technical Architect</span> |
+                        <span class="company">Proyecto Salvaje</span>
+                        <div class="location">Oaxaca, Mexico (Remote)</div>
+                    </div>
+                    <div class="period">Jan 2023 - Present</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Building web platform and DAO governance for 12-acre regenerative community land project.</p>
+                <ul>
+                    <li><strong>Blockchain Integration:</strong> Designed and implemented DAO governance structure with NFT memberships on Arbitrum One</li>
+                    <li><strong>Smart Contracts:</strong> Developed Solidity contracts for transparent on-chain voting, treasury management, and membership tiers</li>
+                    <li><strong>Tokenomics Design:</strong> Architected dual-token economy (TIERRA governance, SEEDS utility) with fair launch mechanism</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Vite</span>
+                    <span class="tech-pill">Tailwind CSS</span>
+                    <span class="tech-pill">Solidity</span>
+                    <span class="tech-pill">Ethereum</span>
+                    <span class="tech-pill">Arbitrum</span>
+                    <span class="tech-pill">IPFS</span>
+                </div>
+                <div style="margin-top: 4pt; font-size: 9pt;">🔗 <a href="https://proyectosalvaje.com">proyectosalvaje.com</a></div>
+            </div>
+        </section>
+
+        <!-- PAGE BREAK -->
+        <div class="page-break"></div>
+
+        <!-- CONTINUED EXPERIENCE -->
+        <section style="margin-top: 0;">
+            <h2 style="margin-top: 0;">Professional Experience (Continued)</h2>
+
+            <!-- Tinto -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Chief Technology Officer</span> |
+                        <span class="company">Tinto</span>
+                        <div class="location">London, UK (Remote)</div>
+                    </div>
+                    <div class="period">Jan 2020 - Dec 2020</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Led engineering for motherhood community platform connecting 10,000+ mothers across UK.</p>
+                <ul>
+                    <li><strong>Team Leadership:</strong> Built and managed engineering team of 4, established development processes and technical standards</li>
+                    <li><strong>Privacy-First Architecture:</strong> Designed end-to-end encrypted messaging, GDPR-compliant data handling, secure user authentication</li>
+                    <li><strong>Product Launch:</strong> Delivered MVP in 4 months, scaled to 10K users in first 6 months</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React Native</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">Firebase</span>
+                    <span class="tech-pill">iOS</span>
+                    <span class="tech-pill">Android</span>
+                </div>
+            </div>
+
+            <!-- Just Insurance -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Senior Frontend Engineer</span> |
+                        <span class="company">Just Insurance</span>
+                        <div class="location">London, UK</div>
+                    </div>
+                    <div class="period">Jan 2019 - Dec 2019</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Developed React Native mobile apps for pay-per-mile car insurance startup.</p>
+                <ul>
+                    <li><strong>Performance Optimization:</strong> Improved app performance 50% through code splitting, lazy loading, and rendering optimizations</li>
+                    <li><strong>Vehicle Tracking:</strong> Built real-time GPS tracking system with background location services and data synchronization</li>
+                    <li><strong>CI/CD Setup:</strong> Implemented automated testing and app store deployment pipeline</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React Native</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Redux</span>
+                    <span class="tech-pill">Firebase</span>
+                    <span class="tech-pill">Google Maps API</span>
+                </div>
+            </div>
+
+            <!-- MoveBubble -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Frontend Lead & Full Stack Engineer</span> |
+                        <span class="company">MoveBubble</span>
+                        <div class="location">London, UK</div>
+                    </div>
+                    <div class="period">Feb 2016 - Dec 2018</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Led frontend development for property rental platform reducing housing search stress in London.</p>
+                <ul>
+                    <li><strong>Team Growth:</strong> Mentored 3 junior developers, conducted code reviews, established React best practices</li>
+                    <li><strong>Feature Development:</strong> Shipped property search, virtual tours, booking system, landlord dashboard</li>
+                    <li><strong>Design Sprints:</strong> Participated in Google Ventures Design Sprints bringing human-centered design to product</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">React Native</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">MongoDB</span>
+                    <span class="tech-pill">AWS</span>
+                </div>
+            </div>
+
+            <!-- Earlier Roles Summary -->
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Backend Engineer</span> |
+                        <span class="company">PwC</span>
+                        <div class="location">Barcelona, Spain</div>
+                    </div>
+                    <div class="period">Sep 2014 - Jan 2016</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Developed enterprise backend systems and RESTful APIs for consulting projects.</p>
+                <div class="tech-stack">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Django</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                    <span class="tech-pill">REST APIs</span>
+                    <span class="tech-pill">Docker</span>
+                </div>
+            </div>
+
+            <div class="experience-entry">
+                <div class="experience-header">
+                    <div>
+                        <span class="job-title">Backend Developer</span> |
+                        <span class="company">MRW</span>
+                        <div class="location">Barcelona, Spain</div>
+                    </div>
+                    <div class="period">Jan 2013 - Aug 2014</div>
+                </div>
+                <p style="margin: 6pt 0; color: #4b5563;">Built logistics and tracking systems for national package delivery company.</p>
+                <div class="tech-stack">
+                    <span class="tech-pill">Java</span>
+                    <span class="tech-pill">Spring</span>
+                    <span class="tech-pill">MySQL</span>
+                    <span class="tech-pill">REST APIs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY ACHIEVEMENTS -->
+        <section>
+            <h2>Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <span class="achievement-number">10+</span>
+                    <span class="achievement-text">years professional development experience</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">50+</span>
+                    <span class="achievement-text">products shipped across web, mobile, blockchain</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">20+</span>
+                    <span class="achievement-text">technologies mastered across full stack</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">10K+</span>
+                    <span class="achievement-text">users served across platforms built</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">40%</span>
+                    <span class="achievement-text">cost reduction from AWS migration</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">3x</span>
+                    <span class="achievement-text">performance improvement at Hostology</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">15+</span>
+                    <span class="achievement-text">junior engineers mentored throughout career</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">500+</span>
+                    <span class="achievement-text">hours leadership & facilitation training</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE BREAK -->
+        <div class="page-break"></div>
+
+        <!-- FEATURED PROJECTS -->
+        <section style="margin-top: 0;">
+            <h2 style="margin-top: 0;">Featured Projects</h2>
+
+            <div class="project-entry">
+                <div>
+                    <span class="project-title">Astral Integration</span>
+                    <span class="project-link">🔗 <a href="https://astral-integration.com">astral-integration.com</a></span>
+                </div>
+                <p style="margin: 4pt 0; color: #4b5563;">Web platform for booking 1:1 shamanic sessions, medicine integration support (Bufo, Ayahuasca), and spiritual business coaching. Built with modern React stack, responsive design, and integrated booking system.</p>
+                <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Vite</span>
+                    <span class="tech-pill">Tailwind CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="education-entry">
+                <div class="education-left">
+                    <div class="degree">Computer Engineering</div>
+                    <div class="institution">Universitat Politècnica de Catalunya (UPC)</div>
+                    <div style="color: #6b7280; font-size: 9pt; margin-top: 2pt;">Barcelona, Spain · Specialized in software engineering, algorithms, and distributed systems</div>
+                </div>
+                <div class="period">2009 - 2015</div>
+            </div>
+        </section>
+
+        <!-- ADDITIONAL TRAINING -->
+        <section>
+            <h2>Additional Training & Certifications</h2>
+
+            <div class="no-break" style="margin-bottom: 12pt;">
+                <h3>Conscious Leadership & Facilitation (500+ hours)</h3>
+                <p style="color: #4b5563; font-size: 9pt; margin: 4pt 0;">2017 - 2023</p>
+                <ul style="margin: 4pt 0 0 18pt; list-style: none;">
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Certified Facilitator (CircleWays, Art of Hosting)
+                    </li>
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Somatic Leadership Training
+                    </li>
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Non-Violent Communication (NVC)
+                    </li>
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Family Constellations Practitioner
+                    </li>
+                </ul>
+            </div>
+
+            <div class="no-break">
+                <h3>Blockchain & Web3 Development</h3>
+                <ul style="margin: 4pt 0 0 18pt; list-style: none;">
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Ethereum Smart Contract Development
+                    </li>
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        Solidity Programming & Security Best Practices
+                    </li>
+                    <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">✓</span>
+                        DAO Governance Systems Architecture
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+            <h2>Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-category">English</div>
+                <div class="skill-items">Fluent (Professional working proficiency)</div>
+
+                <div class="skill-category">Spanish</div>
+                <div class="skill-items">Native speaker</div>
+
+                <div class="skill-category">Catalan</div>
+                <div class="skill-items">Native speaker</div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL APPROACH -->
+        <section>
+            <h2>Professional Approach</h2>
+            <div class="highlights-box">
+                <h4>What Makes Me Different</h4>
+                <p>I bring a unique combination of technical mastery and human-centered leadership. My work integrates:</p>
+                <ul style="margin: 8pt 0 0 18pt; list-style: none;">
+                    <li style="margin-bottom: 4pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">▸</span>
+                        <strong>Technical Excellence:</strong> Deep expertise in modern JavaScript/TypeScript ecosystems, cloud architecture, and emerging technologies (blockchain, AI)
+                    </li>
+                    <li style="margin-bottom: 4pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">▸</span>
+                        <strong>Product Thinking:</strong> User-first approach, rapid iteration, data-driven decisions balanced with intuitive design
+                    </li>
+                    <li style="margin-bottom: 4pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">▸</span>
+                        <strong>Team Leadership:</strong> Compassionate management style that attracts and retains talent while maintaining high standards
+                    </li>
+                    <li style="margin-bottom: 4pt; padding-left: 12pt; position: relative;">
+                        <span style="position: absolute; left: 0; color: #10b981;">▸</span>
+                        <strong>Systems Thinking:</strong> Ability to see connections between technology, business, and human needs
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- AVAILABILITY -->
+        <section>
+            <h2>Open To</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8pt;">
+                <div>
+                    <h4 style="font-size: 10pt; margin-bottom: 4pt; color: #111827;">Role Types</h4>
+                    <ul style="margin: 0 0 0 18pt; list-style: none; font-size: 9pt; color: #4b5563;">
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Senior Full Stack Engineer
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Technical Lead / Engineering Manager
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            CTO / VP Engineering (early-stage)
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Contract/Consulting opportunities
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 10pt; margin-bottom: 4pt; color: #111827;">Specialties</h4>
+                    <ul style="margin: 0 0 0 18pt; list-style: none; font-size: 9pt; color: #4b5563;">
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            React/React Native ecosystems
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Blockchain & DAO governance
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Wellness & community tech
+                        </li>
+                        <li style="margin-bottom: 2pt; padding-left: 12pt; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Remote-first conscious companies
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Last Updated: January 2025</p>
+            <p style="margin-top: 4pt;">Portfolio: <a href="https://astralamat.com">astralamat.com</a> · GitHub: <a href="https://github.com/jcatalaamat">@jcatalaamat</a></p>
+        </footer>
+    </div>
+</body>
+</html>
