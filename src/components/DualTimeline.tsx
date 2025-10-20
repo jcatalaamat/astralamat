@@ -31,11 +31,11 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
             <div className={`absolute inset-0 bg-gradient-to-b ${colors.integrated.gradients.fullSpectrum} opacity-30`}></div>
 
             {/* Integration markers */}
-            {t.items.map((_: any, index: number) => (
+            {t.roles && t.roles.map((_: any, index: number) => (
               <div
                 key={index}
                 className="absolute left-1/2 -translate-x-1/2"
-                style={{ top: `${(index / (t.items.length - 1)) * 100}%` }}
+                style={{ top: `${(index / (t.roles.length - 1)) * 100}%` }}
               >
                 <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${colors.integrated.gradients.dualNature} border-2 border-zinc-950`}></div>
               </div>
@@ -44,7 +44,7 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
 
           {/* Timeline Items */}
           <div className="space-y-16">
-            {t.items.map((item: any, index: number) => {
+            {t.roles && t.roles.map((item: any, index: number) => {
               const isLeft = index % 2 === 0;
               const isTech = item.type === 'technical' || !item.type;
               const gradient = isTech ? colors.tech.gradients.main : colors.spirit.gradients.main;
