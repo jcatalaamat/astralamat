@@ -67,30 +67,15 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
 
           {/* Dual Identity Header */}
           <div className="text-center mb-12">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
-              {/* Technical Identity */}
-              <div className="flex items-center gap-3 group">
-                <div className={`p-3 rounded-xl bg-gradient-to-r ${colors.tech.gradients.main} opacity-90 group-hover:opacity-100 transition-opacity`}>
-                  <Code2 className="w-6 h-6 text-white" />
-                </div>
-                <h1 className={`text-4xl md:text-6xl font-bold bg-gradient-to-r ${colors.tech.gradients.light} bg-clip-text text-transparent`}>
-                  JORDI AMAT
-                </h1>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className={`p-3 rounded-xl bg-gradient-to-r ${colors.tech.gradients.main} opacity-90`}>
+                <Code2 className="w-6 h-6 text-white" />
               </div>
-
-              {/* Divider */}
-              <div className="hidden md:block">
-                <div className="w-12 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-full"></div>
-              </div>
-
-              {/* Spiritual Identity */}
-              <div className="flex items-center gap-3 group">
-                <h1 className={`text-4xl md:text-6xl font-bold bg-gradient-to-r ${colors.spirit.gradients.light} bg-clip-text text-transparent`}>
-                  ASTRAL AMAT
-                </h1>
-                <div className={`p-3 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.main} opacity-90 group-hover:opacity-100 transition-opacity`}>
-                  <Sparkles className="w-6 h-6 text-white" />
-                </div>
+              <h1 className={`text-5xl md:text-7xl font-bold bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
+                ASTRAL AMAT
+              </h1>
+              <div className={`p-3 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.main} opacity-90`}>
+                <Sparkles className="w-6 h-6 text-white" />
               </div>
             </div>
 
