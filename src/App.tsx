@@ -112,22 +112,25 @@ function LandingPage() {
                 </button>
               </div>
 
-              {/* Language Toggle */}
-              <button
-                onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
-              >
-                <Globe className="w-4 h-4" />
-                <span className="text-sm font-medium">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
-              </button>
+              {/* Right side controls - Language + Mobile Menu */}
+              <div className="flex items-center gap-3">
+                {/* Language Toggle */}
+                <button
+                  onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
+                >
+                  <Globe className="w-4 h-4" />
+                  <span className="text-sm font-medium">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
+                </button>
 
-              {/* Mobile Menu Button */}
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
+                {/* Mobile Menu Button */}
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
+                >
+                  {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                </button>
+              </div>
             </div>
 
             {/* Mobile Menu */}
