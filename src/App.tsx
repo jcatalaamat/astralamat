@@ -113,7 +113,7 @@ function LandingPage() {
               </div>
 
               {/* Right side controls - Language + Mobile Menu */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-4">
                 {/* Language Toggle */}
                 <button
                   onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
@@ -126,7 +126,7 @@ function LandingPage() {
                 {/* Mobile Menu Button */}
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
+                  className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
                 >
                   {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                 </button>
@@ -135,72 +135,70 @@ function LandingPage() {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-              <div className="md:hidden border-t border-white/10 bg-black/95 backdrop-blur-xl">
-                <div className="flex flex-col gap-2 p-4">
-                  <button
-                    onClick={() => {
-                      scrollToSection('experience');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all"
-                  >
-                    {t.navigation.experience}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('skills');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all"
-                  >
-                    {t.navigation.skills}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('projects');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all"
-                  >
-                    {t.navigation.projects}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('philosophy');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-purple-400 hover:bg-purple-500/5 rounded-lg transition-all"
-                  >
-                    Philosophy
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('ecosystems');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-cyan-400 hover:bg-cyan-500/5 rounded-lg transition-all"
-                  >
-                    Ecosystem
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('services');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all"
-                  >
-                    {t.navigation.services}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection('contact');
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-left px-4 py-3 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
-                  >
-                    {t.navigation.contact}
-                  </button>
-                </div>
+              <div className="md:hidden py-4 space-y-3 border-t border-white/10">
+                <button
+                  onClick={() => {
+                    scrollToSection('experience');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white transition-colors"
+                >
+                  {t.navigation.experience}
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('skills');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white transition-colors"
+                >
+                  {t.navigation.skills}
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('projects');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white transition-colors"
+                >
+                  {t.navigation.projects}
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('philosophy');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-purple-400 transition-colors"
+                >
+                  Philosophy
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('ecosystems');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-cyan-400 transition-colors"
+                >
+                  Ecosystem
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('services');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white transition-colors"
+                >
+                  {t.navigation.services}
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection('contact');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold"
+                >
+                  {t.navigation.contact}
+                </button>
               </div>
             )}
           </div>
