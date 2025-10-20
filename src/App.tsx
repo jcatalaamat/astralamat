@@ -83,7 +83,7 @@ function LandingPage() {
                   </div>
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Astral Amat
+                  Jordi Amat
                 </span>
               </div>
 
@@ -225,7 +225,7 @@ function LandingPage() {
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Code2 className="w-8 h-8 text-cyan-400" />
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Astral Amat
+                  Jordi Amat
                 </span>
               </div>
 
