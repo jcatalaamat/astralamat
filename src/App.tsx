@@ -75,7 +75,10 @@ function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
-              <div className="flex items-center gap-3">
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <div className="relative">
                   <Code2 className="w-8 h-8 text-cyan-400" />
                   <div className="absolute -top-1 -right-1 w-3 h-3">
@@ -85,7 +88,7 @@ function LandingPage() {
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Astral Amat
                 </span>
-              </div>
+              </button>
 
               {/* Nav Links - Hidden on mobile */}
               <div className="hidden md:flex items-center gap-6">
