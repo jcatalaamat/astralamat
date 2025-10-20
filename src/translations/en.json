@@ -142,11 +142,11 @@
         "link": "https://proyectosalvaje.com"
       },
       {
-        "title": "Hostology Platform",
-        "category": "Enterprise",
-        "description": "Event management platform serving UK hospitality. The Challenge: Complex operations, fragmented systems, stressed teams. My Role: Product Lead & Senior Engineer. The Solution: Unified React/TypeScript platform, AWS migration, CI/CD automation. Technical excellence + compassionate team culture. The Impact: Streamlined operations + team that thrives.",
-        "tech": ["React", "TypeScript", "Node.js", "GraphQL", "C# ASP.NET", "AWS"],
-        "link": "https://hostology.co.uk"
+        "title": "Astral Integration",
+        "category": "Wellness",
+        "description": "1:1 soul work and medicine integration platform. The Vision: Deep transformation requires personalized shamanic presence. The Solution: Website for booking sessions, medicine integration support (Bufo, Ayahuasca), ancestral liberation work, spiritual business alchemy. The Impact: Sacred container for souls ready to transcend, timeline shift, and embody their highest path.",
+        "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
+        "link": "https://astral-integration.com"
       }
     ]
   },

@@ -8,21 +8,21 @@ interface FourEcosystemsProps {
 const FourEcosystems = ({ language }: FourEcosystemsProps) => {
   const ecosystems = [
     {
-      name: 'Proyecto Salvaje',
+      name: 'Mazunte Connect',
       tagline: {
-        en: 'Regenerative Village & Living School',
-        es: 'Pueblo Regenerativo y Escuela Viviente',
-        ca: 'Poble Regeneratiu i Escola Vivent',
+        en: 'Never Miss What\'s Happening in Mazunte',
+        es: 'Nunca Te Pierdas Lo Que Pasa en Mazunte',
+        ca: 'Mai Et Perdis El Que Passa a Mazunte',
       },
       description: {
-        en: 'Intentional regenerative community in Mexico dedicated to protecting freedom, bodily autonomy, and living in harmony with nature. A healing village and educational center for sovereign living.',
-        es: 'Comunidad regenerativa intencional en México dedicada a proteger la libertad, autonomía corporal, y vivir en armonía con la naturaleza. Un pueblo sanador y centro educativo para vida soberana.',
-        ca: 'Comunitat regenerativa intencional a Mèxic dedicada a protegir la llibertat, autonomia corporal, i viure en harmonia amb la natura. Un poble sanador i centre educatiu per a vida sobirana.',
+        en: 'Mobile app for Mazunte\'s conscious community. All events, retreats, yoga, restaurants, and conscious spaces in one place. No more WhatsApp chaos - just a beautifully organized calendar of everything happening in paradise.',
+        es: 'App móvil para la comunidad consciente de Mazunte. Todos los eventos, retiros, yoga, restaurantes y espacios conscientes en un solo lugar. Sin más caos de WhatsApp - solo un calendario bellamente organizado de todo lo que sucede en el paraíso.',
+        ca: 'App mòbil per a la comunitat conscient de Mazunte. Tots els esdeveniments, retirs, ioga, restaurants i espais conscients en un sol lloc. Sense més caos de WhatsApp - només un calendari bellament organitzat de tot el que passa al paradís.',
       },
-      url: 'https://proyectosalvaje.com',
-      icon: Mountain,
-      gradient: 'from-green-500 to-emerald-500',
-      glowColor: 'green-500',
+      url: 'https://mazunte-connect.com',
+      icon: Waves,
+      gradient: 'from-cyan-500 to-blue-500',
+      glowColor: 'cyan-500',
     },
     {
       name: 'Inner Ascend',
@@ -42,6 +42,23 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
       glowColor: 'purple-500',
     },
     {
+      name: 'Proyecto Salvaje',
+      tagline: {
+        en: 'Regenerative Village & Living School',
+        es: 'Pueblo Regenerativo y Escuela Viviente',
+        ca: 'Poble Regeneratiu i Escola Vivent',
+      },
+      description: {
+        en: 'Intentional regenerative community in Mexico dedicated to protecting freedom, bodily autonomy, and living in harmony with nature. A healing village and educational center for sovereign living.',
+        es: 'Comunidad regenerativa intencional en México dedicada a proteger la libertad, autonomía corporal, y vivir en armonía con la naturaleza. Un pueblo sanador y centro educativo para vida soberana.',
+        ca: 'Comunitat regenerativa intencional a Mèxic dedicada a protegir la llibertat, autonomia corporal, i viure en harmonia amb la natura. Un poble sanador i centre educatiu per a vida sobirana.',
+      },
+      url: 'https://proyectosalvaje.com',
+      icon: Mountain,
+      gradient: 'from-green-500 to-emerald-500',
+      glowColor: 'green-500',
+    },
+    {
       name: 'Astral Integration',
       tagline: {
         en: 'Soul Work & Medicine Integration',
@@ -57,23 +74,6 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
       icon: Sparkles,
       gradient: 'from-violet-500 via-purple-500 to-fuchsia-500',
       glowColor: 'purple-500',
-    },
-    {
-      name: 'Mazunte Connect',
-      tagline: {
-        en: 'Never Miss What\'s Happening in Mazunte',
-        es: 'Nunca Te Pierdas Lo Que Pasa en Mazunte',
-        ca: 'Mai Et Perdis El Que Passa a Mazunte',
-      },
-      description: {
-        en: 'Mobile app for Mazunte\'s conscious community. All events, retreats, yoga, restaurants, and conscious spaces in one place. No more WhatsApp chaos - just a beautifully organized calendar of everything happening in paradise.',
-        es: 'App móvil para la comunidad consciente de Mazunte. Todos los eventos, retiros, yoga, restaurantes y espacios conscientes en un solo lugar. Sin más caos de WhatsApp - solo un calendario bellamente organizado de todo lo que sucede en el paraíso.',
-        ca: 'App mòbil per a la comunitat conscient de Mazunte. Tots els esdeveniments, retirs, ioga, restaurants i espais conscients en un sol lloc. Sense més caos de WhatsApp - només un calendari bellament organitzat de tot el que passa al paradís.',
-      },
-      url: 'https://mazunte-connect.com',
-      icon: Waves,
-      gradient: 'from-cyan-500 to-blue-500',
-      glowColor: 'cyan-500',
     },
   ];
 
@@ -95,7 +95,7 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
         </div>
 
         {/* Ecosystems Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {ecosystems.map((ecosystem, index) => {
             const Icon = ecosystem.icon;
 

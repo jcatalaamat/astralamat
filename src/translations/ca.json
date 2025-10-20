@@ -138,11 +138,11 @@
         "link": "https://proyectosalvaje.com"
       },
       {
-        "title": "Plataforma Hostology",
-        "category": "Empresa",
-        "description": "Plataforma de gestió d'esdeveniments servint a l'hospitalitat del Regne Unit. El Desafiament: Operacions complexes, sistemes fragmentats, equips estressats. El meu Rol: Product Lead i Enginyer Senior. La Solució: Plataforma React/TypeScript unificada, migració AWS, automatització CI/CD. Excel·lència tècnica + cultura d'equip compassiva. L'Impacte: Operacions optimitzades + equip que prospera.",
-        "tech": ["React", "TypeScript", "Node.js", "GraphQL", "C# ASP.NET", "AWS"],
-        "link": "https://hostology.co.uk"
+        "title": "Astral Integration",
+        "category": "Benestar",
+        "description": "Plataforma de treball de l'ànima i integració de medicina 1:1. La Visió: La transformació profunda requereix presència xamànica personalitzada. La Solució: Lloc web per reservar sessions, suport d'integració de medicina (Bufo, Ayahuasca), treball d'alliberament ancestral, alquímia de negoci espiritual. L'Impacte: Contenidor sagrat per a ànimes llestes per transcendir, canviar de línia temporal i encarnar el seu camí més elevat.",
+        "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
+        "link": "https://astral-integration.com"
       }
     ]
   },
