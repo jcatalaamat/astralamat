@@ -31,7 +31,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Sacred Geometry Background */}
       <div className="absolute inset-0 opacity-30">
         {/* Animated mesh gradient orbs */}
@@ -62,7 +62,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
       </div>
 
       {/* Content Container */}
-      <div className={`relative z-10 container mx-auto px-4 py-20 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`relative z-10 container mx-auto px-4 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-6xl mx-auto">
 
           {/* Dual Identity Header */}
