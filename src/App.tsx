@@ -14,6 +14,7 @@ import ProjectsShowcase from './components/ProjectsShowcase';
 import ServicesSection from './components/ServicesSection';
 import InvestmentCTA from './components/InvestmentCTA';
 import ContactSection from './components/ContactSection';
+import PhilosophySection from './components/PhilosophySection';
 
 // Main Landing Page Component
 function LandingPage() {
@@ -33,7 +34,7 @@ function LandingPage() {
   }, []);
 
   const spotlightStyle = {
-    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(6, 182, 212, 0.15), transparent 40%)`
+    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(139, 92, 246, 0.15), transparent 40%)`
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -48,8 +49,9 @@ function LandingPage() {
       {/* Animated mesh background */}
       <div className="fixed inset-0 opacity-30">
         <div className="absolute top-0 -left-4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
-        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
+        <div className="absolute top-0 -right-4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
+        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '13s', animationDelay: '6s'}}></div>
       </div>
 
       {/* Mouse spotlight effect */}
@@ -70,25 +72,28 @@ function LandingPage() {
               <div className="flex items-center gap-3">
                 <Code2 className="w-8 h-8 text-cyan-400" />
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Astral Amat
+                  Jordi Amat
                 </span>
               </div>
 
               {/* Nav Links - Hidden on mobile */}
-              <div className="hidden md:flex items-center gap-8">
-                <button onClick={() => scrollToSection('experience')} className="text-gray-400 hover:text-white transition-colors">
+              <div className="hidden md:flex items-center gap-6">
+                <button onClick={() => scrollToSection('experience')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.experience}
                 </button>
-                <button onClick={() => scrollToSection('skills')} className="text-gray-400 hover:text-white transition-colors">
+                <button onClick={() => scrollToSection('skills')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.skills}
                 </button>
-                <button onClick={() => scrollToSection('projects')} className="text-gray-400 hover:text-white transition-colors">
+                <button onClick={() => scrollToSection('projects')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.projects}
                 </button>
-                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white transition-colors">
+                <button onClick={() => scrollToSection('philosophy')} className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
+                  Philosophy
+                </button>
+                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.services}
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+                <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all text-sm">
                   {t.navigation.contact}
                 </button>
               </div>
@@ -110,7 +115,7 @@ function LandingPage() {
           <div className="max-w-6xl mx-auto text-center">
             {/* Main Headline */}
             <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
-              <span className="inline-block animate-fadeIn bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent" style={{
+              <span className="inline-block animate-fadeIn bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" style={{
                 backgroundSize: '200% auto',
                 animation: 'gradient 3s linear infinite'
               }}>
@@ -118,13 +123,8 @@ function LandingPage() {
               </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-2xl md:text-3xl text-gray-400 mb-6 max-w-4xl mx-auto leading-relaxed">
-              {t.hero.subtitle}
-            </p>
-
             {/* Tagline */}
-            <p className="text-lg text-gray-500 mb-12">
+            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed">
               {t.hero.tagline}
             </p>
 
@@ -179,6 +179,7 @@ function LandingPage() {
         <ExperienceTimeline language={language} translations={t} />
         <SkillsSection language={language} translations={t} />
         <ProjectsShowcase language={language} translations={t} />
+        <PhilosophySection language={language} translations={t} />
         <ServicesSection language={language} translations={t} />
         <InvestmentCTA language={language} translations={t} />
         <ContactSection language={language} translations={t} />
@@ -190,7 +191,7 @@ function LandingPage() {
               {/* Logo */}
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Code2 className="w-8 h-8 text-cyan-400" />
-                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Astral Amat
                 </span>
               </div>
@@ -199,6 +200,32 @@ function LandingPage() {
               <p className="text-gray-500 text-lg">
                 {t.footer.tagline}
               </p>
+
+              {/* Connection - Other Projects */}
+              {t.footer.thisSite && (
+                <div className="space-y-3 text-sm text-gray-600">
+                  <p>{t.footer.thisSite}</p>
+                  {t.footer.also && (
+                    <div className="space-y-2">
+                      <p className="text-gray-600">{t.footer.also}</p>
+                      <div className="flex flex-wrap items-center justify-center gap-3">
+                        <a href="https://mazunteconnect.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg text-cyan-400 hover:text-cyan-300 hover:border-cyan-400/50 transition-all">
+                          Mazunte Connect
+                        </a>
+                        <a href="https://inner-ascend.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-lg text-purple-400 hover:text-purple-300 hover:border-purple-400/50 transition-all">
+                          Inner Ascend
+                        </a>
+                        <a href="https://proyectosalvaje.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-lg text-green-400 hover:text-green-300 hover:border-green-400/50 transition-all">
+                          Proyecto Salvaje
+                        </a>
+                        <a href="https://hostology.co.uk" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/30 rounded-lg text-orange-400 hover:text-orange-300 hover:border-orange-400/50 transition-all">
+                          Hostology
+                        </a>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Links */}
@@ -210,14 +237,6 @@ function LandingPage() {
               <Link to="/privacy" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 Privacy
               </Link>
-              <span className="text-gray-700">•</span>
-              <a href={t.footer.links?.privacy || '#'} className="text-gray-400 hover:text-cyan-400 transition-colors">
-                {t.footer.links?.privacy || 'Privacy'}
-              </a>
-              <span className="text-gray-700">•</span>
-              <a href={t.footer.links?.terms || '#'} className="text-gray-400 hover:text-cyan-400 transition-colors">
-                {t.footer.links?.terms || 'Terms'}
-              </a>
             </div>
 
             {/* Copyright */}

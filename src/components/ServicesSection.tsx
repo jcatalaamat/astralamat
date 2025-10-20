@@ -19,14 +19,29 @@ const ServicesSection = ({ translations }: ServicesSectionProps) => {
     <section id="services" className="py-24 px-4 bg-zinc-950/50">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
             {t.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6">
             {t.subtitle}
           </p>
         </div>
+
+        {/* Description & What Makes Me Different */}
+        {t.description && (
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 p-8">
+              <div className="prose prose-invert max-w-none">
+                {t.description.split('\n\n').map((paragraph: string, index: number) => (
+                  <p key={index} className="text-gray-300 leading-relaxed mb-4 last:mb-0">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -70,6 +85,23 @@ const ServicesSection = ({ translations }: ServicesSectionProps) => {
             );
           })}
         </div>
+
+        {/* Ideal Collaborations */}
+        {t.idealFor && t.idealDescription && (
+          <div className="max-w-4xl mx-auto mt-16">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
+              <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-purple-500/30 p-8">
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent mb-6">
+                  {t.idealFor}
+                </h3>
+                <div className="space-y-3 text-gray-300 leading-relaxed whitespace-pre-line">
+                  {t.idealDescription}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

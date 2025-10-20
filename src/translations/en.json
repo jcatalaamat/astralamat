@@ -1,14 +1,14 @@
 {
   "hero": {
-    "title": "Building the Future, One Line at a Time",
-    "subtitle": "Full-Stack Engineer | CTO | Blockchain Developer",
-    "tagline": "Specializing in scalable web applications, crypto integration, and technical leadership",
-    "cta": "View Projects",
-    "secondaryCta": "Get in Touch",
+    "title": "Jordi Amat",
+    "subtitle": "Building Technology That Serves Human Consciousness",
+    "tagline": "CTO · Product Strategist · Conscious Technical Leader | 10+ years architecting digital experiences that elevate. From React Native to blockchain DAOs to AI integration—I bring both technical mastery and holistic awareness to every project.",
+    "cta": "Explore the Work",
+    "secondaryCta": "Begin the Conversation",
     "stats": {
-      "experience": "10+ years experience",
-      "projects": "50+ projects delivered",
-      "technologies": "15+ tech stack mastery"
+      "experience": "10+ Years Leadership",
+      "projects": "50+ Products Shipped",
+      "technologies": "20+ Technologies Mastered"
     }
   },
   "navigation": {
@@ -20,159 +20,252 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "Who is Astral Amat?",
-    "intro": "Software engineer with a decade of experience building scalable applications, leading technical teams, and architecting blockchain solutions.",
-    "description": "Former CTO at multiple startups, passionate about Web3, NFTs, and the future of decentralized technology. I bridge the gap between innovative ideas and production-ready solutions.",
+    "title": "The Journey: From Engineer to Conscious Technical Leader",
+    "intro": "Where Technical Excellence Meets Holistic Awareness",
+    "description": "**2009-2017: Mastery** | Computer Engineering at UPC Barcelona. Progressed from backend engineer (MRW, PWC) to frontend leadership (MoveBubble) to CTO (Tinto). Specialized in React Native, TypeScript, scalable architectures. Discovered my calling: not just building products, but cultivating the humans who build them.\n\n**2017-2023: Integration** | After years in high-pressure tech, I made an unconventional choice: a structured sabbatical to develop conscious leadership. 500+ hours formal training in facilitation, coaching, embodiment practices. Maintained technical edge building wellness apps. Explored blockchain, smart contracts, and AI integration. Emerged with rare integration: technical excellence + human wisdom.\n\n**2023-Present: Contribution** | Returned to tech leadership (Hostology) with both skillsets intact. Now building products AND cultures that thrive. Developing wellness technology with AI integration. Architecting DAO governance for regenerative communities (Proyecto Salvaje). Advising conscious companies on Web3, AI, and holistic leadership.\n\n**What I Bring:** The analytical precision of a senior engineer. The systems thinking of a CTO. The presence and wisdom of a seasoned facilitator. Emerging tech expertise (blockchain, AI). The rare ability to hold both technical excellence and human flourishing.",
     "highlights": [
-      "Technical Leadership",
-      "Full-Stack Development",
-      "Blockchain Expert",
-      "System Architecture"
+      "Conscious Leadership",
+      "Systems Thinking",
+      "Technical Mastery",
+      "Human-Centered Culture"
     ]
   },
   "experience": {
     "title": "Professional Journey",
-    "subtitle": "Building impactful solutions across industries",
+    "subtitle": "Every role an initiation. Every project a teaching.",
     "roles": [
       {
+        "title": "Product Lead & Senior Full Stack Engineer",
+        "company": "Hostology",
+        "period": "2023 - 2025",
+        "description": "Guided Hostology's engineering evolution with both strategic vision and compassionate team leadership. Migrated infrastructure to AWS while fostering a culture of growth and innovation. Technical decisions grounded in product strategy AND human sustainability. Impact: Scalable architecture + Thriving team culture."
+      },
+      {
+        "title": "Personal Mastery & Holistic Development",
+        "company": "Sabbatical",
+        "period": "2017 - 2023",
+        "description": "After a decade in high-velocity tech, I embarked on a structured sabbatical to develop the qualities that make great leaders truly great: presence, empathy, wisdom, and holistic thinking. • 500+ hours formal training in facilitation, coaching, somatic work • Maintained technical edge building wellness applications • Navigated high-altitude challenges (Everest Base Camp, via ferratas) • Integrated ancient wisdom with modern leadership • Emerged with rare combination: technical mastery + conscious presence. This period transformed how I lead, build products, and collaborate."
+      },
+      {
         "title": "Chief Technology Officer",
-        "company": "Tech Startup",
-        "period": "2022 - Present",
-        "description": "Leading technical strategy, team building, and architecture decisions for fast-growing startup."
+        "company": "Tinto",
+        "period": "2020",
+        "description": "Served as CTO for Tinto, holding space for both technical excellence and the vulnerable human experience of motherhood. Led engineering team with emotional intelligence, mentored junior engineers with presence, and built infrastructure that protected user privacy and autonomy. Impact: Product serving 10K+ mothers + Engineers who felt seen."
       },
       {
-        "title": "Senior Full-Stack Engineer",
-        "company": "Web3 Company",
-        "period": "2020 - 2022",
-        "description": "Built NFT marketplace and DeFi protocols using React, Node.js, and Solidity."
+        "title": "Senior Frontend Engineer",
+        "company": "Just Insurance",
+        "period": "2019",
+        "description": "Built React Native mobile apps for pay-per-mile car insurance, enhancing performance across iOS and Android. Developed advanced vehicle tracking systems with real-time data processing. Led CI/CD implementation and app store release processes. Focused on user experience that reduced friction in insurance complexity."
       },
       {
-        "title": "Lead Developer",
-        "company": "Digital Agency",
-        "period": "2018 - 2020",
-        "description": "Architected and delivered 20+ web applications for enterprise clients."
+        "title": "Frontend Lead & Full Stack Engineer",
+        "company": "Movebubble",
+        "period": "2016 - 2018",
+        "description": "Property rental platform reducing housing stress in London. Led React Native development from prototype to core product while mentoring junior developers with patience and presence. Implemented rapid deployment pipeline. Participated in GV Design Sprints bringing human-centered thinking. Impact: Smoother renting for thousands + Team growth."
       },
       {
-        "title": "Software Engineer",
-        "company": "Tech Company",
-        "period": "2015 - 2018",
-        "description": "Full-stack development using modern JavaScript frameworks and cloud infrastructure."
+        "title": "Backend Engineer",
+        "company": "PwC",
+        "period": "2014 - 2016",
+        "description": "Designed C# ASP.NET Web APIs for enterprise tax systems. Implemented ESB/SOA architecture with EventSourcing, optimizing performance and reliability. Established CI pipeline with quality gates. Learned systems thinking at scale in enterprise environment."
+      },
+      {
+        "title": "Backend Engineer",
+        "company": "MRW",
+        "period": "2013 - 2014",
+        "description": "Implemented Service-Oriented Architecture for package delivery management. Integrated 40+ autonomous components for scalable logistics. Applied Domain-Driven Design and Test-Driven Development. First exposure to architecture as consciousness work."
       }
     ]
   },
   "skills": {
-    "title": "Technical Expertise",
-    "subtitle": "Technologies I work with",
+    "title": "Technical Mastery & Leadership Approach",
+    "subtitle": "Mastery is both technical and human",
     "categories": {
       "frontend": {
-        "title": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "React Native"]
+        "title": "Frontend & Mobile",
+        "items": ["React", "React Native", "TypeScript", "Next.js", "Tailwind CSS", "Tamagui", "Expo"]
       },
       "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+        "title": "Backend & Data",
+        "items": ["Node.js", "C# ASP.NET", "GraphQL", "tRPC", "PostgreSQL", "MongoDB", "Supabase"]
       },
-      "blockchain": {
-        "title": "Blockchain",
-        "items": ["Solidity", "Web3.js", "Ethers.js", "Smart Contracts", "DeFi"]
+      "architecture": {
+        "title": "Architecture & Patterns",
+        "items": ["DDD", "TDD", "SOLID", "Event Sourcing", "SOA", "REST APIs"]
       },
       "devops": {
-        "title": "DevOps",
-        "items": ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform"]
+        "title": "DevOps & Cloud",
+        "items": ["AWS", "CircleCI", "Docker", "CI/CD", "EAS Build", "GitHub Actions"]
+      },
+      "emerging": {
+        "title": "Blockchain & AI",
+        "items": ["Smart Contracts", "Solana", "Ethereum", "Web3", "DAO Architecture", "AI Integration"]
+      },
+      "leadership": {
+        "title": "How I Work",
+        "items": [
+          "Systems Thinking: Seeing the whole, solving root causes",
+          "Presence Over Performance: Clarity before action",
+          "Conscious Leadership: Teams that thrive, not just deliver",
+          "Integration: Technical + Business + Human",
+          "Sustainable Pace: Excellence without burnout",
+          "Growth Culture: Curiosity celebrated, not just delivery"
+        ]
       }
     }
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "Portfolio of applications and platforms",
-    "categories": ["All", "NFT", "Crypto", "Web Apps", "Mobile"],
+    "subtitle": "Technology in service of what matters",
+    "categories": ["All", "Community", "Wellness", "Enterprise", "Mobile"],
     "items": [
       {
-        "title": "NFT Marketplace",
-        "category": "NFT",
-        "description": "Full-featured NFT marketplace with minting, trading, and royalties.",
-        "tech": ["React", "Solidity", "Web3", "Node.js"],
-        "link": "#"
+        "title": "Mazunte Connect",
+        "category": "Community",
+        "description": "Bridging locals and travelers in Mazunte, Mexico through conscious technology. The Challenge: Travelers miss authentic experiences, locals can't share their gifts. The Solution: React Native app with events, places, interactive maps, bilingual support. The Impact: Real connection replacing tourist isolation. Community strengthening through technology.",
+        "tech": ["React Native", "Expo", "Tamagui", "Supabase", "TypeScript", "i18next"],
+        "link": "https://mazunteconnect.com"
       },
       {
-        "title": "DeFi Trading Platform",
-        "category": "Crypto",
-        "description": "Decentralized trading platform with liquidity pools and yield farming.",
-        "tech": ["Next.js", "Ethers.js", "Smart Contracts"],
-        "link": "#"
+        "title": "Inner Ascend",
+        "category": "Wellness",
+        "description": "Daily spiritual practice meets deep shadow work. The Vision: Personal transformation shouldn't require expensive programs. The Solution: 90-day journey from wounded to wise. 16 modules, guided meditations, journaling, progress tracking. Co-Star meets Insight Timer meets Mindvalley. The Impact: Accessible transformation for thousands.",
+        "tech": ["React Native", "Expo", "Tamagui", "Supabase", "TypeScript"],
+        "link": "https://inner-ascend.com"
       },
       {
-        "title": "SaaS Dashboard",
-        "category": "Web Apps",
-        "description": "Enterprise analytics dashboard with real-time data visualization.",
-        "tech": ["React", "TypeScript", "PostgreSQL", "AWS"],
-        "link": "#"
+        "title": "Proyecto Salvaje",
+        "category": "Community",
+        "description": "Regenerative village reimagined through blockchain governance. The Vision: Sovereign living integrated with ecological wisdom. The Solution: 12-acre land project with DAO governance, NFT memberships, transparent on-chain decision-making. Web platform connecting vision with reality. The Impact: New model for conscious community building.",
+        "tech": ["React", "TypeScript", "Vite", "Tailwind CSS", "Blockchain", "DAO"],
+        "link": "https://proyectosalvaje.com"
       },
       {
-        "title": "Mobile Crypto Wallet",
-        "category": "Mobile",
-        "description": "Secure multi-chain cryptocurrency wallet for iOS and Android.",
-        "tech": ["React Native", "Web3", "Biometrics"],
-        "link": "#"
+        "title": "Hostology Platform",
+        "category": "Enterprise",
+        "description": "Event management platform serving UK hospitality. The Challenge: Complex operations, fragmented systems, stressed teams. My Role: Product Lead & Senior Engineer. The Solution: Unified React/TypeScript platform, AWS migration, CI/CD automation. Technical excellence + compassionate team culture. The Impact: Streamlined operations + team that thrives.",
+        "tech": ["React", "TypeScript", "Node.js", "GraphQL", "C# ASP.NET", "AWS"],
+        "link": "https://hostology.co.uk"
       }
     ]
   },
   "services": {
-    "title": "What I Offer",
-    "subtitle": "Services for startups and enterprises",
+    "title": "How I Can Serve Your Vision",
+    "subtitle": "I partner with founders, CTOs, and teams to build technology that scales—technically and humanly",
+    "description": "What I Offer: Full-stack development (React, React Native, TypeScript, Node.js, C#) · Blockchain & Web3 architecture (DAOs, smart contracts, Solana, Ethereum) · AI integration & automation · Technical leadership & CTO partnership · Product strategy grounded in user needs · Cloud architecture that grows with you (AWS, DevOps) · Engineering culture that attracts and retains talent · Mentorship that develops both skills and wisdom\n\nWhat Makes Me Different: I don't just write code or manage sprints. I see the whole system: the technology, the humans, the market, the vision. From traditional web apps to blockchain DAOs to AI-powered experiences, I lead teams who feel seen while delivering products that exceed expectations.",
+    "idealFor": "Ideal Collaborations",
+    "idealDescription": "• Conscious companies building meaningful products\n• Wellness, community, education technology\n• Web3, blockchain, and decentralized autonomous organizations (DAOs)\n• AI-powered applications and automation\n• Regenerative businesses & social impact ventures\n• Teams who value both excellence and humanity",
     "items": [
       {
-        "title": "CTO Consulting",
-        "description": "Technical strategy, team building, and architecture planning for your startup.",
-        "features": ["Tech Stack Selection", "Team Hiring", "System Architecture", "Scalability Planning"]
+        "title": "Technical Leadership & CTO Services",
+        "description": "Strategic technical leadership with conscious team cultivation. I architect solutions that scale while nurturing cultures that thrive.",
+        "features": ["Tech Stack & Architecture", "Team Building & Culture", "Product Strategy & Roadmaps", "AWS & DevOps Infrastructure"]
       },
       {
         "title": "Full-Stack Development",
-        "description": "End-to-end application development from concept to deployment.",
-        "features": ["Web Applications", "Mobile Apps", "API Development", "Database Design"]
+        "description": "React Native and web applications built with both technical excellence and human awareness. Technology serving real needs.",
+        "features": ["React Native Mobile Apps", "Web Platforms (React/Next.js)", "API Development (GraphQL/REST)", "Supabase & Firebase Integration"]
       },
       {
-        "title": "Blockchain Integration",
-        "description": "Smart contract development and Web3 integration for your platform.",
-        "features": ["Smart Contracts", "NFT Development", "DeFi Protocols", "Wallet Integration"]
+        "title": "Conscious Product Strategy",
+        "description": "Product decisions grounded in the integration of business goals, user needs, and technical feasibility. Strategic clarity with human sensitivity.",
+        "features": ["User-Centered Product Design", "Technical Feasibility Analysis", "Agile Delivery with Sustainability", "Stakeholder Alignment"]
       }
     ]
   },
   "investment": {
-    "title": "Open for Opportunities",
-    "subtitle": "Looking for investment and collaboration",
-    "description": "I'm actively seeking investment opportunities and partnerships in the crypto, NFT, and Web3 space. Let's build the future together.",
+    "title": "Let's Build Conscious Technology Together",
+    "subtitle": "Open for meaningful collaborations",
+    "description": "I'm seeking partnerships and opportunities that align with my values: technology that connects communities, supports wellness, and enables sustainable living. Let's create applications that make a real difference.",
     "interests": [
-      "Crypto & DeFi Projects",
-      "NFT Platforms",
-      "Web3 Applications",
-      "SaaS Products"
+      "Wellness & Mental Health Apps",
+      "Community Connection Platforms",
+      "Web3, Blockchain & DAO Infrastructure",
+      "AI Integration & Automation",
+      "Regenerative & Ecological Tech",
+      "React Native Development",
+      "CTO & Technical Advisory Roles"
     ],
-    "cta": "Let's Discuss"
+    "cta": "Let's Connect"
   },
   "contact": {
-    "title": "Let's Connect",
-    "subtitle": "Get in touch for opportunities and collaborations",
+    "title": "Let's Create Something Meaningful Together",
+    "subtitle": "I'm available for technical leadership roles where consciousness and excellence converge",
+    "description": "If you're building products that matter, with teams that thrive, I'd love to explore collaboration.",
+    "bestFor": "Best For:",
+    "bestForItems": [
+      "CTO & Technical Leadership (Contract or Full-time)",
+      "Product Strategy & Development",
+      "Technical Advisory for conscious companies",
+      "Engineering Culture & Team Development",
+      "Wellness, Community, Education Technology"
+    ],
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "message": "Your Message",
-      "submit": "Send Message"
+      "submit": "Begin the Conversation"
     },
     "social": {
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "twitter": "Twitter"
+      "linkedin": "linkedin.com/in/jcamat",
+      "github": "github.com/jcatalaamat",
+      "instagram": "instagram.com/astralintegration"
     },
-    "email": "hello@astralamat.com"
+    "email": "astralamat@gmail.com",
+    "phone": "+34 611 14 41 70",
+    "location": "Remote · Barcelona, ES · London, UK · Open to Mexico",
+    "note": "I also offer limited leadership mentorship for technical leaders navigating the integration of excellence and humanity.",
+    "otherWork": "Also exploring: Inner Ascend · Proyecto Salvaje · Spiritual Mentorship"
+  },
+  "philosophy": {
+    "title": "How I Approach Technology & Leadership",
+    "subtitle": "Principles that guide my work",
+    "principles": [
+      {
+        "title": "Systems Over Symptoms",
+        "description": "I solve root causes, not surface issues. Whether debugging code or team dynamics, I trace problems to their source."
+      },
+      {
+        "title": "Presence Over Performance",
+        "description": "The best solutions emerge when we're fully present, not rushing. I create space for clarity before action."
+      },
+      {
+        "title": "Humans Over Metrics",
+        "description": "Metrics matter. But the humans building and using the product matter more. Sustainable success requires both."
+      },
+      {
+        "title": "Integration Over Division",
+        "description": "Great products emerge from integrated thinking: technical + business + human. I bridge these worlds naturally."
+      },
+      {
+        "title": "Consciousness in Code",
+        "description": "Every technical decision is also a values decision. I build with awareness of impact: on users, teams, planet."
+      },
+      {
+        "title": "Growth as Practice",
+        "description": "The best teams are learning teams. I foster cultures where curiosity and growth are celebrated, not just delivery."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Building innovative solutions with code and creativity",
-    "made": "© 2025 Astral Amat - Software Engineer & CTO",
+    "tagline": "Building technology that serves consciousness",
+    "made": "© 2025 Astral Amat (Jordi Amat) · Technical Excellence · Conscious Leadership",
     "rights": "All rights reserved",
+    "connect": "Connect the Worlds",
+    "thisSite": "This Site: Technical Portfolio & Engineering Work",
+    "also": "Also:",
+    "projects": {
+      "title": "My Projects",
+      "mazunte": "Mazunte Connect",
+      "innerAscend": "Inner Ascend",
+      "salvaje": "Proyecto Salvaje",
+      "teachings": "Spiritual Mentorship"
+    },
     "links": {
       "privacy": "Privacy",
-      "terms": "Terms"
+      "terms": "Terms",
+      "support": "Support"
     }
   }
 }

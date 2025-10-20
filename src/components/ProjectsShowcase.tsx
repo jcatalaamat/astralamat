@@ -56,12 +56,18 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
             const gradient = gradients[index % gradients.length];
 
             return (
-              <div key={index} className="relative group">
+              <a
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group block"
+              >
                 {/* Glow effect */}
                 <div className={`absolute -inset-1 bg-gradient-to-r ${gradient} rounded-2xl blur opacity-20 group-hover:opacity-40 transition`}></div>
 
                 {/* Card */}
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8 h-full flex flex-col">
+                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8 h-full flex flex-col hover:border-white/30 transition-all cursor-pointer transform group-hover:scale-[1.02]">
                   {/* Category Badge */}
                   <div className="mb-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r ${gradient} text-white`}>
@@ -92,16 +98,13 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
                     ))}
                   </div>
 
-                  {/* Link */}
-                  <a
-                    href={project.link}
-                    className={`inline-flex items-center gap-2 text-sm font-semibold bg-gradient-to-r ${gradient} bg-clip-text text-transparent hover:opacity-80 transition-opacity`}
-                  >
+                  {/* Link Indicator */}
+                  <div className={`inline-flex items-center gap-2 text-sm font-semibold bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>
                     <span>View Project</span>
-                    <ExternalLink className="w-4 h-4" style={{ color: 'currentColor' }} />
-                  </a>
+                    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" style={{ color: 'currentColor' }} />
+                  </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
