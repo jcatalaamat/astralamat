@@ -72,7 +72,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
                 <Code2 className="w-6 h-6 text-white" />
               </div>
               <h1 className={`text-5xl md:text-7xl font-bold bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
-                ASTRAL AMAT
+                JORDI AMAT
               </h1>
               <div className={`p-3 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.main} opacity-90`}>
                 <Sparkles className="w-6 h-6 text-white" />

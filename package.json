@@ -1,9 +1,9 @@
 {
-  "name": "astral-amat",
+  "name": "jordi-amat",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://astralamat.com",
+  "homepage": "https://jordiamat.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && node scripts/preserve-cname.js",

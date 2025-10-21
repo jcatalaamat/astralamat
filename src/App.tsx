@@ -20,6 +20,7 @@ import DualTimeline from './components/DualTimeline';
 import QuadrantMastery from './components/QuadrantMastery';
 import SacredMandala from './components/SacredMandala';
 import FourEcosystems from './components/ThreeEcosystems';
+import LinksPage from './pages/LinksPage';
 
 // Main Landing Page Component
 function LandingPage() {
@@ -86,7 +87,7 @@ function LandingPage() {
                   </div>
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Astral Amat
+                  Jordi Amat
                 </span>
               </button>
 
@@ -247,7 +248,7 @@ function LandingPage() {
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Code2 className="w-8 h-8 text-cyan-400" />
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Astral Amat
+                  Jordi Amat
                 </span>
               </div>
 
@@ -332,6 +333,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/links" element={<LinksPage />} />
         <Route path="/event/:id" element={<EventRoute />} />
         <Route path="/place/:id" element={<PlaceRoute />} />
         <Route path="/support" element={<SupportPage />} />

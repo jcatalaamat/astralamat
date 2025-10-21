@@ -16,7 +16,7 @@ const supportTranslations = {
         email: {
           title: "Email Support",
           description: "Send us an email and we'll get back to you within 24 hours",
-          action: "hello@astralamat.com"
+          action: "hello@jordiamat.com"
         },
         faq: {
           title: "Frequently Asked Questions",
@@ -61,7 +61,7 @@ const supportTranslations = {
         email: {
           title: "Soporte por Email",
           description: "Envíanos un email y te responderemos en 24 horas",
-          action: "hello@astralamat.com"
+          action: "hello@jordiamat.com"
         },
         faq: {
           title: "Preguntas Frecuentes",
