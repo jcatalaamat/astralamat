@@ -1,4 +1,4 @@
-import { Briefcase, Heart, Code2, Sparkles, Circle } from 'lucide-react';
+import { Code2, Sparkles, Briefcase, Heart } from 'lucide-react';
 import { colors } from '../styles/colors';
 
 interface DualTimelineProps {

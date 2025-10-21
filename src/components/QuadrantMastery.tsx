@@ -83,7 +83,7 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
 
           {/* Grid of Quadrants */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {quadrants.map((quadrant, index) => {
+            {quadrants.map((quadrant) => {
               const Icon = quadrant.icon;
               const isLeadership = quadrant.key === 'leadership';
 
