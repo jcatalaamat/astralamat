@@ -77,9 +77,16 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
 
                         {/* Title & Company */}
                         <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
-                        <p className={`font-semibold mb-4 ${isTech ? 'text-cyan-300' : 'text-purple-300'}`}>
+                        <p className={`font-semibold mb-2 ${isTech ? 'text-cyan-300' : 'text-purple-300'}`}>
                           {item.company}
                         </p>
+
+                        {/* Company Context */}
+                        {item.companyContext && (
+                          <p className="text-gray-400 text-sm leading-relaxed mb-4 italic">
+                            {item.companyContext}
+                          </p>
+                        )}
 
                         {/* Description */}
                         <p className="text-gray-300 leading-relaxed mb-4">
