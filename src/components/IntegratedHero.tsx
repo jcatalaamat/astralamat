@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronDown, Code2, Sparkles } from 'lucide-react';
+import { ChevronDown, Code2, Sparkles, Download } from 'lucide-react';
 import { colors } from '../styles/colors';
 
 interface IntegratedHeroProps {
@@ -138,7 +138,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={scrollToContent}
               className={`group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} text-white font-bold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all`}
@@ -150,6 +150,19 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
               </span>
               <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </button>
+
+            <a
+              href="/Jordi-Amat-CV.pdf"
+              download="Jordi-Amat-CV.pdf"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-bold rounded-lg hover:bg-white/10 hover:border-white/30 hover:shadow-lg hover:shadow-cyan-500/30 transform hover:scale-105 transition-all"
+            >
+              <Download className="w-5 h-5 text-cyan-400 group-hover:translate-y-0.5 transition-transform" />
+              <span>
+                {language === 'en' && 'Download CV'}
+                {language === 'es' && 'Descargar CV'}
+                {language === 'ca' && 'Descarregar CV'}
+              </span>
+            </a>
           </div>
         </div>
       </div>

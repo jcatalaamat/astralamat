@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, Link } from 'react-router-dom';
-import { Code2, Globe, ArrowRight, Briefcase, Rocket, TrendingUp, Menu, X } from 'lucide-react';
+import { Code2, Globe, ArrowRight, Briefcase, Rocket, TrendingUp, Menu, X, Download } from 'lucide-react';
 import enTranslations from './translations/en.json';
 import esTranslations from './translations/es.json';
 import caTranslations from './translations/ca.json';
@@ -110,6 +110,14 @@ function LandingPage() {
                 <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white transition-colors text-sm">
                   {t.navigation.services}
                 </button>
+                <a
+                  href="/Jordi-Amat-CV.pdf"
+                  download="Jordi-Amat-CV.pdf"
+                  className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
+                >
+                  <Download className="w-4 h-4" />
+                  CV
+                </a>
                 <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all text-sm">
                   {t.navigation.contact}
                 </button>
@@ -193,6 +201,17 @@ function LandingPage() {
                 >
                   {t.navigation.services}
                 </button>
+                <a
+                  href="/Jordi-Amat-CV.pdf"
+                  download="Jordi-Amat-CV.pdf"
+                  className="inline-flex items-center gap-2 py-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Download className="w-4 h-4" />
+                  {language === 'en' && 'Download CV'}
+                  {language === 'es' && 'Descargar CV'}
+                  {language === 'ca' && 'Descarregar CV'}
+                </a>
                 <button
                   onClick={() => {
                     scrollToSection('contact');
