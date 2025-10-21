@@ -39,7 +39,7 @@
         "company": "Hostology",
         "period": "2023 - 2025",
         "companyContext": "Hostology is the UK's #1 connected wedding and event planning software, revolutionizing venue management with AI-powered collaboration tools. The platform connects venues, couples, guests, and suppliers in one efficient journey, delivering a 30% reduction in venue admin while providing comprehensive event management, RSVP systems, dietary tracking, accommodation booking, and secure payments.",
-        "description": "Guided Hostology's engineering evolution with both strategic vision and compassionate team leadership. Migrated infrastructure to AWS while fostering a culture of growth and innovation. Technical decisions grounded in product strategy AND human sustainability. Impact: Scalable architecture + Thriving team culture."
+        "description": "Led engineering of AI-powered collaboration tools connecting venues, couples, guests, and suppliers. Migrated infrastructure to AWS while building features that achieved 30% admin reduction. Developed event management, RSVP systems, dietary tracking, and payment flows. Impact: Scalable wedding platform + Thriving team culture."
       },
       {
         "title": "Personal Mastery & Holistic Development",
@@ -52,35 +52,35 @@
         "company": "Tinto",
         "period": "2020",
         "companyContext": "Tinto was a wellness app designed for new mothers, providing guided support, community connection, and evidence-based resources for postpartum recovery and early motherhood. The platform combined mental health support with practical parenting guidance.",
-        "description": "Served as CTO for Tinto, holding space for both technical excellence and the vulnerable human experience of motherhood. Led engineering team with emotional intelligence, mentored junior engineers with presence, and built infrastructure that protected user privacy and autonomy. Impact: Product serving 10K+ mothers + Engineers who felt seen."
+        "description": "Led engineering of wellness app serving new mothers through postpartum recovery. Built guided support features, community connection tools, and evidence-based resources platform. Led team with emotional intelligence while ensuring privacy and autonomy. Impact: 10K+ mothers supported + Team felt seen and valued."
       },
       {
         "title": "Senior Frontend Engineer",
         "company": "Just Insurance",
         "period": "2019",
         "companyContext": "Just Insurance is a UK-based insurtech company offering pay-per-mile car insurance. Using telematics technology, they charge drivers based on actual miles driven rather than estimated annual mileage, making insurance fairer and more affordable for low-mileage drivers.",
-        "description": "Built React Native mobile apps for pay-per-mile car insurance, enhancing performance across iOS and Android. Developed advanced vehicle tracking systems with real-time data processing. Led CI/CD implementation and app store release processes. Focused on user experience that reduced friction in insurance complexity."
+        "description": "Built React Native mobile apps enabling telematics-based pay-per-mile insurance. Developed vehicle tracking systems with real-time data processing to charge drivers by actual miles driven. Led CI/CD implementation and app store releases. Made insurance fairer and more affordable for low-mileage drivers through superior UX."
       },
       {
         "title": "Frontend Lead & Full Stack Engineer",
         "company": "Movebubble",
         "period": "2016 - 2018",
         "companyContext": "Movebubble was a London-based proptech startup that streamlined the rental property search and application process. The platform helped renters discover available properties and submit applications directly through a mobile-first experience, reducing the typical weeks-long search to days.",
-        "description": "Led React Native development from prototype to core product while mentoring junior developers with patience and presence. Implemented rapid deployment pipeline. Participated in GV Design Sprints bringing human-centered thinking. Impact: Smoother renting for thousands + Team growth."
+        "description": "Led React Native development of mobile-first rental platform that reduced property search from weeks to days. Built property discovery, direct application submission, and streamlined renter journey. Mentored junior developers while implementing rapid deployment pipeline. Impact: Thousands found homes faster + Team growth through GV Design Sprints."
       },
       {
         "title": "Backend Engineer",
         "company": "PwC",
         "period": "2014 - 2016",
         "companyContext": "PwC (PricewaterhouseCoopers) is a global professional services network and one of the Big Four accounting firms. Their technology division builds enterprise-grade software solutions for tax compliance, auditing, and financial consulting services used by multinational corporations.",
-        "description": "Designed C# ASP.NET Web APIs for enterprise tax systems. Implemented ESB/SOA architecture with EventSourcing, optimizing performance and reliability. Established CI pipeline with quality gates. Learned systems thinking at scale in enterprise environment."
+        "description": "Designed C# ASP.NET Web APIs for enterprise-grade tax compliance and financial consulting systems used by multinational corporations. Implemented ESB/SOA architecture with EventSourcing for Big Four scale. Established CI pipeline with quality gates. Learned systems thinking serving global clients."
       },
       {
         "title": "Backend Engineer",
         "company": "MRW",
         "period": "2013 - 2014",
         "companyContext": "MRW is Spain's leading courier and package delivery company, providing nationwide logistics services for both businesses and consumers. Their technology infrastructure coordinates thousands of daily deliveries across an extensive network of distribution centers and delivery routes.",
-        "description": "Implemented Service-Oriented Architecture for package delivery management. Integrated 40+ autonomous components for scalable logistics. Applied Domain-Driven Design and Test-Driven Development. First exposure to architecture as consciousness work."
+        "description": "Implemented Service-Oriented Architecture coordinating Spain's nationwide logistics network. Integrated 40+ autonomous components managing thousands of daily deliveries across distribution centers and routes. Applied Domain-Driven Design and Test-Driven Development at scale. First exposure to architecture as systems consciousness."
       }
     ]
   },
