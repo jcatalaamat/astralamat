@@ -254,6 +254,119 @@
       }
     ]
   },
+  "servicesPage": {
+    "header": {
+      "title": "Services",
+      "subtitle": "Practical, scalable solutions for small businesses and standalone products",
+      "description": "Everything that doesn't require massive real-time infrastructure or hardware integration. Built with modern tools, delivered fast, scaled smart."
+    },
+    "smallBusiness": {
+      "title": "For Small Businesses",
+      "subtitle": "Tools that solve real problems for real businesses",
+      "services": [
+        {
+          "title": "Websites & Content Systems",
+          "description": "Portfolio sites, blogs, service booking platforms",
+          "examples": ["Business websites", "Content management", "Booking systems", "Client portals"]
+        },
+        {
+          "title": "Simple SaaS Tools",
+          "description": "Custom tools for invoicing, client management, scheduling",
+          "examples": ["Invoicing systems", "CRM tools", "Appointment scheduling", "Task management"]
+        },
+        {
+          "title": "Lead Generation Funnels",
+          "description": "Landing pages and conversion-optimized funnels",
+          "examples": ["Landing pages", "Lead capture forms", "Email automation", "Analytics dashboards"]
+        },
+        {
+          "title": "Admin Dashboards",
+          "description": "Data visualization and management interfaces",
+          "examples": ["Analytics dashboards", "Inventory management", "Reporting tools", "Data exports"]
+        },
+        {
+          "title": "Community Platforms",
+          "description": "Membership sites and community engagement",
+          "examples": ["Member portals", "Forums & discussions", "Content subscriptions", "Event management"]
+        }
+      ]
+    },
+    "standaloneProducts": {
+      "title": "Standalone Products",
+      "subtitle": "Build once, scale to many - products that generate recurring value",
+      "products": [
+        {
+          "title": "Niche SaaS Tools",
+          "description": "Industry-specific workflow automation and data tools"
+        },
+        {
+          "title": "Template Marketplaces",
+          "description": "Customizable templates and themes for various platforms"
+        },
+        {
+          "title": "Content Platforms",
+          "description": "Newsletter systems, course platforms, community hubs"
+        },
+        {
+          "title": "B2B Industry Tools",
+          "description": "Specialized solutions for specific business verticals"
+        },
+        {
+          "title": "API Wrappers & AI Utilities",
+          "description": "Integration tools and AI-powered automation"
+        }
+      ]
+    },
+    "capabilities": {
+      "title": "What's Realistic",
+      "subtitle": "Modern stack: Next.js, React, Supabase, AI APIs - everything you need for production-ready apps",
+      "items": [
+        "Full CRUD applications (databases, forms, filters)",
+        "Authentication & user management systems",
+        "Payment integrations (Stripe, PayPal)",
+        "Real-time features (Supabase, Firebase)",
+        "AI integrations (ChatGPT, Claude APIs)",
+        "Third-party API integrations (Zapier, etc.)",
+        "Responsive web & mobile applications",
+        "Analytics & reporting dashboards"
+      ]
+    },
+    "skip": {
+      "title": "What We Skip (For Now)",
+      "subtitle": "Being realistic about scope ensures we deliver quality, on time, every time.",
+      "items": [
+        "Heavy graphics/gaming engines",
+        "Live video/streaming infrastructure",
+        "Complex real-time (like Figma)",
+        "Hardware connections/IoT",
+        "High-frequency trading systems",
+        "Enterprise-scale infrastructure"
+      ]
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "Fast, iterative, and transparent - using modern AI-assisted development",
+      "steps": [
+        {
+          "title": "Discovery & Scoping",
+          "description": "We map out your needs, validate feasibility, and define clear deliverables"
+        },
+        {
+          "title": "Rapid Prototyping",
+          "description": "Using v0, ChatGPT, and Cursor, we build working prototypes fast"
+        },
+        {
+          "title": "Iterate & Deploy",
+          "description": "We refine based on feedback and deploy production-ready solutions"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Build Something Real?",
+      "description": "Let's talk about your project. Whether it's a small business tool or a standalone product, we'll deliver practical solutions that actually work.",
+      "button": "Start a Conversation"
+    }
+  },
   "footer": {
     "tagline": "Building technology that serves consciousness",
     "made": "© 2025 Jordi Amat · Technical Excellence · Conscious Leadership",

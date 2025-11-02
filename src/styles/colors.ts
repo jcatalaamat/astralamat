@@ -76,33 +76,33 @@ export const colors = {
 
   // Backgrounds & Surfaces
   surfaces: {
-    dark: {
-      primary: '#09090B',    // Tailwind zinc-950
-      secondary: '#18181B',  // Tailwind zinc-900
-      tertiary: '#27272A',   // Tailwind zinc-800
+    light: {
+      primary: '#FFFFFF',    // White
+      secondary: '#F9FAFB',  // Tailwind gray-50
+      tertiary: '#F3F4F6',   // Tailwind gray-100
     },
     glass: {
-      light: 'bg-white/5 backdrop-blur-xl',
-      medium: 'bg-white/10 backdrop-blur-xl',
-      dark: 'bg-zinc-900/80 backdrop-blur-xl',
-      purple: 'bg-purple-900/20 backdrop-blur-xl',
-      gradient: 'bg-gradient-to-br from-zinc-900/95 to-purple-900/20 backdrop-blur-xl',
+      light: 'bg-black/5 backdrop-blur-xl',
+      medium: 'bg-black/10 backdrop-blur-xl',
+      dark: 'bg-gray-100/80 backdrop-blur-xl',
+      purple: 'bg-purple-100/30 backdrop-blur-xl',
+      gradient: 'bg-gradient-to-br from-white/95 to-purple-50/50 backdrop-blur-xl',
     }
   },
 
   // Text & Content
   text: {
-    primary: '#FAFAFA',      // Tailwind gray-50
-    secondary: '#D4D4D8',    // Tailwind gray-300
-    tertiary: '#A1A1AA',     // Tailwind gray-400
-    muted: '#71717A',        // Tailwind gray-500
+    primary: '#18181B',      // Tailwind zinc-900
+    secondary: '#52525B',    // Tailwind zinc-600
+    tertiary: '#71717A',     // Tailwind zinc-500
+    muted: '#A1A1AA',        // Tailwind zinc-400
   },
 
   // Borders
   borders: {
-    subtle: 'border-white/10',
-    medium: 'border-white/20',
-    strong: 'border-white/30',
+    subtle: 'border-black/10',
+    medium: 'border-black/20',
+    strong: 'border-black/30',
     purple: 'border-purple-500/20',
     purpleMedium: 'border-purple-500/30',
     cyan: 'border-cyan-500/20',

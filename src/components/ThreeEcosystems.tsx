@@ -87,7 +87,7 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
             {language === 'es' && 'El Ecosistema'}
             {language === 'ca' && 'L\'Ecosistema'}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             {language === 'en' && 'Four interconnected projects weaving technology, consciousness, and community'}
             {language === 'es' && 'Cuatro proyectos interconectados tejiendo tecnología, consciencia y comunidad'}
             {language === 'ca' && 'Quatre projectes interconnectats teixint tecnologia, consciència i comunitat'}
@@ -111,7 +111,7 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
                 <div className={`absolute -inset-1 bg-gradient-to-r ${ecosystem.gradient} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500`}></div>
 
                 {/* Card */}
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8 h-full flex flex-col hover:border-white/30 transition-all transform group-hover:scale-[1.02] duration-300">
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-2xl border border-gray-900/10 p-8 h-full flex flex-col hover:border-gray-900/30 transition-all transform group-hover:scale-[1.02] duration-300">
                   {/* Icon */}
                   <div className="mb-6">
                     <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${ecosystem.gradient} group-hover:scale-110 transition-transform duration-300`}>
@@ -120,7 +120,7 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-3xl font-bold text-white mb-3">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-3">
                     {ecosystem.name}
                   </h3>
 
@@ -130,7 +130,7 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
                   </p>
 
                   {/* Description */}
-                  <p className="text-gray-300 leading-relaxed mb-6 flex-grow">
+                  <p className="text-gray-700 leading-relaxed mb-6 flex-grow">
                     {ecosystem.description[language]}
                   </p>
 
@@ -153,17 +153,17 @@ const FourEcosystems = ({ language }: FourEcosystemsProps) => {
         <div className="max-w-4xl mx-auto">
           <div className="relative group">
             <div className={`absolute -inset-1 bg-gradient-to-r ${colors.integrated.gradients.sacredTech} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
-            <div className="relative bg-gradient-to-br from-purple-900/20 to-cyan-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 p-8 text-center">
+            <div className="relative bg-gradient-to-br from-purple-100/40 to-cyan-100/40 backdrop-blur-xl rounded-2xl border border-purple-200/40 p-8 text-center">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Sparkles className="w-6 h-6 text-purple-400" />
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+                <Sparkles className="w-6 h-6 text-purple-700" />
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-700 to-cyan-700 bg-clip-text text-transparent">
                   {language === 'en' && 'Connected by Intention'}
                   {language === 'es' && 'Conectados por Intención'}
                   {language === 'ca' && 'Connectats per Intenció'}
                 </h3>
-                <Sparkles className="w-6 h-6 text-cyan-400" />
+                <Sparkles className="w-6 h-6 text-cyan-700" />
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'en' && 'Each project serves a different aspect of transformation: Salvaje for regenerative community living, Ascend for daily spiritual practice, Astral for deep 1:1 soul work and medicine integration, and Mazunte Connect for digital community infrastructure. Together, they form a complete ecosystem for conscious evolution.'}
                 {language === 'es' && 'Cada proyecto sirve a un aspecto diferente de la transformación: Salvaje para vida comunitaria regenerativa, Ascend para práctica espiritual diaria, Astral para trabajo del alma 1:1 e integración de medicina, y Mazunte Connect para infraestructura digital comunitaria. Juntos, forman un ecosistema completo para evolución consciente.'}
                 {language === 'ca' && 'Cada projecte serveix a un aspecte diferent de la transformació: Salvaje per a vida comunitària regenerativa, Ascend per a pràctica espiritual diària, Astral per a treball de l\'ànima 1:1 i integració de medicina, i Mazunte Connect per a infraestructura digital comunitària. Junts, formen un ecosistema complet per a evolució conscient.'}

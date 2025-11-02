@@ -30,7 +30,7 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
 
   const navItems = [
     { path: '/', label: 'Home', translationKey: null },
-    { path: '/about', label: 'About', translationKey: 'navigation.experience' },
+    { path: '/about', label: 'About', translationKey: 'navigation.about' },
     { path: '/services', label: 'Services', translationKey: 'navigation.services' },
     { path: '/projects', label: 'Projects', translationKey: 'navigation.projects' },
     { path: '/philosophy', label: 'Philosophy', translationKey: null },
@@ -38,6 +38,15 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
   ];
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handleNavClick = (path: string) => {
+    if (location.pathname === path) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate(path);
+    }
+    setMobileMenuOpen(false);
+  };
 
   const getLabel = (item: typeof navItems[0]) => {
     if (item.translationKey) {
@@ -52,7 +61,7 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 border-b border-black/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -61,35 +70,35 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <div className="relative">
-              <Code2 className="w-8 h-8 text-cyan-400" />
+              <Code2 className="w-8 h-8 text-cyan-600" />
               <div className="absolute -top-1 -right-1 w-3 h-3">
                 <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-pink-500 blur-sm opacity-70"></div>
               </div>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Jordi Amat
             </span>
           </Link>
 
           {/* Nav Links - Hidden on mobile */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-2">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.path}
-                to={item.path}
-                className={`transition-colors text-sm ${
+                onClick={() => handleNavClick(item.path)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   isActive(item.path)
-                    ? 'text-white font-semibold'
-                    : 'text-gray-400 hover:text-white'
+                    ? 'text-zinc-900 bg-gradient-to-r from-cyan-50 via-purple-50 to-pink-50 border border-purple-200/50'
+                    : 'text-zinc-600 hover:text-zinc-900 hover:bg-gray-50'
                 }`}
               >
                 {getLabel(item)}
-              </Link>
+              </button>
             ))}
             <a
               href="/Jordi-Amat-CV.pdf"
               download="Jordi-Amat-CV.pdf"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-purple-600 text-white text-sm font-medium hover:shadow-lg hover:shadow-purple-600/30 transition-all ml-2"
             >
               <Download className="w-4 h-4" />
               CV
@@ -101,7 +110,7 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
             {/* Language Toggle */}
             <button
               onClick={handleLanguageChange}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 backdrop-blur-xl border border-black/20 hover:bg-black/10 transition-all"
             >
               <Globe className="w-4 h-4" />
               <span className="text-sm font-medium">
@@ -112,7 +121,7 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
+              className="md:hidden p-2 text-zinc-600 hover:text-zinc-900 transition-colors"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -121,25 +130,24 @@ export default function Navigation({ language: propLanguage, onLanguageChange }:
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-3 border-t border-white/10">
+          <div className="md:hidden py-6 space-y-2 border-t border-black/10 bg-white/95 backdrop-blur-xl">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.path}
-                to={item.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left py-2 transition-colors ${
+                onClick={() => handleNavClick(item.path)}
+                className={`block w-full text-left px-4 py-3 rounded-lg transition-all ${
                   isActive(item.path)
-                    ? 'text-white font-semibold'
-                    : 'text-gray-300 hover:text-white'
+                    ? 'text-zinc-900 font-semibold bg-gradient-to-r from-cyan-50 via-purple-50 to-pink-50 border border-purple-200/50'
+                    : 'text-zinc-600 hover:text-zinc-900 hover:bg-gray-50'
                 }`}
               >
                 {getLabel(item)}
-              </Link>
+              </button>
             ))}
             <a
               href="/Jordi-Amat-CV.pdf"
               download="Jordi-Amat-CV.pdf"
-              className="inline-flex items-center gap-2 py-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+              className="flex items-center gap-2 px-4 py-3 mt-4 rounded-lg bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 text-white font-medium hover:shadow-lg hover:shadow-purple-600/30 transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Download className="w-4 h-4" />

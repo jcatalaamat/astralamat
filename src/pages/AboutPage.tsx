@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import DualTimeline from '../components/DualTimeline';
 import QuadrantMastery from '../components/QuadrantMastery';
 import SacredMandala from '../components/SacredMandala';
@@ -6,8 +6,11 @@ import enTranslations from '../translations/en.json';
 import esTranslations from '../translations/es.json';
 import caTranslations from '../translations/ca.json';
 
-export default function AboutPage() {
-  const [language, setLanguage] = useState<'en' | 'es' | 'ca'>('en');
+interface AboutPageProps {
+  language?: 'en' | 'es' | 'ca';
+}
+
+export default function AboutPage({ language = 'en' }: AboutPageProps) {
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   useEffect(() => {
@@ -15,7 +18,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-float"></div>
@@ -29,12 +32,16 @@ export default function AboutPage() {
         <section className="pt-32 pb-16 px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                About Me
+              <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                {language === 'en' && 'About Me'}
+                {language === 'es' && 'Sobre Mi'}
+                {language === 'ca' && 'Sobre Mi'}
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              A journey through code and consciousness, technical excellence and holistic awareness
+            <p className="text-xl md:text-2xl text-zinc-600 max-w-3xl mx-auto">
+              {language === 'en' && 'A journey through code and consciousness, technical excellence and holistic awareness'}
+              {language === 'es' && 'Un viaje a través del código y la conciencia, excelencia técnica y conciencia holística'}
+              {language === 'ca' && 'Un viatge a través del codi i la consciència, excel·lència tècnica i consciència holística'}
             </p>
           </div>
         </section>

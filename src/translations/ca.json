@@ -98,6 +98,10 @@
         "title": "DevOps i Cloud",
         "items": ["AWS", "CircleCI", "Docker", "CI/CD", "EAS Build", "GitHub Actions"]
       },
+      "emerging": {
+        "title": "Blockchain i IA",
+        "items": ["Smart Contracts", "Solana", "Ethereum", "Web3", "Arquitectura DAO", "Integració IA"]
+      },
       "leadership": {
         "title": "Com Treballo",
         "items": [
@@ -177,6 +181,8 @@
     "interests": [
       "Apps de Benestar i Salut Mental",
       "Plataformes de Connexió Comunitària",
+      "Infraestructura Web3, Blockchain i DAO",
+      "Integració de IA i Automatització",
       "Tecnologia Regenerativa i Ecològica",
       "Desenvolupament React Native",
       "Rols de CTO i Assessoria Tècnica"
@@ -241,6 +247,119 @@
         "description": "Els millors equips són equips d'aprenentatge. Fomento cultures on la curiositat i el creixement se celebren, no només el lliurament."
       }
     ]
+  },
+  "servicesPage": {
+    "header": {
+      "title": "Serveis",
+      "subtitle": "Solucions pràctiques i escalables per a petits negocis i productes independents",
+      "description": "Tot el que no requereix infraestructura massiva en temps real o integració de maquinari. Construït amb eines modernes, lliurat ràpid, escalat intel·ligentment."
+    },
+    "smallBusiness": {
+      "title": "Per a Petits Negocis",
+      "subtitle": "Eines que resolen problemes reals per a negocis reals",
+      "services": [
+        {
+          "title": "Llocs Web i Sistemes de Contingut",
+          "description": "Llocs de portafoli, blogs, plataformes de reserves de serveis",
+          "examples": ["Llocs web corporatius", "Gestió de contingut", "Sistemes de reserves", "Portals de clients"]
+        },
+        {
+          "title": "Eines SaaS Simples",
+          "description": "Eines personalitzades per a facturació, gestió de clients, programació",
+          "examples": ["Sistemes de facturació", "Eines CRM", "Programació de cites", "Gestió de tasques"]
+        },
+        {
+          "title": "Embuts de Generació de Leads",
+          "description": "Pàgines de destinació i embuts optimitzats per a conversió",
+          "examples": ["Pàgines de destinació", "Formularis de captura de leads", "Automatització d'email", "Dashboards d'analítiques"]
+        },
+        {
+          "title": "Dashboards Administratius",
+          "description": "Interfícies de visualització de dades i gestió",
+          "examples": ["Dashboards d'analítiques", "Gestió d'inventari", "Eines d'informes", "Exportacions de dades"]
+        },
+        {
+          "title": "Plataformes Comunitàries",
+          "description": "Llocs de membresía i compromís comunitari",
+          "examples": ["Portals de membres", "Fòrums i discussions", "Subscripcions de contingut", "Gestió d'esdeveniments"]
+        }
+      ]
+    },
+    "standaloneProducts": {
+      "title": "Productes Independents",
+      "subtitle": "Construir una vegada, escalar a molts - productes que generen valor recurrent",
+      "products": [
+        {
+          "title": "Eines SaaS de Nínxol",
+          "description": "Automatització de fluxos de treball i eines de dades específiques de la indústria"
+        },
+        {
+          "title": "Mercats de Plantilles",
+          "description": "Plantilles i temes personalitzables per a diverses plataformes"
+        },
+        {
+          "title": "Plataformes de Contingut",
+          "description": "Sistemes de newsletters, plataformes de cursos, hubs comunitaris"
+        },
+        {
+          "title": "Eines B2B Industrials",
+          "description": "Solucions especialitzades per a verticals de negoci específics"
+        },
+        {
+          "title": "Wrappers d'API i Utilitats d'IA",
+          "description": "Eines d'integració i automatització impulsada per IA"
+        }
+      ]
+    },
+    "capabilities": {
+      "title": "El Que És Realista",
+      "subtitle": "Stack modern: Next.js, React, Supabase, APIs d'IA - tot el que necessites per a apps llestes per a producció",
+      "items": [
+        "Aplicacions CRUD completes (bases de dades, formularis, filtres)",
+        "Sistemes d'autenticació i gestió d'usuaris",
+        "Integracions de pagament (Stripe, PayPal)",
+        "Característiques en temps real (Supabase, Firebase)",
+        "Integracions d'IA (ChatGPT, APIs de Claude)",
+        "Integracions d'APIs de tercers (Zapier, etc.)",
+        "Aplicacions web i mòbils responsives",
+        "Dashboards d'analítiques i informes"
+      ]
+    },
+    "skip": {
+      "title": "El Que Ometem (Per Ara)",
+      "subtitle": "Ser realistes sobre l'abast assegura que lliurem qualitat, a temps, sempre.",
+      "items": [
+        "Motors gràfics/de jocs pesats",
+        "Infraestructura de vídeo/streaming en viu",
+        "Temps real complex (com Figma)",
+        "Connexions de maquinari/IoT",
+        "Sistemes de trading d'alta freqüència",
+        "Infraestructura a escala empresarial"
+      ]
+    },
+    "process": {
+      "title": "Com Treballem",
+      "subtitle": "Ràpid, iteratiu i transparent - usant desenvolupament modern assistit per IA",
+      "steps": [
+        {
+          "title": "Descobriment i Abast",
+          "description": "Mapegem les teves necessitats, validem viabilitat i definim lliurables clars"
+        },
+        {
+          "title": "Prototipat Ràpid",
+          "description": "Usant v0, ChatGPT i Cursor, construïm prototips funcionals ràpidament"
+        },
+        {
+          "title": "Iterar i Desplegar",
+          "description": "Refinem basant-nos en feedback i despleguem solucions llestes per a producció"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Llest per Construir Alguna Cosa Real?",
+      "description": "Parlem sobre el teu projecte. Ja sigui una eina per a petits negocis o un producte independent, lliurarem solucions pràctiques que realment funcionen.",
+      "button": "Inicia una Conversa"
+    }
   },
   "footer": {
     "tagline": "Construint tecnologia que serveix la consciència",

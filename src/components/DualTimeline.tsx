@@ -17,10 +17,8 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
           <h2 className={`text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
             {t.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            {language === 'en' && 'Two parallel journeys, one integrated path'}
-            {language === 'es' && 'Dos caminos paralelos, un sendero integrado'}
-            {language === 'ca' && 'Dos camins paral·lels, un camí integrat'}
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t.subtitle || (language === 'en' && 'Two parallel journeys, one integrated path') || (language === 'es' && 'Dos caminos paralelos, un sendero integrado') || (language === 'ca' && 'Dos camins paral·lels, un camí integrat')}
           </p>
         </div>
 
@@ -28,7 +26,7 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
         <div className="relative">
           {/* Center Dividing Line with Integration Points */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 -ml-0.5">
-            <div className={`absolute inset-0 bg-gradient-to-b ${colors.integrated.gradients.fullSpectrum} opacity-30`}></div>
+            <div className={`absolute inset-0 bg-gradient-to-b ${colors.integrated.gradients.fullSpectrum} opacity-15`}></div>
 
             {/* Integration markers */}
             {t.roles && t.roles.map((_: any, index: number) => (
@@ -37,7 +35,7 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
                 className="absolute left-1/2 -translate-x-1/2"
                 style={{ top: `${(index / (t.roles.length - 1)) * 100}%` }}
               >
-                <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${colors.integrated.gradients.dualNature} border-2 border-zinc-950`}></div>
+                <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${colors.integrated.gradients.dualNature} border-2 border-gray-100`}></div>
               </div>
             ))}
           </div>
@@ -64,32 +62,32 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
                       <div className={`absolute -inset-1 bg-gradient-to-r ${gradient} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
 
                       {/* Card */}
-                      <div className={`relative ${isTech ? 'bg-zinc-900/80' : 'bg-gradient-to-br from-zinc-900/95 to-purple-900/20'} backdrop-blur-xl rounded-2xl border ${isTech ? 'border-white/10' : 'border-purple-500/20'} p-8`}>
+                      <div className={`relative ${isTech ? 'bg-white/50' : 'bg-gradient-to-br from-white/60 to-purple-50/40'} backdrop-blur-xl rounded-2xl border ${isTech ? 'border-gray-200/30' : 'border-purple-200/40'} p-8`}>
                         {/* Icon & Date */}
                         <div className={`flex items-center gap-4 mb-4 ${isLeft ? 'lg:flex-row-reverse lg:justify-end' : ''}`}>
                           <div className={`p-3 rounded-xl bg-gradient-to-r ${gradient}`}>
-                            <Icon className="w-6 h-6 text-white" />
+                            <Icon className="w-6 h-6 text-white" fill="currentColor" />
                           </div>
-                          <span className={`text-sm font-semibold ${isTech ? 'text-cyan-400' : 'text-purple-400'}`}>
+                          <span className={`text-sm font-semibold ${isTech ? 'text-cyan-600' : 'text-purple-600'}`}>
                             {item.period}
                           </span>
                         </div>
 
                         {/* Title & Company */}
-                        <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
-                        <p className={`font-semibold mb-2 ${isTech ? 'text-cyan-300' : 'text-purple-300'}`}>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                        <p className={`font-semibold mb-2 ${isTech ? 'text-cyan-700' : 'text-purple-700'}`}>
                           {item.company}
                         </p>
 
                         {/* Company Context */}
                         {item.companyContext && (
-                          <p className="text-gray-400 text-sm leading-relaxed mb-4 italic">
+                          <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">
                             {item.companyContext}
                           </p>
                         )}
 
                         {/* Description */}
-                        <p className="text-gray-300 leading-relaxed mb-4">
+                        <p className="text-gray-700 leading-relaxed mb-4">
                           {item.description}
                         </p>
 
@@ -99,7 +97,7 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
                             {item.technologies.map((tech: string, techIndex: number) => (
                               <span
                                 key={techIndex}
-                                className={`px-3 py-1 bg-white/5 border ${isTech ? 'border-cyan-500/20 text-cyan-300' : 'border-purple-500/20 text-purple-300'} rounded-lg text-sm`}
+                                className={`px-3 py-1 bg-gray-100/50 border ${isTech ? 'border-cyan-200/60 text-cyan-700' : 'border-purple-200/60 text-purple-700'} rounded-lg text-sm`}
                               >
                                 {tech}
                               </span>
@@ -124,15 +122,13 @@ const DualTimeline = ({ language, translations }: DualTimelineProps) => {
           <div className="mt-16 max-w-4xl mx-auto">
             <div className="relative group">
               <div className={`absolute -inset-1 bg-gradient-to-r ${colors.integrated.gradients.sacredTech} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
-              <div className="relative bg-gradient-to-br from-purple-900/20 to-cyan-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 p-8 text-center">
+              <div className="relative bg-gradient-to-br from-purple-50/40 to-cyan-50/40 backdrop-blur-xl rounded-2xl border border-purple-200/40 p-8 text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <Briefcase className="w-6 h-6 text-cyan-400" />
-                  <Heart className="w-6 h-6 text-purple-400" />
+                  <Briefcase className="w-6 h-6 text-cyan-600" />
+                  <Heart className="w-6 h-6 text-purple-600" />
                 </div>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  {language === 'en' && 'This parallel journey has shaped a unique perspective: technical systems built with human consciousness at the core. Every project benefits from both mastery of code and depth of presence.'}
-                  {language === 'es' && 'Este camino paralelo ha formado una perspectiva única: sistemas técnicos construidos con consciencia humana en el núcleo. Cada proyecto se beneficia tanto de la maestría del código como de la profundidad de la presencia.'}
-                  {language === 'ca' && 'Aquest camí paral·lel ha format una perspectiva única: sistemes tècnics construïts amb consciència humana al nucli. Cada projecte es beneficia tant de la mestria del codi com de la profunditat de la presència.'}
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  {t.integration || (language === 'en' && 'This parallel journey has shaped a unique perspective: technical systems built with human consciousness at the core. Every project benefits from both mastery of code and depth of presence.') || (language === 'es' && 'Este camino paralelo ha formado una perspectiva única: sistemas técnicos construidos con consciencia humana en el núcleo. Cada proyecto se beneficia tanto de la maestría del código como de la profundidad de la presencia.') || (language === 'ca' && 'Aquest camí paral·lel ha format una perspectiva única: sistemes tècnics construïts amb consciència humana al nucli. Cada projecte es beneficia tant de la mestria del codi com de la profunditat de la presència.')}
                 </p>
               </div>
             </div>

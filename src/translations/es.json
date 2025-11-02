@@ -181,6 +181,8 @@
     "interests": [
       "Apps de Bienestar y Salud Mental",
       "Plataformas de Conexión Comunitaria",
+      "Infraestructura Web3, Blockchain y DAO",
+      "Integración de IA y Automatización",
       "Tecnología Regenerativa y Ecológica",
       "Desarrollo React Native",
       "Roles de CTO y Asesoría Técnica"
@@ -245,6 +247,119 @@
         "description": "Los mejores equipos son equipos de aprendizaje. Fomento culturas donde la curiosidad y el crecimiento se celebran, no solo la entrega."
       }
     ]
+  },
+  "servicesPage": {
+    "header": {
+      "title": "Servicios",
+      "subtitle": "Soluciones prácticas y escalables para pequeños negocios y productos independientes",
+      "description": "Todo lo que no requiere infraestructura masiva en tiempo real o integración de hardware. Construido con herramientas modernas, entregado rápido, escalado inteligentemente."
+    },
+    "smallBusiness": {
+      "title": "Para Pequeños Negocios",
+      "subtitle": "Herramientas que resuelven problemas reales para negocios reales",
+      "services": [
+        {
+          "title": "Sitios Web y Sistemas de Contenido",
+          "description": "Sitios de portafolio, blogs, plataformas de reservas de servicios",
+          "examples": ["Sitios web corporativos", "Gestión de contenido", "Sistemas de reservas", "Portales de clientes"]
+        },
+        {
+          "title": "Herramientas SaaS Simples",
+          "description": "Herramientas personalizadas para facturación, gestión de clientes, programación",
+          "examples": ["Sistemas de facturación", "Herramientas CRM", "Programación de citas", "Gestión de tareas"]
+        },
+        {
+          "title": "Embudos de Generación de Leads",
+          "description": "Páginas de destino y embudos optimizados para conversión",
+          "examples": ["Páginas de destino", "Formularios de captura de leads", "Automatización de email", "Dashboards de analíticas"]
+        },
+        {
+          "title": "Dashboards Administrativos",
+          "description": "Interfaces de visualización de datos y gestión",
+          "examples": ["Dashboards de analíticas", "Gestión de inventario", "Herramientas de informes", "Exportaciones de datos"]
+        },
+        {
+          "title": "Plataformas Comunitarias",
+          "description": "Sitios de membresía y compromiso comunitario",
+          "examples": ["Portales de miembros", "Foros y discusiones", "Suscripciones de contenido", "Gestión de eventos"]
+        }
+      ]
+    },
+    "standaloneProducts": {
+      "title": "Productos Independientes",
+      "subtitle": "Construir una vez, escalar a muchos - productos que generan valor recurrente",
+      "products": [
+        {
+          "title": "Herramientas SaaS de Nicho",
+          "description": "Automatización de flujos de trabajo y herramientas de datos específicas de la industria"
+        },
+        {
+          "title": "Mercados de Plantillas",
+          "description": "Plantillas y temas personalizables para varias plataformas"
+        },
+        {
+          "title": "Plataformas de Contenido",
+          "description": "Sistemas de newsletters, plataformas de cursos, hubs comunitarios"
+        },
+        {
+          "title": "Herramientas B2B Industriales",
+          "description": "Soluciones especializadas para verticales de negocio específicos"
+        },
+        {
+          "title": "Wrappers de API y Utilidades de IA",
+          "description": "Herramientas de integración y automatización impulsada por IA"
+        }
+      ]
+    },
+    "capabilities": {
+      "title": "Lo Que Es Realista",
+      "subtitle": "Stack moderno: Next.js, React, Supabase, APIs de IA - todo lo que necesitas para apps listas para producción",
+      "items": [
+        "Aplicaciones CRUD completas (bases de datos, formularios, filtros)",
+        "Sistemas de autenticación y gestión de usuarios",
+        "Integraciones de pago (Stripe, PayPal)",
+        "Características en tiempo real (Supabase, Firebase)",
+        "Integraciones de IA (ChatGPT, APIs de Claude)",
+        "Integraciones de APIs de terceros (Zapier, etc.)",
+        "Aplicaciones web y móviles responsivas",
+        "Dashboards de analíticas e informes"
+      ]
+    },
+    "skip": {
+      "title": "Lo Que Omitimos (Por Ahora)",
+      "subtitle": "Ser realistas sobre el alcance asegura que entregamos calidad, a tiempo, siempre.",
+      "items": [
+        "Motores gráficos/de juegos pesados",
+        "Infraestructura de video/streaming en vivo",
+        "Tiempo real complejo (como Figma)",
+        "Conexiones de hardware/IoT",
+        "Sistemas de trading de alta frecuencia",
+        "Infraestructura a escala empresarial"
+      ]
+    },
+    "process": {
+      "title": "Cómo Trabajamos",
+      "subtitle": "Rápido, iterativo y transparente - usando desarrollo moderno asistido por IA",
+      "steps": [
+        {
+          "title": "Descubrimiento y Alcance",
+          "description": "Mapeamos tus necesidades, validamos viabilidad y definimos entregables claros"
+        },
+        {
+          "title": "Prototipado Rápido",
+          "description": "Usando v0, ChatGPT y Cursor, construimos prototipos funcionales rápidamente"
+        },
+        {
+          "title": "Iterar y Desplegar",
+          "description": "Refinamos basándonos en feedback y desplegamos soluciones listas para producción"
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para Construir Algo Real?",
+      "description": "Hablemos sobre tu proyecto. Ya sea una herramienta para pequeños negocios o un producto independiente, entregaremos soluciones prácticas que realmente funcionan.",
+      "button": "Inicia una Conversación"
+    }
   },
   "footer": {
     "tagline": "Construyendo tecnología que sirve a la consciencia",

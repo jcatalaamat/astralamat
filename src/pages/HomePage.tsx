@@ -10,10 +10,14 @@ import enTranslations from '../translations/en.json';
 import esTranslations from '../translations/es.json';
 import caTranslations from '../translations/ca.json';
 
-export default function HomePage() {
+interface HomePageProps {
+  language?: 'en' | 'es' | 'ca';
+  onLanguageChange?: (language: 'en' | 'es' | 'ca') => void;
+}
+
+export default function HomePage({ language = 'en', onLanguageChange: _onLanguageChange }: HomePageProps) {
   const navigate = useNavigate();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [language, setLanguage] = useState<'en' | 'es' | 'ca'>('en');
 
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
@@ -32,7 +36,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+    <div className="min-h-screen bg-white text-zinc-900 overflow-hidden relative">
       {/* Animated mesh background */}
       <div className="fixed inset-0 opacity-30">
         <div className="absolute top-0 -left-4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
@@ -46,7 +50,7 @@ export default function HomePage() {
 
       {/* Grid overlay */}
       <div className="fixed inset-0 opacity-5" style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
       }}></div>
 
@@ -55,30 +59,30 @@ export default function HomePage() {
         <IntegratedHero language={language} translations={t} />
 
         {/* About Preview */}
-        <AboutPreview />
+        <AboutPreview language={language} translations={t} />
 
         {/* Services Preview */}
-        <ServicesPreview />
+        <ServicesPreview language={language} translations={t} />
 
         {/* Projects Preview */}
-        <ProjectsPreview />
+        <ProjectsPreview language={language} translations={t} />
 
         {/* Philosophy CTA */}
-        <section className="py-20 px-6 bg-gradient-to-b from-black to-gray-900/50">
+        <section className="py-20 px-6 bg-gradient-to-b from-white to-gray-100/50">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-cyan-500/10 rounded-2xl p-12 backdrop-blur-sm border border-white/10">
+            <div className="bg-gradient-to-r from-purple-100/30 via-pink-100/30 to-cyan-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 bg-clip-text text-transparent">
                   A Philosophy of Integration
                 </span>
               </h2>
-              <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+              <p className="text-zinc-700 text-lg mb-8 max-w-2xl mx-auto">
                 Discover the methodology that unites technical excellence with conscious awareness,
                 creating solutions that honor both innovation and humanity.
               </p>
               <button
                 onClick={() => navigate('/philosophy')}
-                className="px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-full font-semibold text-zinc-900 hover:shadow-lg hover:shadow-pink-600/50 transition-all duration-300 transform hover:scale-105"
               >
                 Explore the Philosophy
               </button>

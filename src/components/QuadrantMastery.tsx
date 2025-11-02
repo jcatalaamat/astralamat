@@ -53,13 +53,11 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
           <h2 className={`text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
             {t.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             {t.subtitle}
           </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            {language === 'en' && 'Four domains of mastery, integrated into one holistic approach'}
-            {language === 'es' && 'Cuatro dominios de maestría, integrados en un enfoque holístico'}
-            {language === 'ca' && 'Quatre dominis de mestria, integrats en un enfocament holístic'}
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            {t.integration || (language === 'en' && 'Four domains of mastery, integrated into one holistic approach') || (language === 'es' && 'Cuatro dominios de maestría, integrados en un enfoque holístico') || (language === 'ca' && 'Quatre dominis de mestria, integrats en un enfocament holístic')}
           </p>
         </div>
 
@@ -72,10 +70,10 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
               <div className={`absolute -inset-8 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} rounded-full blur-xl opacity-30 animate-pulse`} style={{animationDuration: '3s'}}></div>
 
               {/* Integration circle */}
-              <div className="relative w-20 h-20 rounded-full bg-zinc-950 border-4 border-transparent bg-clip-padding">
+              <div className="relative w-20 h-20 rounded-full bg-white border-4 border-transparent bg-clip-padding">
                 <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} opacity-50`}></div>
-                <div className="absolute inset-2 rounded-full bg-zinc-950 flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-purple-400" />
+                <div className="absolute inset-2 rounded-full bg-white flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-purple-600" />
                 </div>
               </div>
             </div>
@@ -93,13 +91,13 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
                   <div className={`absolute -inset-1 bg-gradient-to-r ${quadrant.gradient} rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500`}></div>
 
                   {/* Card */}
-                  <div className={`relative h-full ${isLeadership ? 'bg-gradient-to-br from-zinc-900/95 to-purple-900/20' : 'bg-zinc-900/80'} backdrop-blur-xl rounded-2xl border ${isLeadership ? 'border-purple-500/30' : 'border-white/10'} p-8`}>
+                  <div className={`relative h-full ${isLeadership ? 'bg-gradient-to-br from-white to-purple-50' : 'bg-white'} backdrop-blur-xl rounded-2xl border ${isLeadership ? 'border-purple-200' : 'border-gray-200'} p-8`}>
                     {/* Icon & Title */}
                     <div className="flex items-center gap-4 mb-6">
                       <div className={`p-3 rounded-xl bg-gradient-to-r ${quadrant.gradient}`}>
                         <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-white">{quadrant.title}</h3>
+                      <h3 className="text-2xl font-bold text-gray-900">{quadrant.title}</h3>
                     </div>
 
                     {/* Skills Grid */}
@@ -109,7 +107,7 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
                         {quadrant.items.map((principle: string, itemIndex: number) => (
                           <div
                             key={itemIndex}
-                            className="px-4 py-3 bg-white/5 backdrop-blur-xl border border-purple-500/20 rounded-xl text-gray-200 hover:bg-purple-500/10 hover:border-purple-400/40 transition-all group/item"
+                            className="px-4 py-3 bg-purple-50 backdrop-blur-xl border border-purple-200 rounded-xl text-gray-700 hover:bg-purple-100 hover:border-purple-300 transition-all group/item"
                           >
                             <div className="flex items-start gap-3">
                               <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform"></div>
@@ -124,7 +122,7 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
                         {quadrant.items.map((skill: string, itemIndex: number) => (
                           <div
                             key={itemIndex}
-                            className="px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-lg text-gray-300 hover:bg-white/10 hover:border-white/20 transition-all text-sm"
+                            className="px-4 py-2 bg-gray-100 backdrop-blur-xl border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-200 hover:border-gray-400 transition-all text-sm"
                           >
                             {skill}
                           </div>
@@ -143,18 +141,18 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
             {t.categories.architecture && (
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
+                <div className="relative bg-white backdrop-blur-xl rounded-2xl border border-gray-200 p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500">
                       <Blocks className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">{t.categories.architecture.title}</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{t.categories.architecture.title}</h3>
                   </div>
                   <div className="flex flex-wrap gap-3">
                     {t.categories.architecture.items.map((skill: string, index: number) => (
                       <div
                         key={index}
-                        className="px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-lg text-gray-300 hover:bg-white/10 hover:border-white/20 transition-all text-sm"
+                        className="px-4 py-2 bg-gray-100 backdrop-blur-xl border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-200 hover:border-gray-400 transition-all text-sm"
                       >
                         {skill}
                       </div>
@@ -168,18 +166,18 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
             {t.categories.devops && (
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
+                <div className="relative bg-white backdrop-blur-xl rounded-2xl border border-gray-200 p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-3 rounded-xl bg-gradient-to-r from-orange-500 to-red-500">
                       <Cloud className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">{t.categories.devops.title}</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{t.categories.devops.title}</h3>
                   </div>
                   <div className="flex flex-wrap gap-3">
                     {t.categories.devops.items.map((skill: string, index: number) => (
                       <div
                         key={index}
-                        className="px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-lg text-gray-300 hover:bg-white/10 hover:border-white/20 transition-all text-sm"
+                        className="px-4 py-2 bg-gray-100 backdrop-blur-xl border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-200 hover:border-gray-400 transition-all text-sm"
                       >
                         {skill}
                       </div>
@@ -192,13 +190,11 @@ const QuadrantMastery = ({ language, translations }: QuadrantMasteryProps) => {
 
           {/* Integration Statement */}
           <div className="mt-12 text-center">
-            <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20">
-              <p className="text-sm text-purple-300 font-medium flex items-center gap-2">
+            <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-100 to-cyan-100 border border-purple-200">
+              <p className="text-sm text-purple-700 font-medium flex items-center gap-2">
                 <Brain className="w-4 h-4" />
                 <span>
-                  {language === 'en' && 'Technical excellence meets conscious leadership'}
-                  {language === 'es' && 'Excelencia técnica encuentra liderazgo consciente'}
-                  {language === 'ca' && 'Excel·lència tècnica troba lideratge conscient'}
+                  {t.statement || (language === 'en' && 'Technical excellence meets conscious leadership') || (language === 'es' && 'Excelencia técnica encuentra liderazgo consciente') || (language === 'ca' && 'Excel·lència tècnica troba lideratge conscient')}
                 </span>
               </p>
             </div>

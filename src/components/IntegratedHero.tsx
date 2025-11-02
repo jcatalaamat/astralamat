@@ -54,7 +54,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="sacred-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <circle cx="50" cy="50" r="1" fill="currentColor" className="text-purple-400" />
+              <circle cx="50" cy="50" r="1" fill="currentColor" className="text-purple-600" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#sacred-grid)" />
@@ -80,7 +80,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
             </div>
 
             {/* Main Tagline */}
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-2xl md:text-4xl font-bold text-zinc-900 mb-6">
               {language === 'en' && 'Where Code Meets Consciousness'}
               {language === 'es' && 'Donde el Código Encuentra la Consciencia'}
               {language === 'ca' && 'On el Codi Troba la Consciència'}
@@ -88,7 +88,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
 
             {/* Subtitle with dual nature */}
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+              <p className="text-lg md:text-xl text-zinc-700 leading-relaxed mb-8">
                 {t.tagline}
               </p>
             </div>
@@ -99,16 +99,16 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
             {/* Technical Mastery Card */}
             <div className="relative group">
               <div className={`absolute -inset-1 bg-gradient-to-r ${colors.tech.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
-              <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
+              <div className="relative bg-cyan-50 backdrop-blur-xl rounded-2xl border border-cyan-200 p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <Code2 className="w-8 h-8 text-cyan-400" />
-                  <h3 className="text-2xl font-bold text-white">
+                  <Code2 className="w-8 h-8 text-cyan-600" />
+                  <h3 className="text-2xl font-bold text-cyan-900">
                     {language === 'en' && 'Technical Excellence'}
                     {language === 'es' && 'Excelencia Técnica'}
                     {language === 'ca' && 'Excel·lència Tècnica'}
                   </h3>
                 </div>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-cyan-800 leading-relaxed">
                   {language === 'en' && '10+ years architecting scalable systems. From React Native to blockchain DAOs. CTO-level technical leadership with a track record of shipping products that scale.'}
                   {language === 'es' && '10+ años arquitectando sistemas escalables. De React Native a DAOs blockchain. Liderazgo técnico nivel CTO con historial de productos que escalan.'}
                   {language === 'ca' && '10+ anys arquitectant sistemes escalables. De React Native a DAOs blockchain. Lideratge tècnic nivell CTO amb historial de productes que escalen.'}
@@ -119,16 +119,16 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
             {/* Conscious Integration Card */}
             <div className="relative group">
               <div className={`absolute -inset-1 bg-gradient-to-r ${colors.spirit.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-30 transition`}></div>
-              <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-purple-500/20 p-8">
+              <div className="relative bg-purple-50 backdrop-blur-xl rounded-2xl border border-purple-200 p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <Sparkles className="w-8 h-8 text-purple-400" />
-                  <h3 className="text-2xl font-bold text-white">
+                  <Sparkles className="w-8 h-8 text-purple-600" />
+                  <h3 className="text-2xl font-bold text-purple-900">
                     {language === 'en' && 'Holistic Awareness'}
                     {language === 'es' && 'Consciencia Holística'}
                     {language === 'ca' && 'Consciència Holística'}
                   </h3>
                 </div>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-purple-800 leading-relaxed">
                   {language === 'en' && '5+ years of deep inner work. Systems thinking meets spiritual practice. I build technology that serves human flourishing, not just business metrics.'}
                   {language === 'es' && '5+ años de trabajo interior profundo. Pensamiento sistémico encuentra práctica espiritual. Construyo tecnología que sirve al florecimiento humano, no solo métricas.'}
                   {language === 'ca' && '5+ anys de treball interior profund. Pensament sistèmic troba pràctica espiritual. Construeixo tecnologia que serveix el florixement humà, no només mètriques.'}
@@ -154,9 +154,9 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
             <a
               href="/Jordi-Amat-CV.pdf"
               download="Jordi-Amat-CV.pdf"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-bold rounded-lg hover:bg-white/10 hover:border-white/30 hover:shadow-lg hover:shadow-cyan-500/30 transform hover:scale-105 transition-all"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gray-100 backdrop-blur-xl border border-gray-300 text-zinc-900 font-bold rounded-lg hover:bg-gray-200 hover:border-gray-400 hover:shadow-lg hover:shadow-cyan-400/30 transform hover:scale-105 transition-all"
             >
-              <Download className="w-5 h-5 text-cyan-400 group-hover:translate-y-0.5 transition-transform" />
+              <Download className="w-5 h-5 text-cyan-600 group-hover:translate-y-0.5 transition-transform" />
               <span>
                 {language === 'en' && 'Download CV'}
                 {language === 'es' && 'Descargar CV'}
@@ -169,7 +169,7 @@ const IntegratedHero = ({ language, translations }: IntegratedHeroProps) => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-purple-400 opacity-50" />
+        <ChevronDown className="w-6 h-6 text-purple-600 opacity-50" />
       </div>
     </section>
   );

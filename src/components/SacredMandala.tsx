@@ -46,7 +46,7 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
             <h2 className={`text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
               {t.title}
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               {t.subtitle}
             </p>
           </div>
@@ -62,14 +62,12 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
                   <div className={`absolute -inset-12 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} rounded-full blur-2xl opacity-30 animate-pulse`} style={{animationDuration: '4s'}}></div>
 
                   {/* Center symbol */}
-                  <div className="relative w-32 h-32 rounded-full bg-zinc-950 border-4 border-transparent">
+                  <div className="relative w-32 h-32 rounded-full bg-white border-4 border-transparent">
                     <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} opacity-50`}></div>
-                    <div className="absolute inset-2 rounded-full bg-gradient-to-br from-zinc-900/95 to-purple-900/40 backdrop-blur-xl border border-purple-500/30 flex flex-col items-center justify-center">
-                      <Circle className="w-8 h-8 text-purple-400 mb-1" />
-                      <span className="text-xs text-purple-300 font-semibold">
-                        {language === 'en' && 'Integration'}
-                        {language === 'es' && 'Integración'}
-                        {language === 'ca' && 'Integració'}
+                    <div className="absolute inset-2 rounded-full bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl border border-purple-400/30 flex flex-col items-center justify-center">
+                      <Circle className="w-8 h-8 text-purple-600 mb-1" />
+                      <span className="text-xs text-purple-700 font-semibold">
+                        {t.centerLabel || (language === 'en' && 'Integration') || (language === 'es' && 'Integración') || (language === 'ca' && 'Integració')}
                       </span>
                     </div>
                   </div>
@@ -101,7 +99,7 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
                       className="absolute top-1/2 left-1/2 w-px h-full origin-left opacity-20"
                       style={{
                         transform: `rotate(${angle + 90}deg)`,
-                        background: `linear-gradient(to bottom, rgba(139, 92, 246, 0.3), transparent)`,
+                        background: `linear-gradient(to bottom, rgba(147, 102, 234, 0.4), transparent)`,
                         height: `${radius - 60}px`,
                         marginLeft: '-1px',
                       }}
@@ -113,19 +111,19 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
                       <div className={`absolute -inset-1 bg-gradient-to-r ${colors.spirit.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500`}></div>
 
                       {/* Card */}
-                      <div className="relative bg-gradient-to-br from-zinc-900/95 to-purple-900/30 backdrop-blur-xl rounded-2xl border border-purple-500/30 p-6 hover:border-purple-400/50 transition-all duration-300">
+                      <div className="relative bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl rounded-2xl border border-purple-400/30 p-6 hover:border-purple-300/50 transition-all duration-300">
                         {/* Icon */}
                         <div className="mb-4">
-                          <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.glow} border border-purple-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                            <Icon className="w-6 h-6 text-purple-400 group-hover:text-cyan-400 transition-colors" />
+                          <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.glow} border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                            <Icon className="w-6 h-6 text-purple-600 group-hover:text-cyan-600 transition-colors" />
                           </div>
                         </div>
 
                         {/* Content */}
-                        <h3 className="text-lg font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
+                        <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-cyan-600 group-hover:bg-clip-text transition-all duration-300">
                           {principle.title}
                         </h3>
-                        <p className="text-gray-400 leading-relaxed text-sm">
+                        <p className="text-gray-600 leading-relaxed text-sm">
                           {principle.description}
                         </p>
                       </div>
@@ -146,19 +144,19 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
                     <div className={`absolute -inset-1 bg-gradient-to-r ${colors.spirit.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500`}></div>
 
                     {/* Card */}
-                    <div className="relative bg-gradient-to-br from-zinc-900/95 to-purple-900/30 backdrop-blur-xl rounded-2xl border border-purple-500/30 p-8 h-full hover:border-purple-400/50 transition-all duration-300">
+                    <div className="relative bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl rounded-2xl border border-purple-400/30 p-8 h-full hover:border-purple-300/50 transition-all duration-300">
                       {/* Icon */}
                       <div className="mb-6">
-                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${colors.spirit.gradients.glow} border border-purple-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon className="w-7 h-7 text-purple-400 group-hover:text-cyan-400 transition-colors" />
+                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${colors.spirit.gradients.glow} border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                          <Icon className="w-7 h-7 text-purple-600 group-hover:text-cyan-600 transition-colors" />
                         </div>
                       </div>
 
                       {/* Content */}
-                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-cyan-600 group-hover:bg-clip-text transition-all duration-300">
                         {principle.title}
                       </h3>
-                      <p className="text-gray-400 leading-relaxed">
+                      <p className="text-gray-600 leading-relaxed">
                         {principle.description}
                       </p>
                     </div>
@@ -169,11 +167,9 @@ const SacredMandala = ({ language, translations }: SacredMandalaProps) => {
 
             {/* Bottom Accent */}
             <div className="mt-20 text-center">
-              <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20">
-                <p className="text-sm text-purple-300 font-medium">
-                  {language === 'en' && 'These principles guide every decision, every line of code, every team interaction'}
-                  {language === 'es' && 'Estos principios guían cada decisión, cada línea de código, cada interacción de equipo'}
-                  {language === 'ca' && 'Aquests principis guien cada decisió, cada línia de codi, cada interacció d\'equip'}
+              <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-400/10 to-cyan-400/10 border border-purple-400/20">
+                <p className="text-sm text-purple-700 font-medium">
+                  {t.closing || (language === 'en' && 'These principles guide every decision, every line of code, every team interaction') || (language === 'es' && 'Estos principios guían cada decisión, cada línea de código, cada interacción de equipo') || (language === 'ca' && 'Aquests principis guien cada decisió, cada línia de codi, cada interacció d\'equip')}
                 </p>
               </div>
             </div>

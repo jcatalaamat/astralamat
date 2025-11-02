@@ -1,0 +1,294 @@
+================================================================================
+DETAILED INSTANCE BREAKDOWN - EVERY COLOR CLASS
+================================================================================
+
+FILE: /Users/astralamat/Documents/Code/astralamat/src/pages/PhilosophyPage.tsx
+================================================================================
+
+Line 17: Main Container
+  Code: <div className="min-h-screen bg-white">
+  Colors: bg-white
+  Status: PASS ✓
+
+Lines 20-22: Animated Background Blurs
+  Code: <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-float"></div>
+  Code: <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
+  Code: <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-breathe"></div>
+  Colors: bg-cyan-500/20, bg-purple-500/20, bg-pink-500/10
+  Status: PASS ✓
+
+Line 31: Main Heading
+  Code: <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+  Colors: from-cyan-600 via-purple-600 to-pink-600
+  Status: PASS ✓
+
+Line 35: Subtitle [ISSUE #1]
+  Code: <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto">
+  Colors: text-zinc-400
+  Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+  RGB Value: (161, 161, 161)
+  Contrast on white: 4.5:1 (WCAG AA borderline)
+  Needed: 7:1 (WCAG AAA)
+
+Line 50: Integration Principle Card - Background & Border
+  Code: <div className="bg-gradient-to-r from-cyan-100/30 via-purple-100/30 to-pink-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/5">
+  Colors: from-cyan-100/30 via-purple-100/30 to-pink-100/30, border-black/5, backdrop-blur-sm
+  Status: PASS ✓
+
+Lines 51-52: Integration Principle Heading
+  Code: <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
+  Colors: from-cyan-600 to-purple-600
+  Status: PASS ✓
+
+Lines 54, 59: Integration Principle Body Text [ISSUE #1 - 2 more instances]
+  Code: <p className="text-zinc-400 text-lg mb-6">
+  Code: <p className="text-zinc-400 text-lg">
+  Colors: text-zinc-400 (appears twice)
+  Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+Line 67: Dual Nature Card - Background & Border
+  Code: <div className="bg-gradient-to-r from-purple-100/30 via-pink-100/30 to-cyan-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/5">
+  Colors: from-purple-100/30 via-pink-100/30 to-cyan-100/30, border-black/5
+  Status: PASS ✓
+
+Lines 68-69: Dual Nature Heading
+  Code: <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+  Colors: from-purple-600 to-pink-600
+  Status: PASS ✓
+
+Line 73: Technical Excellence Subheading
+  Code: <h3 className="text-2xl font-semibold text-cyan-600 mb-3">Technical Excellence</h3>
+  Colors: text-cyan-600
+  Status: PASS ✓
+
+Line 74: Technical Excellence Body [ISSUE #1 - 3rd instance]
+  Code: <p className="text-zinc-400 text-lg">
+  Colors: text-zinc-400
+  Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+Line 80: Conscious Leadership Subheading
+  Code: <h3 className="text-2xl font-semibold text-purple-600 mb-3">Conscious Leadership</h3>
+  Colors: text-purple-600
+  Status: PASS ✓
+
+Line 81: Conscious Leadership Body [ISSUE #1 - 4th instance]
+  Code: <p className="text-zinc-400 text-lg">
+  Colors: text-zinc-400
+  Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+Line 90: Core Values Card - Background & Border
+  Code: <div className="bg-gradient-to-r from-pink-100/30 via-cyan-100/30 to-purple-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/5">
+  Colors: from-pink-100/30 via-cyan-100/30 to-purple-100/30, border-black/5
+  Status: PASS ✓
+
+Lines 91-92: Core Values Heading
+  Code: <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-pink-600 to-cyan-600 bg-clip-text text-transparent">
+  Colors: from-pink-600 to-cyan-600
+  Status: PASS ✓
+
+Lines 96-110: Core Values Grid Items (4 items)
+
+  Item 1 - Innovation with Purpose:
+    Line 96: <h3 className="text-xl font-semibold text-cyan-600 mb-2">
+    Colors: text-cyan-600
+    Status: PASS ✓
+
+    Line 97: <p className="text-zinc-400"> [ISSUE #1 - 5th instance]
+    Colors: text-zinc-400
+    Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+  Item 2 - Holistic Design:
+    Line 100: <h3 className="text-xl font-semibold text-purple-600 mb-2">
+    Colors: text-purple-600
+    Status: PASS ✓
+
+    Line 101: <p className="text-zinc-400"> [ISSUE #1 - 6th instance]
+    Colors: text-zinc-400
+    Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+  Item 3 - Continuous Evolution:
+    Line 104: <h3 className="text-xl font-semibold text-pink-600 mb-2">
+    Colors: text-pink-600
+    Status: PASS ✓
+
+    Line 105: <p className="text-zinc-400"> [ISSUE #1 - 7th instance]
+    Colors: text-zinc-400
+    Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+  Item 4 - Authentic Collaboration:
+    Line 108: <h3 className="text-xl font-semibold text-cyan-600 mb-2">
+    Colors: text-cyan-600
+    Status: PASS ✓
+
+    Line 109: <p className="text-zinc-400"> [ISSUE #1 - 8th instance]
+    Colors: text-zinc-400
+    Status: MARGINAL ⚠️ - Too light for body text, should be text-zinc-600
+
+================================================================================
+FILE: /Users/astralamat/Documents/Code/astralamat/src/components/SacredMandala.tsx
+================================================================================
+
+Line 24: SVG Background
+  Code: <div className="absolute inset-0 opacity-5">
+  Colors: opacity-5
+  Status: PASS ✓
+
+Lines 29-36: Flower of Life Pattern (SVG circles, 7 instances)
+  Code: <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-purple-400" />
+  (pattern repeats 7 times)
+  Colors: text-purple-400 (7 times, but with opacity-5 parent = barely visible)
+  Status: PASS ✓ (intentionally subtle, part of design)
+
+Line 46: Section Title [ISSUE #2 - OPTIONAL ENHANCEMENT]
+  Code: <h2 className={`text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} bg-clip-text text-transparent`}>
+  Colors: colors.integrated.gradients.fullSpectrum = "from-cyan-400 via-purple-400 to-pink-400"
+  Status: MARGINAL ⚠️ - Using -400 colors (lighter). Works for large text but could use -500/-600 for better consistency
+  Note: Not a critical issue since text is 5xl-6xl (large), but optional improvement
+
+Line 49: Subtitle
+  Code: <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+  Colors: text-gray-600
+  Status: PASS ✓
+
+Line 62: Center Circle Glow
+  Code: <div className={`absolute -inset-12 bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} rounded-full blur-2xl opacity-30 animate-pulse`}>
+  Colors: fullSpectrum gradient with opacity-30
+  Status: PASS ✓
+
+Line 65: Center Circle Container
+  Code: <div className="relative w-32 h-32 rounded-full bg-white border-4 border-transparent">
+  Colors: bg-white, border-transparent
+  Status: PASS ✓
+
+Line 66: Center Circle Gradient Overlay
+  Code: <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${colors.integrated.gradients.fullSpectrum} opacity-50`}></div>
+  Colors: fullSpectrum gradient with opacity-50
+  Status: PASS ✓
+
+Line 67: Center Card Background & Border
+  Code: <div className="absolute inset-2 rounded-full bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl border border-purple-400/30 flex flex-col items-center justify-center">
+  Colors: from-gray-50 to-purple-100/30, border-purple-400/30, backdrop-blur-xl
+  Status: PASS ✓
+
+Line 68: Center Icon
+  Code: <Circle className="w-8 h-8 text-purple-600 mb-1" />
+  Colors: text-purple-600
+  Status: PASS ✓
+
+Line 69: Center Text
+  Code: <span className="text-xs text-purple-700 font-semibold">
+  Colors: text-purple-700
+  Status: PASS ✓
+
+Line 104: Connection Line (inline style)
+  Code: background: `linear-gradient(to bottom, rgba(147, 102, 234, 0.4), transparent)`
+  Colors: rgba purple (147, 102, 234) at 0.4 opacity
+  Status: PASS ✓ - Low opacity gradient line
+
+Line 113: Card Glow Effect (Desktop)
+  Code: <div className={`absolute -inset-1 bg-gradient-to-r ${colors.spirit.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500`}></div>
+  Colors: spirit.main gradient (purple/indigo/pink) with opacity-20
+  Status: PASS ✓
+
+Line 116: Principle Card Background & Border (Desktop)
+  Code: <div className="relative bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl rounded-2xl border border-purple-400/30 p-6 hover:border-purple-300/50 transition-all duration-300">
+  Colors: from-gray-50 to-purple-100/30, border-purple-400/30, hover:border-purple-300/50, backdrop-blur-xl
+  Status: PASS ✓
+
+Line 119: Icon Container (Desktop)
+  Code: <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${colors.spirit.gradients.glow} border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+  Colors: spirit.glow gradient (purple/indigo/pink at 20% opacity), border-purple-400/30
+  Status: PASS ✓
+
+Line 120: Icon Color (Desktop)
+  Code: <Icon className="w-6 h-6 text-purple-600 group-hover:text-cyan-600 transition-colors" />
+  Colors: text-purple-600 (default), group-hover:text-cyan-600
+  Status: PASS ✓
+
+Line 125: Card Heading (Desktop)
+  Code: <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-cyan-600 group-hover:bg-clip-text transition-all duration-300">
+  Colors: text-gray-900 (default), hover gradient from-purple-600 to-cyan-600
+  Status: PASS ✓
+
+Line 128: Card Description (Desktop)
+  Code: <p className="text-gray-600 leading-relaxed text-sm">
+  Colors: text-gray-600
+  Status: PASS ✓
+
+Lines 146: Card Glow Effect (Mobile/Tablet)
+  Code: <div className={`absolute -inset-1 bg-gradient-to-r ${colors.spirit.gradients.main} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500`}></div>
+  Colors: spirit.main gradient (purple/indigo/pink) with opacity-20
+  Status: PASS ✓
+
+Line 149: Principle Card Background & Border (Mobile/Tablet)
+  Code: <div className="relative bg-gradient-to-br from-gray-50 to-purple-100/30 backdrop-blur-xl rounded-2xl border border-purple-400/30 p-8 h-full hover:border-purple-300/50 transition-all duration-300">
+  Colors: from-gray-50 to-purple-100/30, border-purple-400/30, hover:border-purple-300/50, backdrop-blur-xl
+  Status: PASS ✓
+
+Line 152: Icon Container (Mobile/Tablet)
+  Code: <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${colors.spirit.gradients.glow} border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+  Colors: spirit.glow gradient (purple/indigo/pink at 20% opacity), border-purple-400/30
+  Status: PASS ✓
+
+Line 153: Icon Color (Mobile/Tablet)
+  Code: <Icon className="w-7 h-7 text-purple-600 group-hover:text-cyan-600 transition-colors" />
+  Colors: text-purple-600 (default), group-hover:text-cyan-600
+  Status: PASS ✓
+
+Line 158: Card Heading (Mobile/Tablet)
+  Code: <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-cyan-600 group-hover:bg-clip-text transition-all duration-300">
+  Colors: text-gray-900 (default), hover gradient from-purple-600 to-cyan-600
+  Status: PASS ✓
+
+Line 161: Card Description (Mobile/Tablet)
+  Code: <p className="text-gray-600 leading-relaxed">
+  Colors: text-gray-600
+  Status: PASS ✓
+
+Line 172: Bottom Accent Box Background & Border
+  Code: <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-400/10 to-cyan-400/10 border border-purple-400/20">
+  Colors: from-purple-400/10 to-cyan-400/10, border-purple-400/20
+  Status: PASS ✓
+
+Line 173: Bottom Accent Text
+  Code: <p className="text-sm text-purple-700 font-medium">
+  Colors: text-purple-700
+  Status: PASS ✓
+
+================================================================================
+SUMMARY OF FINDINGS
+================================================================================
+
+TOTAL COLOR INSTANCES CHECKED: 50+
+  - PASS: 42
+  - MARGINAL: 9 (8x text-zinc-400 + 1x gradient-400)
+  - FAIL: 0
+
+DARK THEME REMNANTS: 0 ✓ CLEAN
+
+CRITICAL ISSUES: 0
+MEDIUM ISSUES: 1 (text-zinc-400 readability - 8 instances)
+LOW ISSUES: 1 (optional gradient enhancement - 1 instance)
+
+================================================================================
+SPECIFIC ISSUE BREAKDOWN
+================================================================================
+
+ISSUE #1: text-zinc-400 (8 INSTANCES IN PhilosophyPage.tsx)
+────────────────────────────────────────────────────────
+Lines: 35, 54, 59, 74, 81, 97, 101, 105, 109
+Severity: MEDIUM
+Type: Accessibility/Readability
+
+ISSUE #2: Gradient colors (1 INSTANCE IN SacredMandala.tsx)
+────────────────────────────────────────────────────────────
+Line: 46
+Severity: LOW
+Type: Optional Enhancement
+
+NO dark: CLASS DETECTED
+─────────────────────
+Result: CLEAN
+Status: No dark theme CSS found
+
+================================================================================

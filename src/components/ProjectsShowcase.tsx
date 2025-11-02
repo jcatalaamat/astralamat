@@ -22,7 +22,7 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
             {t.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             {t.subtitle}
           </p>
 
@@ -35,7 +35,7 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
                   activeFilter === category
                     ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/50'
-                    : 'bg-white/5 text-gray-400 hover:bg-white/10 border border-white/10'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300'
                 }`}
               >
                 {category}
@@ -67,7 +67,7 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
                 <div className={`absolute -inset-1 bg-gradient-to-r ${gradient} rounded-2xl blur opacity-20 group-hover:opacity-40 transition`}></div>
 
                 {/* Card */}
-                <div className="relative bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8 h-full flex flex-col hover:border-white/30 transition-all cursor-pointer transform group-hover:scale-[1.02]">
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-2xl border border-gray-300 p-8 h-full flex flex-col hover:border-gray-400 transition-all cursor-pointer transform group-hover:scale-[1.02]">
                   {/* Category Badge */}
                   <div className="mb-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r ${gradient} text-white`}>
@@ -76,13 +76,13 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Code className="w-6 h-6" />
                     {project.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-400 mb-6 flex-grow leading-relaxed">
+                  <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
                     {project.description}
                   </p>
 
@@ -91,7 +91,7 @@ const ProjectsShowcase = ({ translations }: ProjectsShowcaseProps) => {
                     {project.tech.map((tech: string, techIndex: number) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-300"
+                        className="px-3 py-1 bg-gray-100 border border-gray-300 rounded-lg text-sm text-gray-600"
                       >
                         {tech}
                       </span>

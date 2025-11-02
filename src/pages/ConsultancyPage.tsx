@@ -76,18 +76,18 @@ export default function ConsultancyPage() {
   ];
 
   const technicalCapabilities = [
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Full CRUD applications (databases, forms, filters)' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Authentication & user management systems' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Payment integrations (Stripe, PayPal)' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Real-time features (Supabase, Firebase)' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'AI integrations (ChatGPT, Claude APIs)' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Third-party API integrations (Zapier, etc.)' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Responsive web & mobile applications' },
-    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-400" />, text: 'Analytics & reporting dashboards' }
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Full CRUD applications (databases, forms, filters)' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Authentication & user management systems' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Payment integrations (Stripe, PayPal)' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Real-time features (Supabase, Firebase)' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'AI integrations (ChatGPT, Claude APIs)' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Third-party API integrations (Zapier, etc.)' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Responsive web & mobile applications' },
+    { icon: <CheckCircle2 className="w-5 h-5 text-cyan-600" />, text: 'Analytics & reporting dashboards' }
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-float"></div>
@@ -101,14 +101,14 @@ export default function ConsultancyPage() {
         <section className="pt-32 pb-16 px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Consultancy Services
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-zinc-600 max-w-3xl mx-auto mb-8">
               Practical, scalable solutions for small businesses and standalone products
             </p>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
               Everything that doesn't require massive real-time infrastructure or hardware integration.
               Built with modern tools, delivered fast, scaled smart.
             </p>
@@ -120,11 +120,11 @@ export default function ConsultancyPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
                   For Small Businesses
                 </span>
               </h2>
-              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
                 Your distribution play - tools that solve real problems for real businesses
               </p>
             </div>
@@ -133,16 +133,16 @@ export default function ConsultancyPage() {
               {smallBusinessServices.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl p-6 backdrop-blur-sm border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300"
+                  className="bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-2xl p-6 backdrop-blur-sm border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300"
                 >
-                  <div className="text-cyan-400 mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-gray-300 mb-4">{service.description}</p>
+                  <div className="text-cyan-600 mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-bold text-zinc-900 mb-2">{service.title}</h3>
+                  <p className="text-zinc-600 mb-4">{service.description}</p>
                   <div className="space-y-2">
                     {service.examples.map((example, exIndex) => (
                       <div key={exIndex} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
-                        <span className="text-sm text-gray-400">{example}</span>
+                        <div className="w-1.5 h-1.5 bg-cyan-600 rounded-full"></div>
+                        <span className="text-sm text-zinc-500">{example}</span>
                       </div>
                     ))}
                   </div>
@@ -153,15 +153,15 @@ export default function ConsultancyPage() {
         </section>
 
         {/* Standalone Products */}
-        <section className="py-16 px-6 bg-gradient-to-b from-black to-gray-900/50">
+        <section className="py-16 px-6 bg-gradient-to-b from-white to-gray-100/50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Standalone Products
                 </span>
               </h2>
-              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
                 Build once, scale to many - products that generate recurring value
               </p>
             </div>
@@ -173,10 +173,10 @@ export default function ConsultancyPage() {
                   className={`bg-gradient-to-br ${product.gradient} rounded-2xl p-6 backdrop-blur-sm border ${product.borderColor} transition-all duration-300 transform hover:scale-105`}
                 >
                   <div className="text-4xl mb-4">
-                    <Rocket className="w-10 h-10 text-purple-400" />
+                    <Rocket className="w-10 h-10 text-purple-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">{product.title}</h3>
-                  <p className="text-gray-300">{product.description}</p>
+                  <h3 className="text-xl font-bold text-zinc-900 mb-2">{product.title}</h3>
+                  <p className="text-zinc-600">{product.description}</p>
                 </div>
               ))}
             </div>
@@ -188,21 +188,21 @@ export default function ConsultancyPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                   What's Realistic
                 </span>
               </h2>
-              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
                 Modern stack: Next.js, React, Supabase, AI APIs - everything you need for production-ready apps
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-white/10">
+            <div className="bg-gradient-to-r from-cyan-100/30 via-purple-100/30 to-pink-100/30 rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-gray-300/30">
               <div className="grid md:grid-cols-2 gap-4">
                 {technicalCapabilities.map((capability, index) => (
                   <div key={index} className="flex items-start gap-3">
                     {capability.icon}
-                    <span className="text-gray-300">{capability.text}</span>
+                    <span className="text-zinc-600">{capability.text}</span>
                   </div>
                 ))}
               </div>
@@ -211,38 +211,38 @@ export default function ConsultancyPage() {
         </section>
 
         {/* What We Skip */}
-        <section className="py-16 px-6 bg-gradient-to-b from-black to-gray-900/50">
+        <section className="py-16 px-6 bg-gradient-to-b from-white to-gray-100/50">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-gray-500/10 to-gray-600/10 rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-gray-500/20">
+            <div className="bg-gradient-to-r from-gray-100/50 to-gray-200/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-gray-400/20">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">
-                <span className="text-gray-400">What We Skip (For Now)</span>
+                <span className="text-zinc-600">What We Skip (For Now)</span>
               </h3>
-              <p className="text-gray-400 text-center mb-6">
+              <p className="text-zinc-600 text-center mb-6">
                 Being realistic about scope ensures we deliver quality, on time, every time.
               </p>
-              <div className="grid md:grid-cols-2 gap-4 text-gray-500">
+              <div className="grid md:grid-cols-2 gap-4 text-zinc-500">
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>Heavy graphics/gaming engines</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>Live video/streaming infrastructure</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>Complex real-time (like Figma)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>Hardware connections/IoT</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>High-frequency trading systems</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-400">✗</span>
+                  <span className="text-red-500">✗</span>
                   <span>Enterprise-scale infrastructure</span>
                 </div>
               </div>
@@ -255,42 +255,42 @@ export default function ConsultancyPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
                   How We Work
                 </span>
               </h2>
-              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
                 Fast, iterative, and transparent - using modern AI-assisted development
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Discovery & Scoping</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl font-bold text-zinc-900 mb-2">Discovery & Scoping</h3>
+                <p className="text-zinc-600">
                   We map out your needs, validate feasibility, and define clear deliverables
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Rapid Prototyping</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl font-bold text-zinc-900 mb-2">Rapid Prototyping</h3>
+                <p className="text-zinc-600">
                   Using v0, ChatGPT, and Cursor, we build working prototypes fast
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Iterate & Deploy</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl font-bold text-zinc-900 mb-2">Iterate & Deploy</h3>
+                <p className="text-zinc-600">
                   We refine based on feedback and deploy production-ready solutions
                 </p>
               </div>
@@ -301,17 +301,17 @@ export default function ConsultancyPage() {
         {/* CTA */}
         <section className="py-16 px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl p-12 backdrop-blur-sm border border-white/10 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="bg-gradient-to-r from-cyan-100/30 via-purple-100/30 to-pink-100/30 rounded-2xl p-12 backdrop-blur-sm border border-gray-300/30 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
                 Ready to Build Something Real?
               </h2>
-              <p className="text-gray-300 text-lg mb-8">
+              <p className="text-zinc-600 text-lg mb-8">
                 Let's talk about your project. Whether it's a small business tool or a standalone product,
                 we'll deliver practical solutions that actually work.
               </p>
               <button
                 onClick={() => navigate('/contact')}
-                className="px-8 py-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
               >
                 Start a Conversation
               </button>
