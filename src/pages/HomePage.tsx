@@ -9,6 +9,8 @@ import ContactSection from '../components/ContactSection';
 import enTranslations from '../translations/en.json';
 import esTranslations from '../translations/es.json';
 import caTranslations from '../translations/ca.json';
+import { useScrollTracking } from '../hooks/useScrollTracking';
+import { trackCTAClick } from '../utils/analytics';
 
 interface HomePageProps {
   language?: 'en' | 'es' | 'ca';
@@ -20,6 +22,9 @@ export default function HomePage({ language = 'en', onLanguageChange: _onLanguag
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
+
+  // Initialize scroll tracking
+  useScrollTracking();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -81,7 +86,10 @@ export default function HomePage({ language = 'en', onLanguageChange: _onLanguag
                 creating solutions that honor both innovation and humanity.
               </p>
               <button
-                onClick={() => navigate('/philosophy')}
+                onClick={() => {
+                  trackCTAClick('Explore the Philosophy', '/home', '/philosophy');
+                  navigate('/philosophy');
+                }}
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-full font-semibold text-zinc-900 hover:shadow-lg hover:shadow-pink-600/50 transition-all duration-300 transform hover:scale-105"
               >
                 Explore the Philosophy

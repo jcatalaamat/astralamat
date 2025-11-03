@@ -216,7 +216,60 @@
     "phone": "+34 611 14 41 70",
     "location": "Remoto · Barcelona, ES · Londres, UK · Abierto a México",
     "note": "También ofrezco mentoría de liderazgo limitada para líderes técnicos navegando la integración de excelencia y humanidad.",
-    "otherWork": "También explorando: Inner Ascend · Proyecto Salvaje · Mentoría Espiritual"
+    "otherWork": "También explorando: Inner Ascend · Proyecto Salvaje · Mentoría Espiritual",
+    "infoCards": {
+      "email": {
+        "title": "Email",
+        "description": "Respuestas rápidas por email",
+        "button": "Enviar Email"
+      },
+      "projects": {
+        "title": "Proyectos",
+        "description": "¿Listo para comenzar tu próxima aventura?",
+        "button": "Discute Tu Proyecto"
+      },
+      "collaboration": {
+        "title": "Colaborar",
+        "description": "Conecta en LinkedIn para oportunidades de colaboración",
+        "button": "Conectar en LinkedIn"
+      }
+    },
+    "alternativeMethods": {
+      "title": "Formas Alternativas de Conectar",
+      "subtitle": "Elige el método que mejor funcione para ti",
+      "directEmail": {
+        "title": "Email Directo",
+        "description": "Copia mi dirección de email para tu cliente preferido",
+        "button": "Copiar Email",
+        "copied": "¡Email copiado!"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Conectemos profesionalmente y exploremos oportunidades",
+        "button": "Ver Perfil"
+      },
+      "calendar": {
+        "title": "Programa una Llamada",
+        "description": "Reserva una llamada de descubrimiento de 30 minutos para discutir tu proyecto",
+        "button": "Reservar Reunión",
+        "comingSoon": "Próximamente"
+      }
+    },
+    "whatToExpect": {
+      "title": "Qué Esperar",
+      "quickResponse": {
+        "title": "Respuesta Rápida",
+        "description": "Típicamente respondo en 24-48 horas en días laborables."
+      },
+      "discoveryCall": {
+        "title": "Llamada de Descubrimiento",
+        "description": "Programaremos una llamada para entender tus necesidades y explorar la alineación."
+      },
+      "tailoredProposal": {
+        "title": "Propuesta Personalizada",
+        "description": "Si encajamos bien, crearé una propuesta personalizada para tu proyecto."
+      }
+    }
   },
   "philosophy": {
     "title": "Cómo Abordo la Tecnología y el Liderazgo",
@@ -257,57 +310,69 @@
     "smallBusiness": {
       "title": "Para Pequeños Negocios",
       "subtitle": "Herramientas que resuelven problemas reales para negocios reales",
+      "priceRange": "€2.000 - €10.000",
       "services": [
         {
           "title": "Sitios Web y Sistemas de Contenido",
           "description": "Sitios de portafolio, blogs, plataformas de reservas de servicios",
-          "examples": ["Sitios web corporativos", "Gestión de contenido", "Sistemas de reservas", "Portales de clientes"]
+          "examples": ["Sitios web corporativos", "Gestión de contenido", "Sistemas de reservas", "Portales de clientes"],
+          "caseStudies": []
         },
         {
           "title": "Herramientas SaaS Simples",
           "description": "Herramientas personalizadas para facturación, gestión de clientes, programación",
-          "examples": ["Sistemas de facturación", "Herramientas CRM", "Programación de citas", "Gestión de tareas"]
+          "examples": ["Sistemas de facturación", "Herramientas CRM", "Programación de citas", "Gestión de tareas"],
+          "caseStudies": []
         },
         {
           "title": "Embudos de Generación de Leads",
           "description": "Páginas de destino y embudos optimizados para conversión",
-          "examples": ["Páginas de destino", "Formularios de captura de leads", "Automatización de email", "Dashboards de analíticas"]
+          "examples": ["Páginas de destino", "Formularios de captura de leads", "Automatización de email", "Dashboards de analíticas"],
+          "caseStudies": []
         },
         {
           "title": "Dashboards Administrativos",
           "description": "Interfaces de visualización de datos y gestión",
-          "examples": ["Dashboards de analíticas", "Gestión de inventario", "Herramientas de informes", "Exportaciones de datos"]
+          "examples": ["Dashboards de analíticas", "Gestión de inventario", "Herramientas de informes", "Exportaciones de datos"],
+          "caseStudies": []
         },
         {
           "title": "Plataformas Comunitarias",
           "description": "Sitios de membresía y compromiso comunitario",
-          "examples": ["Portales de miembros", "Foros y discusiones", "Suscripciones de contenido", "Gestión de eventos"]
+          "examples": ["Portales de miembros", "Foros y discusiones", "Suscripciones de contenido", "Gestión de eventos"],
+          "caseStudies": []
         }
       ]
     },
     "standaloneProducts": {
       "title": "Productos Independientes",
       "subtitle": "Construir una vez, escalar a muchos - productos que generan valor recurrente",
+      "priceRange": "€5.000 - €25.000+",
       "products": [
         {
           "title": "Herramientas SaaS de Nicho",
-          "description": "Automatización de flujos de trabajo y herramientas de datos específicas de la industria"
+          "description": "Automatización de flujos de trabajo y herramientas de datos específicas de la industria",
+          "caseStudies": []
         },
         {
           "title": "Mercados de Plantillas",
-          "description": "Plantillas y temas personalizables para varias plataformas"
+          "description": "Plantillas y temas personalizables para varias plataformas",
+          "caseStudies": []
         },
         {
           "title": "Plataformas de Contenido",
-          "description": "Sistemas de newsletters, plataformas de cursos, hubs comunitarios"
+          "description": "Sistemas de newsletters, plataformas de cursos, hubs comunitarios",
+          "caseStudies": []
         },
         {
           "title": "Herramientas B2B Industriales",
-          "description": "Soluciones especializadas para verticales de negocio específicos"
+          "description": "Soluciones especializadas para verticales de negocio específicos",
+          "caseStudies": []
         },
         {
           "title": "Wrappers de API y Utilidades de IA",
-          "description": "Herramientas de integración y automatización impulsada por IA"
+          "description": "Herramientas de integración y automatización impulsada por IA",
+          "caseStudies": []
         }
       ]
     },

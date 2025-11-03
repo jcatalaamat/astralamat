@@ -216,7 +216,60 @@
     "phone": "+34 611 14 41 70",
     "location": "Remot · Barcelona, ES · Londres, UK · Obert a Mèxic",
     "note": "També ofereixo mentoria de lideratge limitada per a líders tècnics navegant la integració d'excel·lència i humanitat.",
-    "otherWork": "També explorant: Inner Ascend · Projecte Salvatge · Mentoria Espiritual"
+    "otherWork": "També explorant: Inner Ascend · Projecte Salvatge · Mentoria Espiritual",
+    "infoCards": {
+      "email": {
+        "title": "Email",
+        "description": "Respostes ràpides per email",
+        "button": "Enviar Email"
+      },
+      "projects": {
+        "title": "Projectes",
+        "description": "Llest per començar la teva propera aventura?",
+        "button": "Discuteix el Teu Projecte"
+      },
+      "collaboration": {
+        "title": "Col·laborar",
+        "description": "Connecta a LinkedIn per oportunitats de col·laboració",
+        "button": "Connectar a LinkedIn"
+      }
+    },
+    "alternativeMethods": {
+      "title": "Formes Alternatives de Connectar",
+      "subtitle": "Tria el mètode que millor funcioni per a tu",
+      "directEmail": {
+        "title": "Email Directe",
+        "description": "Copia la meva adreça d'email per al teu client preferit",
+        "button": "Copiar Email",
+        "copied": "Email copiat!"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Connectem professionalment i explorem oportunitats",
+        "button": "Veure Perfil"
+      },
+      "calendar": {
+        "title": "Programa una Trucada",
+        "description": "Reserva una trucada de descobriment de 30 minuts per discutir el teu projecte",
+        "button": "Reservar Reunió",
+        "comingSoon": "Properament"
+      }
+    },
+    "whatToExpect": {
+      "title": "Què Esperar",
+      "quickResponse": {
+        "title": "Resposta Ràpida",
+        "description": "Típicament responc en 24-48 hores en dies laborables."
+      },
+      "discoveryCall": {
+        "title": "Trucada de Descobriment",
+        "description": "Programarem una trucada per entendre les teves necessitats i explorar l'alineació."
+      },
+      "tailoredProposal": {
+        "title": "Proposta Personalitzada",
+        "description": "Si encaixem bé, crearé una proposta personalitzada per al teu projecte."
+      }
+    }
   },
   "philosophy": {
     "title": "Com Abordo la Tecnologia i el Lideratge",
@@ -257,57 +310,69 @@
     "smallBusiness": {
       "title": "Per a Petits Negocis",
       "subtitle": "Eines que resolen problemes reals per a negocis reals",
+      "priceRange": "€2.000 - €10.000",
       "services": [
         {
           "title": "Llocs Web i Sistemes de Contingut",
           "description": "Llocs de portafoli, blogs, plataformes de reserves de serveis",
-          "examples": ["Llocs web corporatius", "Gestió de contingut", "Sistemes de reserves", "Portals de clients"]
+          "examples": ["Llocs web corporatius", "Gestió de contingut", "Sistemes de reserves", "Portals de clients"],
+          "caseStudies": []
         },
         {
           "title": "Eines SaaS Simples",
           "description": "Eines personalitzades per a facturació, gestió de clients, programació",
-          "examples": ["Sistemes de facturació", "Eines CRM", "Programació de cites", "Gestió de tasques"]
+          "examples": ["Sistemes de facturació", "Eines CRM", "Programació de cites", "Gestió de tasques"],
+          "caseStudies": []
         },
         {
           "title": "Embuts de Generació de Leads",
           "description": "Pàgines de destinació i embuts optimitzats per a conversió",
-          "examples": ["Pàgines de destinació", "Formularis de captura de leads", "Automatització d'email", "Dashboards d'analítiques"]
+          "examples": ["Pàgines de destinació", "Formularis de captura de leads", "Automatització d'email", "Dashboards d'analítiques"],
+          "caseStudies": []
         },
         {
           "title": "Dashboards Administratius",
           "description": "Interfícies de visualització de dades i gestió",
-          "examples": ["Dashboards d'analítiques", "Gestió d'inventari", "Eines d'informes", "Exportacions de dades"]
+          "examples": ["Dashboards d'analítiques", "Gestió d'inventari", "Eines d'informes", "Exportacions de dades"],
+          "caseStudies": []
         },
         {
           "title": "Plataformes Comunitàries",
           "description": "Llocs de membresía i compromís comunitari",
-          "examples": ["Portals de membres", "Fòrums i discussions", "Subscripcions de contingut", "Gestió d'esdeveniments"]
+          "examples": ["Portals de membres", "Fòrums i discussions", "Subscripcions de contingut", "Gestió d'esdeveniments"],
+          "caseStudies": []
         }
       ]
     },
     "standaloneProducts": {
       "title": "Productes Independents",
       "subtitle": "Construir una vegada, escalar a molts - productes que generen valor recurrent",
+      "priceRange": "€5.000 - €25.000+",
       "products": [
         {
           "title": "Eines SaaS de Nínxol",
-          "description": "Automatització de fluxos de treball i eines de dades específiques de la indústria"
+          "description": "Automatització de fluxos de treball i eines de dades específiques de la indústria",
+          "caseStudies": []
         },
         {
           "title": "Mercats de Plantilles",
-          "description": "Plantilles i temes personalitzables per a diverses plataformes"
+          "description": "Plantilles i temes personalitzables per a diverses plataformes",
+          "caseStudies": []
         },
         {
           "title": "Plataformes de Contingut",
-          "description": "Sistemes de newsletters, plataformes de cursos, hubs comunitaris"
+          "description": "Sistemes de newsletters, plataformes de cursos, hubs comunitaris",
+          "caseStudies": []
         },
         {
           "title": "Eines B2B Industrials",
-          "description": "Solucions especialitzades per a verticals de negoci específics"
+          "description": "Solucions especialitzades per a verticals de negoci específics",
+          "caseStudies": []
         },
         {
           "title": "Wrappers d'API i Utilitats d'IA",
-          "description": "Eines d'integració i automatització impulsada per IA"
+          "description": "Eines d'integració i automatització impulsada per IA",
+          "caseStudies": []
         }
       ]
     },

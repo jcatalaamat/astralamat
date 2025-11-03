@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProjectsShowcase from '../components/ProjectsShowcase';
 import FourEcosystems from '../components/ThreeEcosystems';
 import enTranslations from '../translations/en.json';
@@ -11,7 +12,7 @@ interface ProjectsPageProps {
 }
 
 export default function ProjectsPage({ language = 'en', onLanguageChange: _onLanguageChange }: ProjectsPageProps = {}) {
-
+  const navigate = useNavigate();
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   useEffect(() => {
@@ -58,16 +59,38 @@ export default function ProjectsPage({ language = 'en', onLanguageChange: _onLan
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-cyan-100/30 via-purple-100/30 to-pink-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
-                Building the Future
+                {language === 'en' && 'Building the Future'}
+                {language === 'es' && 'Construyendo el Futuro'}
+                {language === 'ca' && 'Construint el Futur'}
               </h2>
-              <p className="text-zinc-600 text-lg mb-6">
-                Each project represents a unique intersection of technical innovation and conscious design.
-                From decentralized platforms to mobile experiences, every solution is crafted with attention
-                to both functionality and user experience.
+              <p className="text-zinc-700 text-lg mb-6">
+                {language === 'en' && 'Each project represents a unique intersection of technical innovation and conscious design. From decentralized platforms to mobile experiences, every solution is crafted with attention to both functionality and user experience.'}
+                {language === 'es' && 'Cada proyecto representa una intersección única de innovación técnica y diseño consciente. Desde plataformas descentralizadas hasta experiencias móviles, cada solución se elabora con atención tanto a la funcionalidad como a la experiencia del usuario.'}
+                {language === 'ca' && 'Cada projecte representa una intersecció única d\'innovació tècnica i disseny conscient. Des de plataformes descentralitzades fins a experiències mòbils, cada solució s\'elabora amb atenció tant a la funcionalitat com a l\'experiència de l\'usuari.'}
               </p>
-              <p className="text-zinc-600 text-lg">
-                Interested in collaborating on your next project? Let's create something extraordinary together.
+              <p className="text-zinc-700 text-lg mb-8">
+                {language === 'en' && "Interested in collaborating on your next project? Let's create something extraordinary together."}
+                {language === 'es' && '¿Interesado en colaborar en tu próximo proyecto? Creemos algo extraordinario juntos.'}
+                {language === 'ca' && 'Interessat en col·laborar en el teu proper projecte? Creem alguna cosa extraordinària junts.'}
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  onClick={() => navigate('/contact')}
+                  className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
+                >
+                  {language === 'en' && 'Start Your Project'}
+                  {language === 'es' && 'Inicia Tu Proyecto'}
+                  {language === 'ca' && 'Inicia el Teu Projecte'}
+                </button>
+                <button
+                  onClick={() => navigate('/services')}
+                  className="px-8 py-4 bg-white border-2 border-purple-600 rounded-full font-semibold text-purple-600 hover:bg-purple-50 transition-all duration-300 transform hover:scale-105"
+                >
+                  {language === 'en' && 'View Services'}
+                  {language === 'es' && 'Ver Servicios'}
+                  {language === 'ca' && 'Veure Serveis'}
+                </button>
+              </div>
             </div>
           </div>
         </section>

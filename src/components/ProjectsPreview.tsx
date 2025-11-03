@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { trackCTAClick } from '../utils/analytics';
 
 interface ProjectsPreviewProps {
   language?: 'en' | 'es' | 'ca';
@@ -50,7 +51,8 @@ export default function ProjectsPreview({ language: _language = 'en', translatio
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className={`bg-gradient-to-br ${project.gradient} rounded-2xl p-8 backdrop-blur-sm border ${project.borderColor} hover:border-opacity-60 transition-all duration-300`}
+              onClick={() => navigate('/projects')}
+              className={`bg-gradient-to-br ${project.gradient} rounded-2xl p-8 backdrop-blur-sm border ${project.borderColor} hover:border-opacity-60 transition-all duration-300 cursor-pointer transform hover:scale-105`}
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {project.title}
@@ -77,7 +79,10 @@ export default function ProjectsPreview({ language: _language = 'en', translatio
             Explore the full portfolio of 50+ projects across blockchain, mobile, web, and AI
           </p>
           <button
-            onClick={() => navigate('/projects')}
+            onClick={() => {
+              trackCTAClick('View All Projects', '/home', '/projects');
+              navigate('/projects');
+            }}
             className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
           >
             View All Projects

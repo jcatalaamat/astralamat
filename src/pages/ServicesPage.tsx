@@ -4,6 +4,7 @@ import { Code2, Zap, Rocket, Database, Users, TrendingUp, CheckCircle2 } from 'l
 import enTranslations from '../translations/en.json';
 import esTranslations from '../translations/es.json';
 import caTranslations from '../translations/ca.json';
+import { trackCTAClick } from '../utils/analytics';
 
 interface ServicesPageProps {
   language?: 'en' | 'es' | 'ca';
@@ -66,21 +67,26 @@ export default function ServicesPage({ language = 'en', onLanguageChange: _onLan
                   {t.servicesPage.smallBusiness.title}
                 </span>
               </h2>
-              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto mb-4">
                 {t.servicesPage.smallBusiness.subtitle}
               </p>
+              <div className="inline-block bg-cyan-100 border border-cyan-500/30 rounded-full px-6 py-2">
+                <span className="text-cyan-700 font-semibold text-lg">
+                  {t.servicesPage.smallBusiness.priceRange}
+                </span>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {t.servicesPage.smallBusiness.services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-2xl p-6 backdrop-blur-sm border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300"
+                  className="bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-2xl p-6 backdrop-blur-sm border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 flex flex-col"
                 >
                   <div className="text-cyan-600 mb-4">{serviceIcons[index]}</div>
                   <h3 className="text-xl font-bold text-zinc-900 mb-2">{service.title}</h3>
                   <p className="text-zinc-600 mb-4">{service.description}</p>
-                  <div className="space-y-2">
+                  <div className="space-y-2 mb-4 flex-grow">
                     {service.examples.map((example, exIndex) => (
                       <div key={exIndex} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-cyan-600 rounded-full"></div>
@@ -88,6 +94,15 @@ export default function ServicesPage({ language = 'en', onLanguageChange: _onLan
                       </div>
                     ))}
                   </div>
+                  <button
+                    onClick={() => navigate('/projects')}
+                    className="mt-auto text-cyan-600 hover:text-cyan-700 text-sm font-semibold flex items-center gap-1 group"
+                  >
+                    {language === 'en' && 'View Related Projects'}
+                    {language === 'es' && 'Ver Proyectos Relacionados'}
+                    {language === 'ca' && 'Veure Projectes Relacionats'}
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </button>
                 </div>
               ))}
             </div>
@@ -103,22 +118,36 @@ export default function ServicesPage({ language = 'en', onLanguageChange: _onLan
                   {t.servicesPage.standaloneProducts.title}
                 </span>
               </h2>
-              <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
+              <p className="text-zinc-600 text-lg max-w-2xl mx-auto mb-4">
                 {t.servicesPage.standaloneProducts.subtitle}
               </p>
+              <div className="inline-block bg-purple-100 border border-purple-500/30 rounded-full px-6 py-2">
+                <span className="text-purple-700 font-semibold text-lg">
+                  {t.servicesPage.standaloneProducts.priceRange}
+                </span>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {t.servicesPage.standaloneProducts.products.map((product, index) => (
                 <div
                   key={index}
-                  className={`bg-gradient-to-br ${productGradients[index].gradient} rounded-2xl p-6 backdrop-blur-sm border ${productGradients[index].borderColor} transition-all duration-300 transform hover:scale-105`}
+                  className={`bg-gradient-to-br ${productGradients[index].gradient} rounded-2xl p-6 backdrop-blur-sm border ${productGradients[index].borderColor} transition-all duration-300 transform hover:scale-105 flex flex-col`}
                 >
                   <div className="text-4xl mb-4">
                     <Rocket className="w-10 h-10 text-purple-600" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 mb-2">{product.title}</h3>
-                  <p className="text-zinc-600">{product.description}</p>
+                  <p className="text-zinc-600 mb-4 flex-grow">{product.description}</p>
+                  <button
+                    onClick={() => navigate('/projects')}
+                    className="mt-auto text-purple-600 hover:text-purple-700 text-sm font-semibold flex items-center gap-1 group"
+                  >
+                    {language === 'en' && 'View Examples'}
+                    {language === 'es' && 'Ver Ejemplos'}
+                    {language === 'ca' && 'Veure Exemples'}
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </button>
                 </div>
               ))}
             </div>
@@ -220,7 +249,10 @@ export default function ServicesPage({ language = 'en', onLanguageChange: _onLan
                 {t.servicesPage.cta.description}
               </p>
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => {
+                  trackCTAClick(t.servicesPage.cta.button, '/services', '/contact');
+                  navigate('/contact');
+                }}
                 className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
               >
                 {t.servicesPage.cta.button}

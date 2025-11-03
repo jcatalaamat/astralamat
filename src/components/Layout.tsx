@@ -1,6 +1,7 @@
 import { useState, ReactNode, cloneElement, isValidElement } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
+import FloatingContactButton from './FloatingContactButton';
 
 interface LayoutProps {
   children: ReactNode;
@@ -19,6 +20,7 @@ export default function Layout({ children }: LayoutProps) {
       <Navigation language={language} onLanguageChange={setLanguage} />
       <main>{childrenWithLanguage}</main>
       <Footer language={language} />
+      <FloatingContactButton />
     </div>
   );
 }

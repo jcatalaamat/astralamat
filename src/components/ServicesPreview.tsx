@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { trackCTAClick } from '../utils/analytics';
 
 interface ServicesPreviewProps {
   language?: 'en' | 'es' | 'ca';
@@ -53,7 +54,8 @@ export default function ServicesPreview({ language: _language = 'en', translatio
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-gradient-to-br ${service.gradient} rounded-2xl p-8 backdrop-blur-sm border ${service.borderColor} transition-all duration-300 transform hover:scale-105`}
+              onClick={() => navigate('/services')}
+              className={`bg-gradient-to-br ${service.gradient} rounded-2xl p-8 backdrop-blur-sm border ${service.borderColor} transition-all duration-300 transform hover:scale-105 cursor-pointer`}
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className={`text-xl font-bold ${service.textColor} mb-3`}>
@@ -68,7 +70,10 @@ export default function ServicesPreview({ language: _language = 'en', translatio
 
         <div className="text-center">
           <button
-            onClick={() => navigate('/services')}
+            onClick={() => {
+              trackCTAClick('View All Services', '/home', '/services');
+              navigate('/services');
+            }}
             className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
           >
             View All Services

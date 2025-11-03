@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { trackCTAClick } from '../utils/analytics';
 
 interface AboutPreviewProps {
   language?: 'en' | 'es' | 'ca';
@@ -24,7 +25,10 @@ export default function AboutPreview(_props: AboutPreviewProps) {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Experience Preview */}
-          <div className="bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl p-8 backdrop-blur-sm border border-cyan-400 hover:border-cyan-600 transition-all duration-300">
+          <div
+            onClick={() => navigate('/about')}
+            className="bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl p-8 backdrop-blur-sm border border-cyan-400 hover:border-cyan-600 transition-all duration-300 cursor-pointer transform hover:scale-105"
+          >
             <div className="text-4xl mb-4">🚀</div>
             <h3 className="text-2xl font-bold text-cyan-600 mb-3">Experience</h3>
             <p className="text-gray-700 mb-4">
@@ -39,7 +43,10 @@ export default function AboutPreview(_props: AboutPreviewProps) {
           </div>
 
           {/* Skills Preview */}
-          <div className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 backdrop-blur-sm border border-purple-400 hover:border-purple-600 transition-all duration-300">
+          <div
+            onClick={() => navigate('/about')}
+            className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 backdrop-blur-sm border border-purple-400 hover:border-purple-600 transition-all duration-300 cursor-pointer transform hover:scale-105"
+          >
             <div className="text-4xl mb-4">⚡</div>
             <h3 className="text-2xl font-bold text-purple-600 mb-3">Expertise</h3>
             <p className="text-gray-700 mb-4">
@@ -56,7 +63,10 @@ export default function AboutPreview(_props: AboutPreviewProps) {
 
         <div className="text-center">
           <button
-            onClick={() => navigate('/about')}
+            onClick={() => {
+              trackCTAClick('Explore My Journey', '/home', '/about');
+              navigate('/about');
+            }}
             className="px-8 py-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-400/50 transition-all duration-300 transform hover:scale-105"
           >
             Explore My Journey

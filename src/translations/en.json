@@ -222,7 +222,60 @@
     "phone": "+34 611 14 41 70",
     "location": "Remote · Barcelona, ES · London, UK · Open to Mexico",
     "note": "I also offer limited leadership mentorship for technical leaders navigating the integration of excellence and humanity.",
-    "otherWork": "Also exploring: Inner Ascend · Proyecto Salvaje · Spiritual Mentorship"
+    "otherWork": "Also exploring: Inner Ascend · Proyecto Salvaje · Spiritual Mentorship",
+    "infoCards": {
+      "email": {
+        "title": "Email",
+        "description": "Quick responses via email",
+        "button": "Send Email"
+      },
+      "projects": {
+        "title": "Projects",
+        "description": "Ready to start your next venture?",
+        "button": "Discuss Your Project"
+      },
+      "collaboration": {
+        "title": "Collaborate",
+        "description": "Connect on LinkedIn for partnership opportunities",
+        "button": "Connect on LinkedIn"
+      }
+    },
+    "alternativeMethods": {
+      "title": "Alternative Ways to Connect",
+      "subtitle": "Choose the method that works best for you",
+      "directEmail": {
+        "title": "Direct Email",
+        "description": "Copy my email address for your preferred client",
+        "button": "Copy Email",
+        "copied": "Email copied!"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Let's connect professionally and explore opportunities",
+        "button": "View Profile"
+      },
+      "calendar": {
+        "title": "Schedule a Call",
+        "description": "Book a 30-minute discovery call to discuss your project",
+        "button": "Book a Meeting",
+        "comingSoon": "Coming Soon"
+      }
+    },
+    "whatToExpect": {
+      "title": "What to Expect",
+      "quickResponse": {
+        "title": "Quick Response",
+        "description": "I typically respond within 24-48 hours on business days."
+      },
+      "discoveryCall": {
+        "title": "Discovery Call",
+        "description": "We'll schedule a call to understand your needs and explore alignment."
+      },
+      "tailoredProposal": {
+        "title": "Tailored Proposal",
+        "description": "If we're a good fit, I'll create a customized proposal for your project."
+      }
+    }
   },
   "philosophy": {
     "title": "How I Approach Technology & Leadership",
@@ -263,57 +316,69 @@
     "smallBusiness": {
       "title": "For Small Businesses",
       "subtitle": "Tools that solve real problems for real businesses",
+      "priceRange": "€2,000 - €10,000",
       "services": [
         {
           "title": "Websites & Content Systems",
           "description": "Portfolio sites, blogs, service booking platforms",
-          "examples": ["Business websites", "Content management", "Booking systems", "Client portals"]
+          "examples": ["Business websites", "Content management", "Booking systems", "Client portals"],
+          "caseStudies": []
         },
         {
           "title": "Simple SaaS Tools",
           "description": "Custom tools for invoicing, client management, scheduling",
-          "examples": ["Invoicing systems", "CRM tools", "Appointment scheduling", "Task management"]
+          "examples": ["Invoicing systems", "CRM tools", "Appointment scheduling", "Task management"],
+          "caseStudies": []
         },
         {
           "title": "Lead Generation Funnels",
           "description": "Landing pages and conversion-optimized funnels",
-          "examples": ["Landing pages", "Lead capture forms", "Email automation", "Analytics dashboards"]
+          "examples": ["Landing pages", "Lead capture forms", "Email automation", "Analytics dashboards"],
+          "caseStudies": []
         },
         {
           "title": "Admin Dashboards",
           "description": "Data visualization and management interfaces",
-          "examples": ["Analytics dashboards", "Inventory management", "Reporting tools", "Data exports"]
+          "examples": ["Analytics dashboards", "Inventory management", "Reporting tools", "Data exports"],
+          "caseStudies": []
         },
         {
           "title": "Community Platforms",
           "description": "Membership sites and community engagement",
-          "examples": ["Member portals", "Forums & discussions", "Content subscriptions", "Event management"]
+          "examples": ["Member portals", "Forums & discussions", "Content subscriptions", "Event management"],
+          "caseStudies": []
         }
       ]
     },
     "standaloneProducts": {
       "title": "Standalone Products",
       "subtitle": "Build once, scale to many - products that generate recurring value",
+      "priceRange": "€5,000 - €25,000+",
       "products": [
         {
           "title": "Niche SaaS Tools",
-          "description": "Industry-specific workflow automation and data tools"
+          "description": "Industry-specific workflow automation and data tools",
+          "caseStudies": []
         },
         {
           "title": "Template Marketplaces",
-          "description": "Customizable templates and themes for various platforms"
+          "description": "Customizable templates and themes for various platforms",
+          "caseStudies": []
         },
         {
           "title": "Content Platforms",
-          "description": "Newsletter systems, course platforms, community hubs"
+          "description": "Newsletter systems, course platforms, community hubs",
+          "caseStudies": []
         },
         {
           "title": "B2B Industry Tools",
-          "description": "Specialized solutions for specific business verticals"
+          "description": "Specialized solutions for specific business verticals",
+          "caseStudies": []
         },
         {
           "title": "API Wrappers & AI Utilities",
-          "description": "Integration tools and AI-powered automation"
+          "description": "Integration tools and AI-powered automation",
+          "caseStudies": []
         }
       ]
     },

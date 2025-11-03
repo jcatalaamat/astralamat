@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SacredMandala from '../components/SacredMandala';
 import enTranslations from '../translations/en.json';
 import esTranslations from '../translations/es.json';
@@ -10,6 +11,7 @@ interface PhilosophyPageProps {
 }
 
 export default function PhilosophyPage({ language = 'en', onLanguageChange: _onLanguageChange }: PhilosophyPageProps) {
+  const navigate = useNavigate();
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   useEffect(() => {
@@ -35,7 +37,7 @@ export default function PhilosophyPage({ language = 'en', onLanguageChange: _onL
                 Philosophy
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-zinc-600 max-w-3xl mx-auto">
               Where code meets consciousness - a methodology for the new era
             </p>
           </div>
@@ -54,12 +56,12 @@ export default function PhilosophyPage({ language = 'en', onLanguageChange: _onL
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
                 The Integration Principle
               </h2>
-              <p className="text-zinc-400 text-lg mb-6">
+              <p className="text-zinc-700 text-lg mb-6">
                 True innovation emerges at the intersection of seemingly opposite forces. Technology and consciousness,
                 logic and intuition, structure and flow - these are not contradictions but complementary forces that,
                 when integrated, create solutions far more powerful than either could achieve alone.
               </p>
-              <p className="text-zinc-400 text-lg">
+              <p className="text-zinc-700 text-lg">
                 This philosophy guides every project, every line of code, every strategic decision. It's not about
                 choosing between technical excellence and human-centered design - it's about achieving both through
                 conscious integration.
@@ -74,14 +76,14 @@ export default function PhilosophyPage({ language = 'en', onLanguageChange: _onL
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-cyan-600 mb-3">Technical Excellence</h3>
-                  <p className="text-zinc-400 text-lg">
+                  <p className="text-zinc-700 text-lg">
                     Mastery of cutting-edge technologies, architectural best practices, and scalable solutions.
                     Every system is built on solid foundations of clean code, robust testing, and performance optimization.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-purple-600 mb-3">Conscious Leadership</h3>
-                  <p className="text-zinc-400 text-lg">
+                  <p className="text-zinc-700 text-lg">
                     Understanding that technology serves humanity. Leading with awareness, empathy, and purpose.
                     Creating solutions that honor both user needs and the broader impact on communities and ecosystems.
                   </p>
@@ -97,20 +99,49 @@ export default function PhilosophyPage({ language = 'en', onLanguageChange: _onL
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-xl font-semibold text-cyan-600 mb-2">Innovation with Purpose</h3>
-                  <p className="text-zinc-400">Technology that serves a meaningful vision, not innovation for its own sake.</p>
+                  <p className="text-zinc-600">Technology that serves a meaningful vision, not innovation for its own sake.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-purple-600 mb-2">Holistic Design</h3>
-                  <p className="text-zinc-400">Solutions that consider the full spectrum of technical, human, and environmental impact.</p>
+                  <p className="text-zinc-600">Solutions that consider the full spectrum of technical, human, and environmental impact.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pink-600 mb-2">Continuous Evolution</h3>
-                  <p className="text-zinc-400">Embracing growth, learning, and adaptation as fundamental to excellence.</p>
+                  <p className="text-zinc-600">Embracing growth, learning, and adaptation as fundamental to excellence.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-cyan-600 mb-2">Authentic Collaboration</h3>
-                  <p className="text-zinc-400">Building with integrity, transparency, and genuine partnership at the core.</p>
+                  <p className="text-zinc-600">Building with integrity, transparency, and genuine partnership at the core.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA to Services */}
+        <section className="py-16 px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-cyan-100/30 via-purple-100/30 to-pink-100/30 rounded-2xl p-12 backdrop-blur-sm border border-black/10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
+                See This Philosophy in Action
+              </h2>
+              <p className="text-zinc-700 text-lg mb-8 max-w-2xl mx-auto">
+                This methodology drives every service I offer. Discover how conscious integration creates
+                exceptional results for your business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  onClick={() => navigate('/services')}
+                  className="px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 transform hover:scale-105"
+                >
+                  Explore Services
+                </button>
+                <button
+                  onClick={() => navigate('/projects')}
+                  className="px-8 py-4 bg-white border-2 border-purple-600 rounded-full font-semibold text-purple-600 hover:bg-purple-50 transition-all duration-300 transform hover:scale-105"
+                >
+                  View Projects
+                </button>
               </div>
             </div>
           </div>
