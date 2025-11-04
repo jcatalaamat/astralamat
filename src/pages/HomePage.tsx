@@ -43,7 +43,7 @@ export default function HomePage({ language = 'en', onLanguageChange: _onLanguag
   return (
     <div className="min-h-screen bg-white text-zinc-900 overflow-hidden relative">
       {/* Animated mesh background */}
-      <div className="fixed inset-0 opacity-30">
+      <div className="fixed inset-0 opacity-30 pointer-events-none">
         <div className="absolute top-0 -left-4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
         <div className="absolute top-0 -right-4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
         <div className="absolute -bottom-8 left-20 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
@@ -54,7 +54,7 @@ export default function HomePage({ language = 'en', onLanguageChange: _onLanguag
       <div className="fixed inset-0 pointer-events-none" style={spotlightStyle}></div>
 
       {/* Grid overlay */}
-      <div className="fixed inset-0 opacity-5" style={{
+      <div className="fixed inset-0 opacity-5 pointer-events-none" style={{
         backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
       }}></div>
