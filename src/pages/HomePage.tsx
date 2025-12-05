@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import WhatWeDo from '../components/WhatWeDo';
 import WhoWeHelp from '../components/WhoWeHelp';
 import Services from '../components/Services';
+import Pricing from '../components/Pricing';
 import HowItWorks from '../components/HowItWorks';
 import BeforeAfter from '../components/BeforeAfter';
 import Examples from '../components/Examples';
@@ -19,6 +20,7 @@ export default function HomePage() {
         <WhatWeDo />
         <WhoWeHelp />
         <Services />
+        <Pricing />
         <HowItWorks />
         <BeforeAfter />
         <Examples />
