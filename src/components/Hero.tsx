@@ -59,7 +59,7 @@ const Hero = () => {
           {/* Value Prop */}
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
             No tech overwhelm. No scattered planning. No noise.{' '}
-            <span className="text-electric-cyan font-medium">Just clarity, structure, and a finished product.</span>
+            <span className="text-electric-cyan font-medium">Just clarity, structure, and a finished product created with intention.</span>
           </p>
 
           {/* CTAs */}

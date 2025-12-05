@@ -17,7 +17,7 @@ const FinalCTA = () => {
             Start with a free 20-minute clarity session. No pressure — just direction.
           </p>
           <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-            Tell us what you're creating, and we'll show you exactly how it could take shape.
+            Tell us what you're creating, and we'll show you how it could take shape.
           </p>
 
           {/* CTA Buttons */}

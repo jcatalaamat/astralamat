@@ -17,7 +17,7 @@ const WhatWeDo = () => {
             You already know what you want to create. You just need someone who can see it clearly — and build it with care.
           </p>
           <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-            We take what lives in your mind — even if it's still forming — and translate it into structure, flow, and a finished product. You hold the vision. We shape it into something the world can use.
+            We listen deeply. We translate what lives in your mind — even if it's still forming — into structure, flow, and a finished product. You hold the vision. We shape it into something the world can use.
           </p>
 
           {/* What We Build - With Mockup Previews */}
@@ -45,7 +45,7 @@ const WhatWeDo = () => {
                   <Package className="w-5 h-5 text-astral-violet" />
                 </div>
                 <h3 className="font-bold text-space-dark mb-2">Full Products</h3>
-                <p className="text-gray-600 text-sm">Apps, platforms, membership sites, course portals, digital tools</p>
+                <p className="text-gray-600 text-sm">Apps · platforms · memberships · course portals · digital tools</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ const WhatWeDo = () => {
                   <Workflow className="w-5 h-5 text-electric-cyan" />
                 </div>
                 <h3 className="font-bold text-space-dark mb-2">Business Systems</h3>
-                <p className="text-gray-600 text-sm">Booking flows, client journeys, automations, operations dashboards</p>
+                <p className="text-gray-600 text-sm">Booking flows · client journeys · automations · dashboards</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ const WhatWeDo = () => {
                   <Cpu className="w-5 h-5 text-pink-500" />
                 </div>
                 <h3 className="font-bold text-space-dark mb-2">AI Experiences</h3>
-                <p className="text-gray-600 text-sm">Custom AI tools, content engines, personalized guides, smart assistants</p>
+                <p className="text-gray-600 text-sm">Custom assistants · content engines · personalized guides · smart tools</p>
               </div>
             </div>
           </div>

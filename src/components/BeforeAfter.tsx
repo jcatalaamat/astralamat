@@ -10,11 +10,11 @@ const beforeItems = [
 ];
 
 const afterItems = [
-  'Clear plan',
-  'Full product built for you',
+  'A clear plan',
+  'A product built for you',
   'Automation doing the boring work',
-  'Ready-to-use tools',
-  'More income streams',
+  'New income streams',
+  'Ease & flow',
   'A business that feels aligned',
 ];
 

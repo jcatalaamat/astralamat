@@ -30,24 +30,9 @@ const examples = [
 const Examples = () => {
   return (
     <section id="examples" className="py-24 bg-gradient-to-b from-deep-space via-space-dark to-deep-space relative overflow-hidden">
-      {/* Stars */}
-      <div className="absolute inset-0 opacity-30">
-        {[...Array(25)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-white rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              opacity: Math.random() * 0.5 + 0.2,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Nebula */}
-      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-electric-cyan/10 rounded-full filter blur-3xl"></div>
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-astral-violet/10 rounded-full filter blur-3xl"></div>
+      {/* Subtle gradient orbs */}
+      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-electric-cyan/10 rounded-full filter blur-[100px]"></div>
+      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-astral-violet/10 rounded-full filter blur-[100px]"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">

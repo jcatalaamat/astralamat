@@ -6,38 +6,39 @@ const packages = [
     name: 'Clarity Session',
     price: '€150',
     description: 'Your idea becomes a structured plan.',
-    details: 'We map the features, flows, timeline, tools, and the most elegant path to build it.',
+    details: 'Features, flows, timeline, tools — the most elegant path forward.',
     accent: 'violet',
   },
   {
     icon: Layers,
     name: 'Systems Package',
     price: 'from €800',
-    description: 'For creators and businesses who need solid foundations and ease in their operations.',
-    details: 'We design and build the systems that let everything flow.',
+    description: 'For creators and businesses who need foundations that feel effortless.',
+    details: '',
     includes: [
       'Booking & scheduling',
       'CRM & client journeys',
-      'Automations & workflows',
+      'Automations',
       'Operational dashboards',
       'Internal tools',
     ],
-    note: 'A refined architecture for the parts of your work that should feel effortless.',
+    note: 'A solid architecture for the parts of your work that should flow smoothly.',
     accent: 'cyan',
   },
   {
     icon: Package,
     name: 'Product Package',
     price: 'from €3,500',
-    description: 'Your full digital product — designed, built, and delivered.',
+    description: 'Your full digital product — thoughtfully designed, built, and delivered.',
     includes: [
-      'MVPs & platforms',
+      'MVPs',
+      'Platforms',
       'Membership ecosystems',
-      'Course portals & teaching systems',
-      'Creator digital suites',
+      'Course portals',
+      'Creator suites',
       'AI-enhanced experiences',
     ],
-    note: 'We handle the team, the build, and the process. You stay in your vision.',
+    note: 'You stay in your vision. We take care of the build.',
     accent: 'pink',
     featured: true,
   },
@@ -45,15 +46,15 @@ const packages = [
     icon: Heart,
     name: 'Support Package',
     price: '€350–€1,200/month',
-    description: 'Ongoing care as your product evolves.',
+    description: 'A gentle, ongoing partnership as your product evolves.',
     includes: [
-      'Feature updates',
-      'Maintenance & stability',
-      'Improvements & refinements',
-      'Content or system changes',
-      'Long-term partnership',
+      'Updates',
+      'Improvements',
+      'Maintenance',
+      'New features',
+      'Content + system changes',
     ],
-    note: "A gentle, consistent way to grow what you've created.",
+    note: 'A steady container for long-term growth.',
     accent: 'amber',
   },
 ];
@@ -143,7 +144,7 @@ const Pricing = () => {
           {/* Bottom CTA */}
           <div className="text-center mt-12">
             <p className="text-gray-400 mb-6">
-              Not sure which package fits? Start with a clarity session.
+              Not sure which fits? Begin with a clarity session.
             </p>
             <a
               href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20learn%20more%20about%20your%20packages."

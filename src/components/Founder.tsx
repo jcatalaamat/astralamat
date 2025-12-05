@@ -45,17 +45,17 @@ const Founder = () => {
                   Integration Architect
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  I help people bring their ideas into the world — not through complexity, but through clarity, structure, and care.
+                  I help people bring their ideas into the world — not through complexity, but through clarity, structure, and intention.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  You don't need to manage a team or learn the technology. You just need someone who can see what you're building — and bring it into form. That's what I do.
+                  You don't need to learn the technology or manage the team. You just need someone who can see what you're building — and bring it into form. That's what I do.
                 </p>
               </div>
             </div>
 
             {/* What I Combine */}
             <div className="mt-8 pt-8 border-t border-gray-100">
-              <p className="text-center text-gray-500 text-sm mb-6">What I bring to every project</p>
+              <p className="text-center text-gray-500 text-sm mb-6">What I bring</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center p-4">
                   <Code2 className="w-6 h-6 text-electric-cyan mx-auto mb-2" />
@@ -67,7 +67,7 @@ const Founder = () => {
                 </div>
                 <div className="text-center p-4">
                   <Brain className="w-6 h-6 text-pink-500 mx-auto mb-2" />
-                  <p className="text-sm text-gray-600">AI-Powered Possibilities</p>
+                  <p className="text-sm text-gray-600">AI-Powered Possibility</p>
                 </div>
                 <div className="text-center p-4">
                   <Sparkles className="w-6 h-6 text-amber-500 mx-auto mb-2" />
