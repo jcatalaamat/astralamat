@@ -11,10 +11,10 @@ export default function Footer() {
               Astral Integration
             </span>
             <p className="text-gray-400">
-              Turning Vision Into Reality
+              Where vision finds its form.
             </p>
             <p className="text-gray-500 text-sm mt-1">
-              AI-powered. Human-guided.
+              Technology with intention.
             </p>
           </div>
 

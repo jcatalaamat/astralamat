@@ -11,13 +11,13 @@ const FinalCTA = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Header */}
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Ready to Make Your Idea Real?
+            Ready to bring your vision to life?
           </h2>
           <p className="text-xl text-gray-300 mb-4">
-            Whether it's a full product, a new offering, or a system that makes your life easier — let's build it.
+            Start with a free 20-minute clarity session. No pressure — just direction.
           </p>
           <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-            Start with a free 20-minute call to map your vision and next steps.
+            Tell us what you're creating, and we'll show you exactly how it could take shape.
           </p>
 
           {/* CTA Buttons */}

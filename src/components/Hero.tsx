@@ -45,21 +45,21 @@ const Hero = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Turn your idea into a{' '}
+            This is where ideas{' '}
             <span className="bg-gradient-to-r from-astral-violet via-electric-cyan to-astral-violet bg-clip-text text-transparent">
-              real product
+              become real
             </span>
           </h1>
 
-          {/* Subheadline */}
+          {/* Subheadline - SPIRITUAL + CLEAR */}
           <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
-            From concepts to complete digital systems — designed with clarity, built by experts, powered by AI when it helps.
+            Where intuition meets architecture. Where vision finds its form.
           </p>
 
           {/* Value Prop */}
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            You bring the vision. We design it, build it, launch it, and make it real.{' '}
-            <span className="text-electric-cyan font-medium">Fast, personal, and done-for-you.</span>
+            No tech overwhelm. No scattered planning. No noise.{' '}
+            <span className="text-electric-cyan font-medium">Just clarity, structure, and a finished product.</span>
           </p>
 
           {/* CTAs */}
@@ -87,7 +87,7 @@ const Hero = () => {
 
           {/* Trust Line */}
           <p className="text-sm text-gray-500">
-            Helping creators, entrepreneurs, small businesses, and wellness leaders bring their ideas to life.
+            A studio for creators, entrepreneurs, wellness leaders, and businesses ready to bring meaningful work into the world.
           </p>
 
           {/* Scroll prompt */}

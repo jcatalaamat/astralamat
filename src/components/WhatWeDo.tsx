@@ -7,14 +7,17 @@ const WhatWeDo = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
           <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-6">
-            We turn ideas into{' '}
+            Why people choose{' '}
             <span className="bg-gradient-to-r from-astral-violet to-electric-cyan bg-clip-text text-transparent">
-              complete products
+              Astral Integration
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Astral Integration helps you transform your concept into something real — without needing developers, without tech overwhelm.
+          <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
+            You already know what you want to create. You just need someone who can see it clearly — and build it with care.
+          </p>
+          <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
+            We take what lives in your mind — even if it's still forming — and translate it into structure, flow, and a finished product. You hold the vision. We shape it into something the world can use.
           </p>
 
           {/* What We Build - With Mockup Previews */}
@@ -127,7 +130,7 @@ const WhatWeDo = () => {
 
           {/* Bottom Note */}
           <p className="mt-8 text-gray-500 text-sm">
-            We design it, outsource to top specialists, manage the build end-to-end, and ship fast.
+            Whatever you're called to create — we'll design it, build it, and bring it to life.
           </p>
         </div>
       </div>

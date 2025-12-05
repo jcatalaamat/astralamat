@@ -42,13 +42,13 @@ const Founder = () => {
                   Jordi Amat
                 </h3>
                 <p className="text-astral-violet font-medium mb-4">
-                  Product Architect & Creative Systems Designer
+                  Integration Architect
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  I help people turn ideas into real products. Not with complex tech. Not with expensive agencies. But with clarity, creativity, and world-class outsourced execution.
+                  I help people bring their ideas into the world — not through complexity, but through clarity, structure, and care.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Over 10+ years in product & engineering, I've learned how to translate vision into structure — and structure into reality.
+                  You don't need to manage a team or learn the technology. You just need someone who can see what you're building — and bring it into form. That's what I do.
                 </p>
               </div>
             </div>

@@ -4,32 +4,32 @@ const steps = [
   {
     number: '01',
     icon: MessageCircle,
-    title: 'Share Your Idea',
-    description: 'No tech skills needed. Just tell us what you want to create.',
+    title: 'Share Your Vision',
+    description: "No tech language needed — just tell us what you're called to create.",
   },
   {
     number: '02',
     icon: Map,
-    title: 'We Map It Out',
-    description: 'A simple plan showing features, flow, tools, timeline, and costs.',
+    title: 'We Shape the Blueprint',
+    description: 'Your idea becomes a clear, structured plan — with features, flow, timeline, and cost.',
   },
   {
     number: '03',
     icon: Users,
-    title: 'We Assemble the Team',
-    description: 'Top freelancers + specialists (design, dev, AI, automation).',
+    title: 'We Gather the Right People',
+    description: 'Designers, developers, automators — carefully chosen for your project.',
   },
   {
     number: '04',
     icon: ClipboardCheck,
-    title: 'We Manage Everything',
-    description: 'We handle the meetings, tasks, timelines, and QA.',
+    title: 'We Handle the Build',
+    description: 'You stay in your zone. We manage every detail of the execution.',
   },
   {
     number: '05',
     icon: Rocket,
-    title: 'You Get Your Product',
-    description: 'Delivered fast. Fully documented. Supported as you grow.',
+    title: 'You Launch',
+    description: 'A finished product — ready to share with the world.',
   },
 ];
 
@@ -48,7 +48,7 @@ const HowItWorks = () => {
               How It Works
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              From idea to launched product in 5 simple steps
+              From vision to finished product — designed around your rhythm
             </p>
           </div>
 
