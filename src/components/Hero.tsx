@@ -38,7 +38,7 @@ const Hero = () => {
 
           {/* Brand */}
           <p className="text-lg md:text-xl font-medium text-electric-cyan mb-6 tracking-wide uppercase">
-            Astral Systems Engineering
+            Astral Integration Systems Engineering
           </p>
 
           {/* Main Headline */}

@@ -24,7 +24,7 @@ const WhySection = () => {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-sm font-medium text-astral-violet uppercase tracking-wider mb-3">
-            Why Astral Systems Exists
+            Why Astral Integration Exists
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-6">
             Your work transforms people.

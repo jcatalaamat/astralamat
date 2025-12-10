@@ -48,7 +48,7 @@ export default function Navigation() {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-lg font-bold text-white">
-              Astral Systems
+              Astral Integration
             </span>
           </button>
 

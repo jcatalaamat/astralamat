@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="text-center mb-8">
             <span className="text-lg font-bold text-white mb-3 block">
-              Astral Systems Engineering
+              Astral Integration Systems Engineering
             </span>
             <p className="text-gray-400">
               The Future of Transformational Learning.
@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center text-sm text-gray-500">
-            <p>&copy; {new Date().getFullYear()} Astral Systems Engineering. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Astral Integration Systems Engineering. All rights reserved.</p>
           </div>
         </div>
       </div>

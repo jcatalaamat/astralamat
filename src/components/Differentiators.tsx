@@ -38,7 +38,7 @@ const Differentiators = () => {
               What Makes Us Different
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-space-dark mb-6">
-              Why Astral Systems Is Unique
+              Why Astral Integration Is Unique
             </h2>
           </div>
 
