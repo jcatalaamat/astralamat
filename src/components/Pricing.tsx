@@ -1,61 +1,72 @@
-import { Sparkles, Layers, Package, Heart } from 'lucide-react';
+import { Sparkles, Layers, Building2, Cpu, Heart } from 'lucide-react';
 
 const packages = [
   {
     icon: Sparkles,
-    name: 'Clarity Session',
-    price: '€150',
-    description: 'Your idea becomes a structured plan.',
-    details: 'Features, flows, timeline, tools — the most elegant path forward.',
-    accent: 'violet',
+    name: 'Clarity Architecture Session',
+    price: '€250',
+    description: 'Your vision becomes a complete systems blueprint.',
+    details: 'Features, flows, timeline, tools, integrations, cost.',
+    note: 'The perfect starting point for any project.',
   },
   {
     icon: Layers,
-    name: 'Systems Package',
-    price: 'from €800',
-    description: 'For creators and businesses who need foundations that feel effortless.',
-    details: '',
+    name: 'Systems Foundation Package',
+    price: 'from €1,500',
+    description: 'For studios, teachers, retreat centers, and small institutions.',
     includes: [
       'Booking & scheduling',
-      'CRM & client journeys',
-      'Automations',
-      'Operational dashboards',
+      'CRM & automations',
+      'Onboarding flows',
+      'Dashboards',
+      'AI-powered support',
       'Internal tools',
     ],
-    note: 'A solid architecture for the parts of your work that should flow smoothly.',
-    accent: 'cyan',
+    note: 'A solid foundation for your organization.',
   },
   {
-    icon: Package,
-    name: 'Product Package',
-    price: 'from €3,500',
-    description: 'Your full digital product — thoughtfully designed, built, and delivered.',
+    icon: Building2,
+    name: 'Institutional Platform Package',
+    price: 'from €5,000',
+    description: 'For RA MA-style academies, yoga schools, spiritual temples, and visionary groups.',
     includes: [
-      'MVPs',
-      'Platforms',
-      'Membership ecosystems',
-      'Course portals',
-      'Creator suites',
-      'AI-enhanced experiences',
+      'Teaching portal',
+      'Member ecosystem',
+      'Practice library',
+      'AI guides',
+      'Community architecture',
+      'Operational backend',
+      'Automations',
+      'Revenue systems',
     ],
-    note: 'You stay in your vision. We take care of the build.',
-    accent: 'pink',
+    note: 'Everything a modern spiritual institution needs.',
     featured: true,
   },
   {
-    icon: Heart,
-    name: 'Support Package',
-    price: '€350–€1,200/month',
-    description: 'A gentle, ongoing partnership as your product evolves.',
+    icon: Cpu,
+    name: 'AI Experience Package',
+    price: 'from €3,500',
+    description: 'Custom AI assistants, guides, lineage tools, content engines.',
     includes: [
-      'Updates',
-      'Improvements',
-      'Maintenance',
-      'New features',
-      'Content + system changes',
+      'Personalized AI assistants',
+      'Wisdom guides',
+      'Content engines',
+      'Learning companions',
     ],
-    note: 'A steady container for long-term growth.',
-    accent: 'amber',
+    note: 'Perfect for teachers, creators, coaches, schools, academies.',
+  },
+  {
+    icon: Heart,
+    name: 'Ongoing Support',
+    price: '€350–€1,200/month',
+    description: 'Maintenance, updates, improvements, expansions.',
+    includes: [
+      'System maintenance',
+      'Regular updates',
+      'New features',
+      'Priority support',
+    ],
+    note: 'A gentle long-term partnership.',
   },
 ];
 
@@ -67,47 +78,53 @@ const Pricing = () => {
       <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-electric-cyan/10 rounded-full filter blur-[100px]"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
+            <p className="text-sm font-medium text-electric-cyan uppercase tracking-wider mb-3">
+              Packages
+            </p>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Studio Packages
+              Investment & Packages
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Clear, simple, and designed around how people naturally create
+              Clear, simple pricing designed for spiritual institutions and visionary organizations
             </p>
           </div>
 
           {/* Packages Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
                 className={`group relative bg-white/5 backdrop-blur-sm rounded-2xl border transition-all duration-300 overflow-hidden ${
                   pkg.featured
-                    ? 'border-astral-violet/50 bg-white/10'
+                    ? 'border-astral-violet/50 bg-white/10 lg:scale-105 lg:-my-2'
                     : 'border-white/10 hover:border-astral-violet/30 hover:bg-white/10'
                 }`}
               >
                 {pkg.featured && (
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-astral-violet via-electric-cyan to-astral-violet" />
+                  <>
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-astral-violet via-electric-cyan to-astral-violet" />
+                    <div className="absolute top-4 right-4 px-3 py-1 bg-astral-violet/20 rounded-full text-xs text-electric-cyan font-medium">
+                      Most Popular
+                    </div>
+                  </>
                 )}
 
-                <div className="p-8">
+                <div className="p-6">
                   {/* Header */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-astral-violet to-electric-cyan rounded-xl flex items-center justify-center">
-                        <pkg.icon className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white">{pkg.name}</h3>
-                      </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-astral-violet to-electric-cyan rounded-xl flex items-center justify-center">
+                      <pkg.icon className="w-5 h-5 text-white" />
                     </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-bold text-electric-cyan">{pkg.price}</p>
+                    <div>
+                      <h3 className="text-lg font-bold text-white">{pkg.name}</h3>
                     </div>
                   </div>
+
+                  {/* Price */}
+                  <p className="text-2xl font-bold text-electric-cyan mb-4">{pkg.price}</p>
 
                   {/* Description */}
                   <p className="text-gray-300 mb-4">{pkg.description}</p>
@@ -144,10 +161,10 @@ const Pricing = () => {
           {/* Bottom CTA */}
           <div className="text-center mt-12">
             <p className="text-gray-400 mb-6">
-              Not sure which fits? Begin with a clarity session.
+              Not sure which fits? Begin with a Clarity Architecture Session.
             </p>
             <a
-              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20learn%20more%20about%20your%20packages."
+              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20learn%20more%20about%20your%20packages%20for%20spiritual%20institutions."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/20 text-white font-medium rounded-xl hover:bg-white/20 transition-all"

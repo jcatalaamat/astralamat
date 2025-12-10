@@ -1,29 +1,49 @@
-import { Leaf, Wine, Mic, FlaskConical } from 'lucide-react';
+import { Sparkles, Home, Mic, Building2 } from 'lucide-react';
 
 const examples = [
   {
-    icon: Leaf,
-    title: 'For a Yoga Teacher',
-    items: ['Booking system', 'Client journey', 'Course portal', 'Personalized AI practice guide'],
-    color: 'green',
+    icon: Sparkles,
+    title: 'For a Kundalini / Yoga School',
+    items: [
+      'Teaching portal',
+      'Practice library',
+      'Student journeys',
+      'AI lineage guide',
+      'Certification system',
+      'Community ecosystem',
+    ],
   },
   {
-    icon: Wine,
-    title: 'For a Winery or Restaurant',
-    items: ['Reservation engine', 'Menu system', 'Automated customer replies', 'Loyalty program'],
-    color: 'purple',
+    icon: Home,
+    title: 'For a Retreat Center',
+    items: [
+      'Booking & onboarding',
+      'CRM flows',
+      'AI integration guides',
+      'Community hub',
+      'Operational tools',
+    ],
   },
   {
     icon: Mic,
-    title: 'For a Creator',
-    items: ['Membership platform', 'AI content engine', 'Digital product suite', 'Funnel + onboarding automation'],
-    color: 'cyan',
+    title: 'For a Creator or Healer',
+    items: [
+      'Membership platform',
+      'AI practice assistant',
+      'Digital product suite',
+      'Funnels & automations',
+    ],
   },
   {
-    icon: FlaskConical,
-    title: 'For a Startup Founder',
-    items: ['Full MVP', 'UX + architecture', 'Dev team coordination', 'Launch support'],
-    color: 'pink',
+    icon: Building2,
+    title: 'For a Visionary Institution',
+    items: [
+      'Global ambassador system',
+      'AI learning ecosystem',
+      'Practice database',
+      'Business automations',
+      'Internal operations dashboard',
+    ],
   },
 ];
 
@@ -38,11 +58,14 @@ const Examples = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
+            <p className="text-sm font-medium text-electric-cyan uppercase tracking-wider mb-3">
+              Real Examples
+            </p>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Examples of What We Build
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Real scenarios, real solutions
+              Real scenarios for spiritual institutions and visionary organizations
             </p>
           </div>
 

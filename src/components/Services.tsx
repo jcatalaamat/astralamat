@@ -1,59 +1,41 @@
-import { Package, Settings, Cpu, Zap, Lightbulb, Users } from 'lucide-react';
+import { Cpu, Globe, Bot, Settings, Lightbulb, Infinity } from 'lucide-react';
 
 const services = [
   {
-    icon: Package,
-    title: 'Full Product Build',
-    subtitle: 'MVP / App / Platform',
-    description: 'Your complete digital product — from UX to implementation to launch.',
-    ideal: 'For creators, founders, and businesses ready to scale.',
-    accent: 'violet',
-    gradient: 'from-astral-violet/10 to-astral-violet/5',
+    icon: Cpu,
+    number: '01',
+    title: 'AI Systems Engineering',
+    description: 'Complete intelligent architecture for your digital ecosystem.',
+  },
+  {
+    icon: Globe,
+    number: '02',
+    title: 'Learning Platform Design',
+    description: 'Teaching, learning, community, and practice — unified.',
+  },
+  {
+    icon: Bot,
+    number: '03',
+    title: 'Transformation Engines',
+    description: 'AI-powered companions that adapt to each student\'s journey.',
   },
   {
     icon: Settings,
-    title: 'Custom Systems & Workflows',
-    subtitle: 'Operations & Automation',
-    description: 'Booking systems, CRM flows, onboarding, internal tools, business automation.',
-    ideal: 'For local businesses + service providers.',
-    accent: 'cyan',
-    gradient: 'from-electric-cyan/10 to-electric-cyan/5',
-  },
-  {
-    icon: Cpu,
-    title: 'AI-Enhanced Offerings',
-    subtitle: 'Smart Tools & Experiences',
-    description: 'AI assistants, intelligent content creation, personalized teaching tools.',
-    ideal: 'For creators, coaches, spiritual leaders.',
-    accent: 'pink',
-    gradient: 'from-pink-500/10 to-pink-500/5',
-  },
-  {
-    icon: Zap,
-    title: 'Business Automation',
-    subtitle: 'Time Freedom',
-    description: 'Email replies, reminders, funnels, scheduling, customer support.',
-    ideal: 'For anyone wanting more time freedom.',
-    accent: 'amber',
-    gradient: 'from-amber-500/10 to-amber-500/5',
+    number: '04',
+    title: 'Business Systems & Automations',
+    description: 'Operational clarity. Zero overwhelm. Maximum flow.',
   },
   {
     icon: Lightbulb,
-    title: 'Idea-to-Reality Sessions',
-    subtitle: 'Strategy & Planning',
-    description: 'Your idea becomes a crystal-clear blueprint.',
-    ideal: 'Features, flows, timeline, tools.',
-    accent: 'green',
-    gradient: 'from-green-500/10 to-green-500/5',
+    number: '05',
+    title: 'Vision → Blueprint Sessions',
+    description: 'Your mission becomes a structured, actionable, beautifully coherent systems map.',
   },
   {
-    icon: Users,
-    title: 'Product Management',
-    subtitle: 'Outsourced Delivery',
-    description: 'We source the specialists. We manage the build. You stay in your zone.',
-    ideal: 'Zero stress, fast delivery.',
-    accent: 'blue',
-    gradient: 'from-blue-500/10 to-blue-500/5',
+    icon: Infinity,
+    number: '06',
+    title: 'Ongoing Evolution Partnerships',
+    description: 'Long-term architectural leadership for institutions committed to global impact.',
   },
 ];
 
@@ -64,12 +46,12 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-4">
+            <p className="text-sm font-medium text-astral-violet uppercase tracking-wider mb-3">
               Our Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to go from idea → structure → finished product
             </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-4">
+              How We Serve You
+            </h2>
           </div>
 
           {/* Services Grid */}
@@ -79,24 +61,20 @@ const Services = () => {
                 key={service.title}
                 className="group relative bg-white rounded-2xl border border-gray-200 hover:border-astral-violet/30 hover:shadow-lg hover:shadow-astral-violet/10 transition-all duration-300 overflow-hidden"
               >
-                {/* Subtle gradient accent at top */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity`} />
+                {/* Number badge */}
+                <div className="absolute top-4 right-4 text-4xl font-bold text-gray-100 group-hover:text-astral-violet/10 transition-colors">
+                  {service.number}
+                </div>
 
-                <div className="p-6">
+                <div className="p-6 relative">
                   <div className="w-12 h-12 bg-gradient-to-br from-astral-violet to-electric-cyan rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-space-dark mb-1">
+                  <h3 className="text-xl font-bold text-space-dark mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-astral-violet font-medium mb-3">
-                    {service.subtitle}
-                  </p>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {service.description}
-                  </p>
-                  <p className="text-sm text-gray-500 italic">
-                    {service.ideal}
                   </p>
                 </div>
               </div>

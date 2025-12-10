@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { href: '#what-we-do', label: 'What We Do' },
+  { href: '#why', label: 'Why Us' },
+  { href: '#what-we-do', label: 'What We Build' },
+  { href: '#who-we-help', label: 'Who We Help' },
   { href: '#services', label: 'Services' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#how-it-works', label: 'How It Works' },
+  { href: '#engagement', label: 'How We Work' },
   { href: '#about', label: 'About' },
 ];
 
@@ -47,7 +48,7 @@ export default function Navigation() {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-lg font-bold text-white">
-              Astral Integration
+              Astral Systems
             </span>
           </button>
 
@@ -57,18 +58,18 @@ export default function Navigation() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all"
               >
                 {item.label}
               </button>
             ))}
             <a
-              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20start%20a%20project."
+              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20request%20a%20strategy%20call%20about%20AI%20systems%20for%20our%20education%20platform."
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-4 py-2 bg-astral-violet text-white text-sm font-medium rounded-lg hover:bg-astral-violet/90 hover:shadow-lg hover:shadow-astral-violet/30 transition-all"
             >
-              Start a Project
+              Request a Call
             </a>
           </div>
 
@@ -94,13 +95,13 @@ export default function Navigation() {
               </button>
             ))}
             <a
-              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20start%20a%20project."
+              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20request%20a%20strategy%20call%20about%20AI%20systems%20for%20our%20education%20platform."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center mt-4 px-4 py-3 bg-astral-violet text-white font-medium rounded-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Start a Project
+              Request a Call
             </a>
           </div>
         )}

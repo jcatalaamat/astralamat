@@ -1,11 +1,12 @@
 import Hero from '../components/Hero';
+import WhySection from '../components/WhySection';
+import ApproachSection from '../components/ApproachSection';
 import WhatWeDo from '../components/WhatWeDo';
 import WhoWeHelp from '../components/WhoWeHelp';
 import Services from '../components/Services';
-import Pricing from '../components/Pricing';
+import EngagementModels from '../components/EngagementModels';
 import HowItWorks from '../components/HowItWorks';
 import BeforeAfter from '../components/BeforeAfter';
-import Examples from '../components/Examples';
 import Founder from '../components/Founder';
 import FinalCTA from '../components/FinalCTA';
 import Navigation from '../components/Navigation';
@@ -17,13 +18,14 @@ export default function HomePage() {
       <Navigation />
       <main>
         <Hero />
+        <WhySection />
+        <ApproachSection />
         <WhatWeDo />
         <WhoWeHelp />
         <Services />
-        <Pricing />
+        <EngagementModels />
         <HowItWorks />
         <BeforeAfter />
-        <Examples />
         <Founder />
         <FinalCTA />
       </main>

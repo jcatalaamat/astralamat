@@ -1,94 +1,67 @@
-import { MessageCircle, Map, Users, ClipboardCheck, Rocket } from 'lucide-react';
-
 const steps = [
   {
     number: '01',
-    icon: MessageCircle,
-    title: 'Share Your Vision',
-    description: "No tech language needed — just tell us what you're called to create.",
+    title: 'Vision Immersion',
+    description: 'We dive into your teachings, mission, content, audience, and desired outcomes.',
   },
   {
     number: '02',
-    icon: Map,
-    title: 'We Shape the Blueprint',
-    description: 'Your idea becomes a clear, structured plan — with features, flow, timeline, and cost.',
+    title: 'Systems Blueprint',
+    description: 'A complete architecture of your future digital ecosystem.',
   },
   {
     number: '03',
-    icon: Users,
-    title: 'We Gather the Right People',
-    description: 'Designers, developers, automators — carefully chosen for your project.',
+    title: 'Engineering & Assembly',
+    description: 'We curate and manage a global team to build the system.',
   },
   {
     number: '04',
-    icon: ClipboardCheck,
-    title: 'We Handle the Build',
-    description: 'You stay in your zone. We manage every detail of the execution.',
+    title: 'Integration & Testing',
+    description: 'Everything is aligned with your pedagogy, voice, values, and transmission.',
   },
   {
     number: '05',
-    icon: Rocket,
-    title: 'You Launch',
-    description: 'A finished product — ready to share with the world.',
+    title: 'Launch & Evolution',
+    description: 'Your platform evolves with your work — not against it.',
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 bg-gradient-to-b from-deep-space via-space-dark to-deep-space relative overflow-hidden">
-      {/* Subtle gradient orbs - no animated stars */}
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-astral-violet/10 rounded-full filter blur-[100px]"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-electric-cyan/10 rounded-full filter blur-[100px]"></div>
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto">
+    <section id="how-it-works" className="py-24 bg-soft-sand">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <p className="text-sm font-medium text-astral-violet uppercase tracking-wider mb-3">
+              The Process
+            </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-4">
               How It Works
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              From vision to finished product — designed around your rhythm
-            </p>
           </div>
 
-          {/* Steps - Vertical on mobile, horizontal on desktop */}
-          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-5 md:gap-4">
-            {steps.map((step, index) => (
-              <div key={step.number} className="relative">
-                {/* Connector Line (Desktop) */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-[60%] w-full h-0.5 bg-gradient-to-r from-astral-violet to-electric-cyan opacity-30" />
-                )}
+          {/* Steps */}
+          <div className="space-y-6">
+            {steps.map((step) => (
+              <div
+                key={step.number}
+                className="group flex items-start gap-6 bg-white rounded-2xl p-6 border border-gray-200 hover:border-astral-violet/30 hover:shadow-lg transition-all"
+              >
+                {/* Step Number */}
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-astral-violet to-electric-cyan rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="text-2xl font-bold text-white">{step.number}</span>
+                </div>
 
-                <div className="text-center">
-                  {/* Icon */}
-                  <div className="relative z-10 mx-auto mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-astral-violet to-electric-cyan rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-astral-violet/20">
-                      <step.icon className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-
-                  {/* Step Number */}
-                  <span className="text-xs font-bold text-electric-cyan mb-2 block">
-                    STEP {step.number}
-                  </span>
-
-                  {/* Content */}
-                  <h3 className="text-lg font-bold text-white mb-2">
+                {/* Content */}
+                <div className="flex-1 pt-2">
+                  <h3 className="text-xl font-bold text-space-dark mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
-
-                {/* Connector Line (Mobile) */}
-                {index < steps.length - 1 && (
-                  <div className="md:hidden flex justify-center my-4">
-                    <div className="w-0.5 h-8 bg-gradient-to-b from-astral-violet to-electric-cyan rounded-full" />
-                  </div>
-                )}
               </div>
             ))}
           </div>
