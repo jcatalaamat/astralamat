@@ -59,7 +59,7 @@ const WhySection = () => {
 
             <div className="border-t border-gray-100 pt-8">
               <p className="text-lg text-gray-600 text-center mb-4">
-                This is where most transformational institutions struggle.
+                This is where most teachers and schools struggle.
               </p>
               <p className="text-xl text-space-dark text-center font-medium">
                 Your teachings are powerful, but your systems are fragile.

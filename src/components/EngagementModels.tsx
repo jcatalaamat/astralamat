@@ -14,7 +14,7 @@ const engagements = [
   {
     icon: Infinity,
     title: 'Evolution Partnership',
-    description: 'Fractional CTO / AI Architect for transformational institutions.',
+    description: 'Fractional CTO / AI Architect for teachers, schools & platforms.',
   },
   {
     icon: Compass,

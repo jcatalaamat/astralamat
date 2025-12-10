@@ -56,7 +56,7 @@ const Founder = () => {
                   AI Systems Engineer & Transformation Architect
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                  I design intelligent systems for transformational educators, spiritual guides, and visionary institutions.
+                  I design intelligent systems for transformational educators, spiritual guides, and consciousness schools of all sizes.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   I help global teachers scale their impact with systems that carry their wisdom into the future — clearly, beautifully, and intelligently.

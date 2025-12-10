@@ -35,7 +35,7 @@ const services = [
     icon: Infinity,
     number: '06',
     title: 'Ongoing Evolution Partnerships',
-    description: 'Long-term architectural leadership for institutions committed to global impact.',
+    description: 'Long-term architectural leadership for teachers and schools ready to expand.',
   },
 ];
 
