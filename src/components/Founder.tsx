@@ -61,9 +61,12 @@ const Founder = () => {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   I help global teachers scale their impact with systems that carry their wisdom into the future — clearly, beautifully, and intelligently.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   <span className="text-astral-violet font-medium">Not complexity. Not overwhelm.</span>{' '}
                   Just precision, integrity, and evolution.
+                </p>
+                <p className="text-gray-500 text-sm leading-relaxed italic">
+                  Beyond transformational learning, I also architect AI-powered systems for founders, creators, and small businesses looking to build scalable digital products and operations.
                 </p>
               </div>
             </div>
