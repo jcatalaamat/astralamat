@@ -51,7 +51,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
-            AI Systems Engineering for Teachers, Guides, Creators & Consciousness Schools
+            AI Systems Engineering for Visionary Leaders, Teachers, Guides & Consciousness Schools
           </p>
 
           {/* Value Props */}
