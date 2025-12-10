@@ -3,12 +3,12 @@ import { Map, Hammer, Infinity, Compass, MessageCircle } from 'lucide-react';
 const engagements = [
   {
     icon: Map,
-    title: 'Architecture Engagement',
+    title: 'Systems Architecture Design',
     description: 'We design your entire digital nervous system.',
   },
   {
     icon: Hammer,
-    title: 'Full Buildout',
+    title: 'Platform Build & Implementation',
     description: 'We assemble & manage the team to build your platform or ecosystem.',
   },
   {
@@ -41,7 +41,7 @@ const EngagementModels = () => {
               Engagement Models
             </h2>
             <p className="text-gray-400">
-              Premium, custom, global-ready.
+              Premium, custom, built to evolve.
             </p>
           </div>
 

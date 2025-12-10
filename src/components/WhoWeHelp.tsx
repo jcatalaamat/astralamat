@@ -13,12 +13,12 @@ const audiences = [
   },
   {
     icon: Globe,
-    title: 'Transformational Education Platforms',
+    title: 'Transformational Learning Platforms',
     description: 'Mindvalley, Gaia, coaching platforms, online academies, retreat-lineage schools.',
   },
   {
     icon: Home,
-    title: 'Retreat Centers & Hybrid Learning Spaces',
+    title: 'Retreat Centers & Hybrid Teaching Spaces',
     description: 'Where in-person work merges with digital transformation.',
   },
   {

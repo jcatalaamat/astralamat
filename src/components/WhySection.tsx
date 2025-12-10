@@ -4,10 +4,10 @@ const WhySection = () => {
     'personalized learning flows',
     'AI-powered guidance',
     'seamless operations',
-    'digital architecture',
-    'unified platforms',
-    'automated support',
-    'global-ready infrastructure',
+    'beautifully integrated platforms',
+    'tools that grow with you',
+    'support systems that work',
+    'room to scale globally',
   ];
 
   return (

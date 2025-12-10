@@ -42,13 +42,13 @@ const categories = [
   },
   {
     icon: Settings,
-    title: 'Institutional Automations',
+    title: 'Operational Support Systems',
     subtitle: 'The backend that supports your mission.',
     items: [
-      'CRM flows',
-      'Onboarding pathways',
-      'Booking systems',
-      'Automated operations',
+      'Student onboarding systems',
+      'Seamless client journeys',
+      'Booking & scheduling tools',
+      'Automations that remove admin noise',
       'Dashboards & internal tools',
     ],
     gradient: 'from-amber-500 to-astral-violet',
@@ -78,9 +78,9 @@ const WhatWeDo = () => {
               What We Build
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-space-dark mb-4">
-              Intelligent Infrastructure for the{' '}
+              Intelligent Platforms for{' '}
               <span className="bg-gradient-to-r from-astral-violet to-electric-cyan bg-clip-text text-transparent">
-                Transformation Industry
+                Transformational Teaching
               </span>
             </h2>
           </div>

@@ -51,7 +51,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
-            AI Systems Engineering for Visionary Leaders, Teachers, Guides & Consciousness Schools
+            Intelligent Platform Design & AI Architecture for Teachers, Schools & Consciousness Guides
           </p>
 
           {/* Value Props */}
@@ -89,7 +89,7 @@ const Hero = () => {
 
           {/* Trust Line */}
           <p className="text-sm text-gray-500 max-w-2xl mx-auto">
-            A sacred engineering studio for teachers, creators, mystics, coaches, visionary leaders, retreat centers, and transformational learning platforms.
+            A sacred systems studio for teachers, guides, schools, and transformational creators.
           </p>
 
           {/* Scroll prompt */}
