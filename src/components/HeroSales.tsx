@@ -48,22 +48,27 @@ const HeroSales = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            AI Systems for{' '}
+            AI Systems That{' '}
             <span className="bg-gradient-to-r from-astral-violet via-electric-cyan to-astral-violet bg-clip-text text-transparent">
-              Coaches, Healers & Visionary Educators
+              Scale Your Transformation Work
             </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
-            Custom platforms, automations, client portals, and AI assistants — built for your unique way of working.
+          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
+            Built for coaches, healers, teachers & conscious creators.
+          </p>
+
+          {/* Mystique Line */}
+          <p className="text-lg text-electric-cyan/80 italic mb-6 max-w-2xl mx-auto">
+            Technology that honors your transmission.
           </p>
 
           {/* Value Props */}
           <div className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto space-y-1">
-            <p>The intelligence behind your business.</p>
-            <p>The structure behind your transformation.</p>
-            <p className="text-electric-cyan font-medium">The systems that make your mission scalable.</p>
+            <p>Custom platforms, automations, and AI assistants.</p>
+            <p>Systems engineered with awareness.</p>
+            <p className="text-electric-cyan font-medium">AI that expands your impact without diluting your essence.</p>
           </div>
 
           {/* CTAs */}
@@ -87,9 +92,9 @@ const HeroSales = () => {
             </button>
           </div>
 
-          {/* Trust Line */}
-          <p className="text-sm text-gray-500 max-w-2xl mx-auto">
-            Done-for-you AI system builds for coaches, therapists, yoga studios, retreat centers, and transformational creators.
+          {/* Social Proof */}
+          <p className="text-sm text-gray-400 max-w-2xl mx-auto">
+            Trusted by transformational coaches, retreat leaders, healers, and educators across the world.
           </p>
 
           {/* Scroll prompt */}

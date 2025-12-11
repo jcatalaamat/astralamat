@@ -2,10 +2,10 @@ import HeroSales from '../components/HeroSales';
 import ValueProposition from '../components/ValueProposition';
 import WhatWeBuildSales from '../components/WhatWeBuildSales';
 import WhoWeHelpSales from '../components/WhoWeHelpSales';
-import PackagesSales from '../components/PackagesSales';
+import WhyChooseUs from '../components/WhyChooseUs';
 import DemoSection from '../components/DemoSection';
+import PackagesSales from '../components/PackagesSales';
 import NicheTemplates from '../components/NicheTemplates';
-import HowItWorks from '../components/HowItWorks';
 import FounderSales from '../components/FounderSales';
 import FinalCTASales from '../components/FinalCTASales';
 import Navigation from '../components/Navigation';
@@ -20,10 +20,10 @@ export default function HomePage() {
         <ValueProposition />
         <WhatWeBuildSales />
         <WhoWeHelpSales />
-        <PackagesSales />
+        <WhyChooseUs />
         <DemoSection />
+        <PackagesSales />
         <NicheTemplates />
-        <HowItWorks />
         <FounderSales />
         <FinalCTASales />
       </main>
