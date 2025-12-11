@@ -1,14 +1,13 @@
-import Hero from '../components/Hero';
-import WhySection from '../components/WhySection';
-import ApproachSection from '../components/ApproachSection';
-import WhatWeDo from '../components/WhatWeDo';
-import WhoWeHelp from '../components/WhoWeHelp';
-import Services from '../components/Services';
-import EngagementModels from '../components/EngagementModels';
+import HeroSales from '../components/HeroSales';
+import ValueProposition from '../components/ValueProposition';
+import WhatWeBuildSales from '../components/WhatWeBuildSales';
+import WhoWeHelpSales from '../components/WhoWeHelpSales';
+import PackagesSales from '../components/PackagesSales';
+import DemoSection from '../components/DemoSection';
+import NicheTemplates from '../components/NicheTemplates';
 import HowItWorks from '../components/HowItWorks';
-import BeforeAfter from '../components/BeforeAfter';
-import Founder from '../components/Founder';
-import FinalCTA from '../components/FinalCTA';
+import FounderSales from '../components/FounderSales';
+import FinalCTASales from '../components/FinalCTASales';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -17,17 +16,16 @@ export default function HomePage() {
     <div className="min-h-screen bg-white text-zinc-900">
       <Navigation />
       <main>
-        <Hero />
-        <WhySection />
-        <ApproachSection />
-        <WhatWeDo />
-        <WhoWeHelp />
-        <Services />
-        <EngagementModels />
+        <HeroSales />
+        <ValueProposition />
+        <WhatWeBuildSales />
+        <WhoWeHelpSales />
+        <PackagesSales />
+        <DemoSection />
+        <NicheTemplates />
         <HowItWorks />
-        <BeforeAfter />
-        <Founder />
-        <FinalCTA />
+        <FounderSales />
+        <FinalCTASales />
       </main>
       <Footer />
     </div>

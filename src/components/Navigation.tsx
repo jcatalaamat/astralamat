@@ -1,7 +1,20 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
-const navItems = [
+interface NavigationProps {
+  isVisionPage?: boolean;
+}
+
+const salesNavItems = [
+  { href: '#what-we-build', label: 'What We Build' },
+  { href: '#who-we-help', label: 'Who We Help' },
+  { href: '#packages', label: 'Packages' },
+  { href: '#demo', label: 'Demo' },
+  { href: '#about', label: 'About' },
+];
+
+const visionNavItems = [
   { href: '#why', label: 'Why Us' },
   { href: '#what-we-do', label: 'What We Build' },
   { href: '#who-we-help', label: 'Who We Help' },
@@ -10,9 +23,12 @@ const navItems = [
   { href: '#about', label: 'About' },
 ];
 
-export default function Navigation() {
+export default function Navigation({ isVisionPage = false }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const navItems = isVisionPage ? visionNavItems : salesNavItems;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,14 +59,19 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <button
-            onClick={scrollToTop}
+          <Link
+            to="/"
+            onClick={() => {
+              if (location.pathname === '/') {
+                scrollToTop();
+              }
+            }}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-lg font-bold text-white">
               Astral Integration
             </span>
-          </button>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
@@ -63,8 +84,26 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+
+            {/* Vision/Home Link */}
+            {isVisionPage ? (
+              <Link
+                to="/"
+                className="px-3 py-2 text-sm font-medium text-electric-cyan hover:text-white hover:bg-white/10 rounded-lg transition-all"
+              >
+                Home
+              </Link>
+            ) : (
+              <Link
+                to="/vision"
+                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+              >
+                Vision
+              </Link>
+            )}
+
             <a
-              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20request%20a%20strategy%20call%20about%20AI%20systems%20for%20our%20education%20platform."
+              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20book%20an%20AI%20Blueprint%20session%20for%20my%20practice."
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-4 py-2 bg-astral-violet text-white text-sm font-medium rounded-lg hover:bg-astral-violet/90 hover:shadow-lg hover:shadow-astral-violet/30 transition-all"
@@ -94,8 +133,28 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+
+            {/* Vision/Home Link Mobile */}
+            {isVisionPage ? (
+              <Link
+                to="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-left px-4 py-3 text-electric-cyan hover:text-white hover:bg-white/10 rounded-lg transition-all"
+              >
+                Home
+              </Link>
+            ) : (
+              <Link
+                to="/vision"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-left px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+              >
+                Vision
+              </Link>
+            )}
+
             <a
-              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20request%20a%20strategy%20call%20about%20AI%20systems%20for%20our%20education%20platform."
+              href="https://wa.me/34611144170?text=Hi!%20I'd%20like%20to%20book%20an%20AI%20Blueprint%20session%20for%20my%20practice."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center mt-4 px-4 py-3 bg-astral-violet text-white font-medium rounded-lg"
